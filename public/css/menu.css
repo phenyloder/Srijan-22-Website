@@ -1,0 +1,47 @@
+/* ROOT */
+:root{
+    font-size: 16px;
+    
+    --primary: #970ED9;
+    --secondary: #06A9CE;
+    --tertiary: #15131A;
+}
+/* ROOT */
+
+/* MENU STYLES */
+
+#menu{
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+
+#menuContainer{
+    display: flex;
+    height: 100%;
+}
+
+#toggle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+}
+
+#menuList{
+    background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+#contactInfo{
+    background-color: var(--tertiary);
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+/* MENU STYLES */

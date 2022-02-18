@@ -1,1 +1,11 @@
 /* styles */
+
+/* ROOT */
+:root{
+    font-size: 16px;
+    
+    --primary: #970ED9;
+    --secondary: #06A9CE;
+    --tertiary: #15131A;
+}
+/* ROOT */

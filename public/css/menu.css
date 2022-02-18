@@ -5,6 +5,7 @@
     --primary: #970ED9;
     --secondary: #06A9CE;
     --tertiary: #15131A;
+    --text-primary: #FFFFFF;
 }
 /* ROOT */
 
@@ -12,7 +13,6 @@
 
 #menu{
     position: fixed;
-    background-color: gray;
     top: 0;
     right: 0;
     width: 100%;
@@ -36,12 +36,41 @@
     background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
     flex-grow: 1;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.menuItem{
+    text-decoration: none;
+    color: var(--text-primary);
+    margin-left: 25%;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+.menuItem:hover{
+    color: var(--tertiary);
 }
 
 #contactInfo{
     background-color: var(--tertiary);
     flex-grow: 1;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.contactInfoItem{
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-left: 18%;
 }
 
 /* MENU STYLES */

@@ -181,4 +181,28 @@
     color: var(--text-primary);
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+    #contactInfo{
+        display: none;
+        max-width: 0;
+    }
+
+    #menuList{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #logo{
+        width: 12rem;
+    }
+
+    #menuToggleButton{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
 /* MENU STYLES */

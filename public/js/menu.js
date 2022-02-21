@@ -26,10 +26,6 @@ const MenuToggleButton = document.getElementById("menuToggleButton");
 
 MenuToggleButton.addEventListener("click", handleMenuToggle);
 
-// console.log(document.getElementsByClassName("menuItem")).forEach(element => {
-//     console.log(element)
-// });
-
 [...document.getElementsByClassName("menuItem")].forEach(element => {
     element.addEventListener("click",handleMenuToggle);
 });

@@ -52,7 +52,7 @@ body{
     transition: 250ms;
 }
 
-.fa-linkedin-in, .fa-facebook-f {
+.fa-linkedin-in-1, .fa-facebook-f-1 {
     font-size: 2rem;
     padding: 1rem;
     color: white;
@@ -62,13 +62,13 @@ body{
     -webkit-text-stroke-color: hsla(0, 0%, 100%);
 }
 
-.fa-instagram{
+.fa-instagram-1{
     font-size: 2.25rem;
     padding: 1rem;
     color: white;    
 }
 
-.linkedin, .facebook {
+.linkedin-1, .facebook-1 {
     font-size: 2rem;
     padding: 1rem;
     color: white;
@@ -78,7 +78,7 @@ body{
     -webkit-text-stroke-color: hsla(0, 0%, 0%);
 }
 
-.instagram{
+.instagram-1{
     font-size: 2.25rem;
     padding: 1rem;
     color: black;    

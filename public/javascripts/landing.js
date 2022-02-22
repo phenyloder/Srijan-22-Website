@@ -7,9 +7,9 @@ function scrollChange() {
         document.getElementById("scrollDownButton").href="Register_Page_Link";
         document.getElementById("scrollDownButton").style.color="black";
 
-        document.getElementById("Linkedin").classList.add("linkedin");
-        document.getElementById("Facebook").classList.add("facebook");
-        document.getElementById("Instagram").classList.add("instagram");
+        document.getElementById("Linkedin").classList.add("linkedin-1");
+        document.getElementById("Facebook").classList.add("facebook-1");
+        document.getElementById("Instagram").classList.add("instagram-1");
 
         document.getElementById("VerticalLine").classList.remove("leftVerticalLine");
         document.getElementById("VerticalLine").classList.add("verticalLine");
@@ -19,9 +19,9 @@ function scrollChange() {
         document.getElementById("scrollDownButton").href="#aboutUsSection";
         document.getElementById("scrollDownButton").style.color="white";
         
-        document.getElementById("Linkedin").classList.remove("linkedin");
-        document.getElementById("Facebook").classList.remove("facebook");
-        document.getElementById("Instagram").classList.remove("instagram");
+        document.getElementById("Linkedin").classList.remove("linkedin-1");
+        document.getElementById("Facebook").classList.remove("facebook-1");
+        document.getElementById("Instagram").classList.remove("instagram-1");
 
         document.getElementById("VerticalLine").classList.add("leftVerticalLine");
         document.getElementById("VerticalLine").classList.remove("verticalLine");

@@ -61,13 +61,13 @@
     left: 60%;
     height: fit-content;
     transform: rotate(0.5turn);
-    animation: spin2 2s 1;
+    animation: spin2 1.5s 1;
 }
 .about-anim{
     position: fixed;
     left: 60%;
     height: fit-content;
-    animation: spin 2s 1;
+    animation: spin 1.5s 1;
 }
 .circle{
     width: 27rem;
@@ -87,6 +87,14 @@
     left: -3.5%;
     transform: rotate(0.5turn);
 }
+.logo-circle-l.transition{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 47%;
+    left: -3.5%;
+    transition: all 2.5s ease;
+}
 .logo-circle-l{
     display: flex;
     align-items: center;
@@ -96,6 +104,7 @@
     border-radius: 50%;
     top: 37%;
     left: -11%;
+    transition: all 2.5s ease;
 }
 .about-logo1.hidden{
     display: none;
@@ -114,6 +123,14 @@
     top: 37%;
     right: -11%;
     transform: rotate(0.5turn);
+    transition: all 2.5s ease;
+}
+.logo-circle-s.transition{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 45%;
+    right: -4%;
 }
 .logo-circle-s{
     width: 2rem;
@@ -121,6 +138,7 @@
     border-radius: 50%;
     top: 45%;
     right: -4%;
+    transition: all 2.5s ease;
 }
 .about-logo2.hidden{
     display: none;

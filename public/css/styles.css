@@ -37,6 +37,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 
 .coverPage .socialIcons {
@@ -224,15 +225,6 @@ body {
   letter-spacing: 5px;
 }
 
-#aboutUsSection {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Applying CSS to sphere */
 .tagcloud {
   color: white;
@@ -398,5 +390,47 @@ body {
   .floating-button {
     top: 82%;
     right: -3.5rem;
+  }
+}
+
+@media (max-width: 361px),(height: 740px){
+  .coverPage .leftVerticalLine{
+      width: 80px;
+      left: -0.75rem;
+  }
+  .verticalLine{
+      width: 80px;
+      left: -0.75rem;
+  }
+}
+
+
+@media (max-width: 376px),(height: 667px){
+
+  .contentWrapper{
+      margin-bottom: 11.5rem;
+  }
+  .coverPage .leftVerticalLine{
+      width: 60px;
+      left: -0.2rem;
+      top: 120%;
+  }
+  .verticalLine{
+      width: 60px;
+      left: -0.2rem;
+      top: 115%;
+  }
+  .floating-button{
+      top: 79%;
+  }
+
+  .leftContentWrapper h1{
+      font-size: 3.25rem;
+      margin-bottom: 1rem;
+  }
+
+  .leftContentWrapper p{
+      font-size: 0.825rem;
+      width: 95%;
   }
 }

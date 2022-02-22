@@ -1,7 +1,4 @@
-/* styles */
 
-
-/* Landing-Page-starts */
 *{
     padding: 0;
     margin: 0;
@@ -11,7 +8,6 @@
 
 body{
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -134,9 +130,7 @@ body{
 
 .contentWrapper .rightContentWrapper {
     width: 50vw;
-    height: 100%;
-    background-image: url(../image/content.jpg);
-    background-size: percentage;   
+    height: 100%; 
 }
 
 .leftContentWrapper h1{
@@ -225,7 +219,7 @@ body{
     color: white;
     font-size: 1.125rem;
     font-family: 'gil-roy';
-    font-weight: medium;
+    font-weight: bold;
     letter-spacing: 5px;
 }
 
@@ -237,6 +231,27 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+ /* Applying CSS to sphere */
+ .tagcloud {
+     color: white;
+    display: inline-block;
+    position: absolute;
+    top: -45%;
+    left: 10%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'gil-roy';
+    font-size: 28px;
+  }
+  
+  /* Change color of each text in sphere on hover   */
+  .tagcloud--item:hover {
+    background-image: linear-gradient(-180deg, #B621FE, #1FD1F9);
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
 
 @media(max-width: 1200px){
     .fa-linkedin-in, .fa-facebook-f {
@@ -380,5 +395,3 @@ body{
         right: -3.5rem;
     }
 }
-
-/* Landing-Page-ends */

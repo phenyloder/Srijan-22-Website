@@ -7,9 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" src="javascripts/landing.js"></script>
+    <script type="text/javascript" src="landing.js"></script>
 </head>
 <body onclick="clickfunction()">
+    
     <div class="coverPage">
         <div class="socialIcons">
             <a href=""><i id="Linkedin" class="fa-brands fa-linkedin-in "></i></a>
@@ -23,18 +24,53 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, itaque maxime. Error autem veritatis quidem eum necessitatibus provident eveniet! Accusamus nostrum aperiam, excepturi ad laborum corrupti iste eaque sequi.</p>
             </div>
             <div class="rightContentWrapper">
+                <span class="Sphere"></span>
             </div>
         </div>
         <div class="floating-button">
             <a id="scrollDownButton" href="#aboutUsSection">
                 SCROLL DOWN <i class="fa-solid fa-arrow-right-long" style="width: 45px"></i>
-            </a>          
-        </div>
+            </a>     
+        </div>  
     </div>
+
     <div id="aboutUsSection">
-        <h1>.</h1>
+        <h1>about us section</h1>
     </div>
-    <script src="landing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'Right talent', 'Financing', 'Infrastructure',
+            'Planning', 'Self doubt', 'Criticism', 'Fintech',
+            'Innovation', 'Unicorn', 'Startup',
+            'Imagineer', 'SaaS'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 250,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#FF5733 ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
+    <script src="javascripts/landing.js"></script>
 </body>
 </html>
+
+
 

@@ -10,6 +10,23 @@ body, .coverPage {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #333333;
+  box-shadow: inset 0 0 5px black;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(-180deg, #b621fe, #1fd1f9);
+  border-radius: 10px;
+  transition: 250ms;
+  opacity: 0.8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(-180deg, #1fd1f9, #b621fe);
+}
+
 @font-face {
   font-family: "gil-roy";
   src: url("../fonts/Gilroy-Medium.ttf") format("truetype");

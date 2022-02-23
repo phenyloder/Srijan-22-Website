@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/workshop.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/landing.css">
     <link
       rel="stylesheet"
@@ -14,35 +16,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- SCROLL ANIMATION PACKAGE -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- SCROLL ANIMATION PACKAGE -->
+
     <title>Srijan 2.0</title>
-    <style>
-        ::-webkit-scrollbar {
-          width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-          background-color: #333333;
-          box-shadow: inset 0 0 5px black;
-        }
-        ::-webkit-scrollbar-thumb {
-          background-image: linear-gradient(-180deg, #b621fe, #1fd1f9);
-          border-radius: 10px;
-          transition: 250ms;
-          opacity: 0.8;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-          background-image: linear-gradient(-180deg, #1fd1f9, #b621fe);
-        }
-    </style>
 </head>
 <body>
 
-   
     <%- include("./partials/landing.ejs") %>
     
-    
-    
+    <%- include("./partials/menu.ejs") %>
+
+    <div class="about">
+        <%- include("partials/about") %> 
+    </div> 
+
+    <div class="workshop">
+        <%- include("partials/workshop.ejs") %>
+    </div>
+    <%- include("./partials/footer.ejs") %>
     
     <script src="/js/menu.js"></script>
     <script src="/js/landing.js"></script>
+    <script src="/js/about.js"></script>
+
+    <!-- SCROLL ANIMATION PACKAGE -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            delay: 0,
+            duration: 1000,
+        });
+        </script>
+    <!-- SCROLL ANIMATION PACKAGE -->
 </body>
 </html>

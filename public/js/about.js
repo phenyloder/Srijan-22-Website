@@ -12,7 +12,7 @@ const logo2 = document.querySelector(".about-logo2");
 window.addEventListener("scroll", () => {
     // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if(scrolled<180)
     {
         nitsCircle.classList.add("transition");
@@ -42,10 +42,8 @@ window.addEventListener("scroll", () => {
     if(scrolled>478)
     {
         animBox.classList.add("absolute");
-        animBoxFlip.classList.add("absolute");
     }
     else if(scrolled<478){
         animBox.classList.remove("absolute");
-        animBoxFlip.classList.remove("absolute");
     }
 })

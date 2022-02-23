@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   position: fixed;
   left: 3rem;
+  z-index: 30;
 }
 
 .socialIcons i {
@@ -171,6 +172,7 @@ body {
   top: 62%;
   transform: rotate(90deg);
   animation: animateUpDown 1.75s infinite;
+  z-index: 30;
 }
 
 @keyframes animateUpDown {
@@ -198,6 +200,7 @@ body {
   top: 62%;
   transform: rotate(90deg);
   animation: animateUpDown 1.75s infinite;
+  z-index: 30;
 }
 
 @keyframes animateUpDown1 {

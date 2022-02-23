@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/font/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(/font/Gilroy-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.workshop {
+    background-color: #15131A;
+    font-size: 14px;
+    font-family: Gilroy-Bold;
+    color: white;
+    padding-bottom: 5em;
+}
+
+.workName span {
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.workName {
+    text-align: center;
+    font-size: 3.4em;
+    padding-top: 1em;
+    height: fit-content;
+}
+
+.workshop .groups-row {
+    column-count: 3;
+    column-gap: 3.5em;
+    margin-left: 10em;
+    margin-right: 10em;
+    text-align: center;
+}
+
+.workshop .list {
+    display: inline-block;
+    padding-block-end: 2em;
+    padding-block-start: 1em;
+}
+
+.workshop .content {
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    font-family: Gilroy-Medium;
+    color: rgba(255, 255, 255, 0.72);
+    ;
+}
+
+.workshop .title {
+    font-size: 2em;
+    text-align: left;
+    line-height: 0.3em;
+}
+
+@media screen and (max-width:1023px) {
+    .workshop .groups-row {
+        column-count: 2;
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .workName span2 {
+        background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workName span {
+        background: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workshop .groups-row {
+        column-count: 1;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .workshop .title {
+        font-size: 1.7em;
+        line-height: 0.3em;
+    }
+    .workshop .content {
+        font-size: 1em;
+        line-height: 1.7em;
+        color: rgba(255, 255, 255, 0.72);
+        ;
+    }
+}

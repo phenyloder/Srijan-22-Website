@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/workshop.css">
     <link rel="stylesheet" href="/css/about.css">
-
-
+    <link rel="stylesheet" href="/css/landing.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- SCROLL ANIMATION PACKAGE -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- SCROLL ANIMATION PACKAGE -->
@@ -18,11 +24,11 @@
 </head>
 <body>
 
-    <%- include("./partials/header.ejs") %>
+    <%- include("./partials/landing.ejs") %>
     
     <%- include("./partials/menu.ejs") %>
 
-    <div class="about">
+    <div id="aboutUsSection" class="about">
         <%- include("partials/about") %> 
     </div> 
 
@@ -32,6 +38,7 @@
     <%- include("./partials/footer.ejs") %>
     
     <script src="/js/menu.js"></script>
+    <script src="/js/landing.js"></script>
     <script src="/js/about.js"></script>
 
     <!-- SCROLL ANIMATION PACKAGE -->

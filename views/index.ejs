@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/workshop.css">
+    <link rel="stylesheet" href="/css/about.css">
+
+
+    <!-- SCROLL ANIMATION PACKAGE -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- SCROLL ANIMATION PACKAGE -->
+
     <title>Srijan 2.0</title>
 </head>
 <body>
@@ -15,11 +22,27 @@
     
     <%- include("./partials/menu.ejs") %>
 
+    <div class="about">
+        <%- include("partials/about") %> 
+    </div> 
+
     <div class="workshop">
         <%- include("partials/workshop.ejs") %>
     </div>
     <%- include("./partials/footer.ejs") %>
     
     <script src="/js/menu.js"></script>
+    <script src="/js/about.js"></script>
+
+    <!-- SCROLL ANIMATION PACKAGE -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            delay: 0,
+            duration: 1000,
+        });
+        </script>
+    <!-- SCROLL ANIMATION PACKAGE -->
 </body>
 </html>

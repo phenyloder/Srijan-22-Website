@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.workshop {
+    background-color: #15131A;
+    font-size: 16px;
+    font-family: Gilroy;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+.workshop p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.groups-row p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.workName span {
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.workName {
+    text-align: center;
+    font-size: 4.1rem;
+    padding-top: 5rem;
+    height: fit-content;
+}
+
+.workshop .groups-row {
+    column-count: 3;
+    column-gap: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.workshop .list {
+    display: inline-block;
+    padding-block-end: 2rem;
+    padding-block-start: 1rem;
+}
+
+.workshop .content {
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-family: Gilroy;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.72);
+    ;
+}
+
+.workshop .title {
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 0.3rem;
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width:1500px) {
+    .workshop .groups-row {
+        column-count: 2;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .workName span2 {
+        background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workName span {
+        background: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workshop .groups-row {
+        column-count: 1;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .workshop .title {
+        font-size: 2rem;
+        line-height: 0.5rem;
+    }
+    .workshop .content {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: rgba(255, 255, 255, 0.72);
+        ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .workName span2 {
+        background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workName span {
+        background: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workName {
+        font-size: 3.1rem;
+    }
+    .workshop .groups-row {
+        column-count: 1;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .workshop .title {
+        font-size: 1.3rem;
+        line-height: 0.3rem;
+    }
+    .workshop .content {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        color: rgba(255, 255, 255, 0.72);
+        ;
+    }
+}

@@ -1,33 +1,38 @@
 /* ROOT */
-:root{
+
+:root {
     font-size: 16px;
-    
     --primary: #970ED9;
     --secondary: #06A9CE;
     --tertiary: #15131A;
     --text-primary: #FFFFFF;
 }
+
+
 /* ROOT */
+
 
 /* MENU STYLES */
 
-#menu{
+#menu {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
+    z-index: 100;
     /* display: flex; */
 }
 
-.menuContainerActive{
+.menuContainerActive {
     position: relative;
     right: 0;
     display: flex;
     height: 100%;
     transition: 0.4s;
 }
-.menuContainerInactive{
+
+.menuContainerInactive {
     position: relative;
     right: -100%;
     display: flex;
@@ -35,7 +40,7 @@
     transition: 0.4s;
 }
 
-#menuBar{
+#menuBar {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,7 +50,7 @@
     background-color: var(--tertiary);
 }
 
-#logo{
+#logo {
     margin-left: 8%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -53,7 +58,7 @@
     z-index: 3;
 }
 
-#menuToggleButton{
+#menuToggleButton {
     position: relative;
     height: 4.5rem;
     width: 4.5rem;
@@ -64,37 +69,27 @@
     z-index: 3;
 }
 
-#menuToggleButton::before{
+#menuToggleButton::before {
     content: "";
     position: absolute;
     background-color: var(--tertiary);
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     width: 95%;
     height: 95%;
 }
 
-.menuToggleButtonActive{
+.menuToggleButtonActive {
     background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
 }
 
-.menuToggleButtonInctive{
+.menuToggleButtonInctive {
     background-color: var(--tertiary);
 }
 
-.menuToggleButtonLinesActive{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    height: 5%;
-    border-radius: 5rem;
-    background-color: var(--text-primary);
-    transition: 0.4s;
-}
-.menuToggleButtonLinesInactive{
+.menuToggleButtonLinesActive {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,27 +100,38 @@
     transition: 0.4s;
 }
 
-.menuToggleButtonLinesActive#toggleButtonLineOne{
+.menuToggleButtonLinesInactive {
+    position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%) rotateZ(45deg);
+    left: 50%;
+    width: 50%;
+    height: 5%;
+    border-radius: 5rem;
+    background-color: var(--text-primary);
+    transition: 0.4s;
 }
 
-.menuToggleButtonLinesInactive#toggleButtonLineOne{
+.menuToggleButtonLinesActive#toggleButtonLineOne {
+    top: 50%;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.menuToggleButtonLinesInactive#toggleButtonLineOne {
     top: 40%;
-    transform: translate(-50%,-50%) rotateZ(0deg);
+    transform: translate(-50%, -50%) rotateZ(0deg);
 }
 
-.menuToggleButtonLinesActive#toggleButtonLineTwo{
+.menuToggleButtonLinesActive#toggleButtonLineTwo {
     top: 50%;
-    transform: translate(-50%,-50%) rotateZ(-45deg);
+    transform: translate(-50%, -50%) rotateZ(-45deg);
 }
 
-.menuToggleButtonLinesInactive#toggleButtonLineTwo{
+.menuToggleButtonLinesInactive#toggleButtonLineTwo {
     top: 60%;
-    transform: translate(-50%,-50%) rotateZ(0deg);
+    transform: translate(-50%, -50%) rotateZ(0deg);
 }
 
-#menuList{
+#menuList {
     background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
     flex-grow: 1;
     max-width: 50%;
@@ -137,7 +143,7 @@
     padding-bottom: 10vh;
 }
 
-.menuItem{
+.menuItem {
     text-decoration: none;
     color: var(--text-primary);
     margin-left: 25%;
@@ -145,11 +151,11 @@
     transition-duration: 0.2s;
 }
 
-.menuItem:hover{
+.menuItem:hover {
     color: var(--tertiary);
 }
 
-#contactInfo{
+#contactInfo {
     background-color: var(--tertiary);
     flex-grow: 1;
     max-width: 50%;
@@ -160,49 +166,50 @@
     padding-bottom: 10vh;
 }
 
-.contactInfoItem{
+.contactInfoItem {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.25rem;
     margin-left: 18%;
 }
 
-.contactInfoItem > div{
+.contactInfoItem>div {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.contactInfoItem > div > a{
+
+.contactInfoItem>div>a {
     text-decoration: none;
     color: var(--text-primary);
 }
 
-.contactInfoItem#contactInfoHeader{
+.contactInfoItem#contactInfoHeader {
     font-size: 2rem;
     font-weight: bold;
     color: var(--text-primary);
 }
 
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1000px) {
-    #contactInfo{
+    #contactInfo {
         display: none;
         max-width: 0;
     }
-
-    #menuList{
+    #menuList {
         max-width: 100%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    #logo{
+    #logo {
         width: 12rem;
     }
-
-    #menuToggleButton{
+    #menuToggleButton {
         width: 3rem;
         height: 3rem;
     }
 }
+
 
 /* MENU STYLES */

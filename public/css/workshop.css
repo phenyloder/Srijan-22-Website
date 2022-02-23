@@ -1,11 +1,15 @@
 @font-face {
-    font-family: Gilroy-Bold;
-    src: url(/font/Gilroy-Bold.ttf);
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Gilroy-Medium;
-    src: url(/font/Gilroy-Medium.ttf);
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -15,10 +19,21 @@ body {
 
 .workshop {
     background-color: #15131A;
-    font-size: 14px;
-    font-family: Gilroy-Bold;
+    font-size: 16px;
+    font-family: Gilroy;
+    font-weight: bold;
     color: white;
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
+}
+
+.workshop p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.groups-row p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 .workName span {
@@ -29,49 +44,52 @@ body {
 
 .workName {
     text-align: center;
-    font-size: 3.4em;
-    padding-top: 1em;
+    font-size: 4.1rem;
+    padding-top: 5rem;
     height: fit-content;
 }
 
 .workshop .groups-row {
     column-count: 3;
-    column-gap: 3.5em;
-    margin-left: 10em;
-    margin-right: 10em;
+    column-gap: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     text-align: center;
+    margin-top: 3.5rem;
 }
 
 .workshop .list {
     display: inline-block;
-    padding-block-end: 2em;
-    padding-block-start: 1em;
+    padding-block-end: 2rem;
+    padding-block-start: 1rem;
 }
 
 .workshop .content {
     text-align: justify;
-    font-size: 1.3em;
-    line-height: 1.7em;
-    font-family: Gilroy-Medium;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-family: Gilroy;
+    font-weight: normal;
     color: rgba(255, 255, 255, 0.72);
     ;
 }
 
 .workshop .title {
-    font-size: 2em;
+    font-size: 2.5rem;
     text-align: left;
-    line-height: 0.3em;
+    line-height: 0.3rem;
+    padding-top: 1.5rem;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1500px) {
     .workshop .groups-row {
         column-count: 2;
-        margin-left: 7em;
-        margin-right: 7em;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1000px) {
     .workName span2 {
         background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
         -webkit-text-fill-color: transparent;
@@ -84,16 +102,47 @@ body {
     }
     .workshop .groups-row {
         column-count: 1;
-        margin-left: 5em;
-        margin-right: 5em;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
     .workshop .title {
-        font-size: 1.7em;
-        line-height: 0.3em;
+        font-size: 2rem;
+        line-height: 0.5rem;
     }
     .workshop .content {
-        font-size: 1em;
-        line-height: 1.7em;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: rgba(255, 255, 255, 0.72);
+        ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .workName span2 {
+        background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workName span {
+        background: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .workName {
+        font-size: 3.1rem;
+    }
+    .workshop .groups-row {
+        column-count: 1;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .workshop .title {
+        font-size: 1.3rem;
+        line-height: 0.3rem;
+    }
+    .workshop .content {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
         color: rgba(255, 255, 255, 0.72);
         ;
     }

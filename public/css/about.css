@@ -1,11 +1,16 @@
 @font-face {
-    font-family: Gilroy-Bold;
-    src: url(/font/Gilroy-Bold.ttf);
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
 }
 @font-face {
-    font-family: Gilroy-Medium;
-    src: url(/font/Gilroy-Medium.ttf);
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Medium.ttf");
+    font-weight: medium;
+    font-style: normal;
 }
+
 .body{
     margin: 0;
     padding: 0;
@@ -16,6 +21,7 @@
     position: relative;
     justify-content: space-evenly;
     margin: 7%;
+    margin-top: 10%;
     margin-left: 10%;
 }
 .about-text{
@@ -26,7 +32,8 @@
     left: -17%;
 }
 .about-heading{
-    font-family: Gilroy-Bold;
+    font-family: Gilroy;
+    font-weight: bold;
     font-size: 1.5rem;
     line-height: 56px
 }
@@ -36,7 +43,8 @@
     -webkit-text-fill-color: transparent;
 }
 .about-description{
-    font-family: Gilroy-Medium;
+    font-family: Gilroy;
+    font-weight: medium;
     position: relative;
     font-size: 1.5rem;
     line-height: 35.83px;
@@ -62,8 +70,21 @@
     transform: rotate(0.5turn);
     animation: spin2 1.5s 1;
 }
+.about-anim.absolute{
+    position: absolute;
+    left: 60%;
+    height: fit-content;
+    transform: rotate(0.5turn);
+    animation: spin2 1.5s 1;
+}
 .about-anim{
     position: fixed;
+    left: 60%;
+    height: fit-content;
+    animation: spin 1.5s 1;
+}
+.about-anim.absolute{
+    position: absolute;
     left: 60%;
     height: fit-content;
     animation: spin 1.5s 1;

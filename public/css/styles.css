@@ -1,5 +1,6 @@
 /* styles */
 
+
 /* FONT */
 
 @font-face {
@@ -8,12 +9,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Gilroy";
     src: url("../font/Gilroy-Light.ttf");
     font-weight: lighter;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Gilroy";
     src: url("../font/Gilroy-Bold.ttf");
@@ -21,19 +24,23 @@
     font-style: normal;
 }
 
+
 /* FONT */
 
-*{
+* {
     font-family: Gilroy;
 }
 
-/* ROOT */
-:root{
-    font-size: 16px;
 
+/* ROOT */
+
+:root {
+    font-size: 16px;
     --primary: #970ED9;
     --secondary: #06A9CE;
     --tertiary: #15131A;
     --text-primary: #FFFFFF;
 }
+
+
 /* ROOT */

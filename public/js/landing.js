@@ -20,7 +20,7 @@ function scrollChange() {
       document.getElementById("VerticalLine").classList.add("leftVerticalLine");
       document.getElementById("VerticalLine").classList.remove("verticalLine");
     }
-    else if (x > 457 && x <1400) {
+    else if (x > 457 && x <1760) {
       document.getElementById("scrollDownButton").innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
       document.getElementById("scrollDownButton").href = "Register_Page_Link";
@@ -36,7 +36,7 @@ function scrollChange() {
       document.getElementById("VerticalLine").classList.add("verticalLine");
     }
 
-    else if (x > 1400) {
+    else if (x > 1760) {
       document.getElementById("scrollDownButton").innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
       document.getElementById("scrollDownButton").href = "Register_Page_Link";

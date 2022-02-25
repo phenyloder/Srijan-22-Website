@@ -30,14 +30,14 @@ body, .coverPage {
 
 @font-face {
   font-family: "gil-roy";
-  src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  src: url("../font/Gilroy-Medium.ttf") format("truetype");
   font-weight: medium;
   font-style: normal;
 }
 
 @font-face {
   font-family: "gil-roy";
-  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  src: url("../font/Gilroy-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }

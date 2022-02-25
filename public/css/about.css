@@ -58,7 +58,7 @@
 }
 @keyframes spin2 {
     to{
-        transform: rotate(1turn);
+        transform: rotate(0turn);
     }
 }
 .about-anim.flipped{
@@ -67,14 +67,26 @@
     left: 60%;
     height: fit-content;
     transform: rotate(0.5turn);
-    animation: spin2 1.5s 1;
 }
 .about-anim{
     position: fixed;
     top: 25%;
     left: 60%;
     height: fit-content;
+}
+.about-anim.animate-clockwise{
+    position: fixed;
+    top: 25%;
+    left: 60%;
+    height: fit-content;
     animation: spin 1.5s 1;
+}
+.about-anim.animate-anticlockwise{
+    position: fixed;
+    top: 25%;
+    left: 60%;
+    height: fit-content;
+    animation: spin2 1.5s 1;
 }
 .about-anim.absolute{
     position: absolute;
@@ -107,7 +119,10 @@
     border-radius: 50%;
     top: 47%;
     left: -3.5%;
-    transition: all 2s ease;
+    transition: all 0.5s ease;
+}
+.logo-circle-l.transition{
+    transform: rotate(-0.5turn);
 }
 .logo-circle-l{
     display: flex;
@@ -118,7 +133,7 @@
     border-radius: 50%;
     top: 37%;
     left: -11%;
-    transition: all 2s ease;
+    transition: all 0.5s ease;
 }
 .about-logo1.hidden{
     display: none;
@@ -136,8 +151,8 @@
     border-radius: 50%;
     top: 37%;
     right: -11%;
+    transition: all 0.5s ease;
     transform: rotate(0.5turn);
-    transition: all 3s ease;
 }
 .logo-circle-s.transition{
     width: 2rem;
@@ -152,7 +167,6 @@
     border-radius: 50%;
     top: 45%;
     right: -4%;
-    transition: all 3s ease;
 }
 .about-logo2.hidden{
     display: none;

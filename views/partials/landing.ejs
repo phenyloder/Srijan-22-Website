@@ -1,0 +1,71 @@
+<div class="coverPage">
+  <div class="socialIcons">
+    <a  id="icon-s" href=""
+      ><i id="Linkedin" class="fa-brands fa-linkedin-in fa-linkedin-in-1"></i
+    ></a>
+    <a id="icon-s" href=""
+      ><i id="Facebook" class="fa-brands fa-facebook-f fa-facebook-f-1"></i
+    ></a>
+    <a href=""
+      ><i id="Instagram" class="fa-brands fa-instagram fa-instagram-1"></i
+    ></a>
+    <hr id="VerticalLine" class="leftVerticalLine" />
+  </div>
+  <div class="contentWrapper">
+    <div class="leftContentWrapper">
+      <h1>Srijan 3.0</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, itaque
+        maxime. Error autem veritatis quidem eum necessitatibus provident
+        eveniet! Accusamus nostrum aperiam, excepturi ad laborum corrupti iste
+        eaque sequi.
+      </p>
+    </div>
+    <div class="rightContentWrapper">
+      <span class="Sphere"></span>
+    </div>
+  </div>
+  <div class="floating-button">
+    <a id="scrollDownButton" href="#aboutUsSection">
+      SCROLL DOWN
+      <i class="fa-solid fa-arrow-right-long" style="width: 45px"></i>
+    </a>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+<script>
+  const Texts = [
+    "Right talent",
+    "Financing",
+    "Infrastructure",
+    "Planning",
+    "Self doubt",
+    "Criticism",
+    "Fintech",
+    "Innovation",
+    "Unicorn",
+    "Startup",
+    "Imagineer",
+    "SaaS",
+  ];
+
+  var tagCloud = TagCloud(".Sphere", Texts, {
+    // Sphere radius in px
+    radius: 250,
+
+    // animation speed
+    // slow, normal, fast
+    maxSpeed: "normal",
+    initSpeed: "fast",
+
+    // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
+    direction: 135,
+
+    // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+    keep: true,
+  });
+
+  // Giving color to each text in sphere
+  var color = "#FF5733 ";
+  document.querySelector(".Sphere").style.color = color;
+</script>

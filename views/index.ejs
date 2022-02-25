@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,37 @@
     <link rel="stylesheet" href="/css/workshop.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/landing.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="/css/galleryStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- SCROLL ANIMATION PACKAGE -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- SCROLL ANIMATION PACKAGE -->
 
     <title>Srijan 2.0</title>
 </head>
+
 <body>
 
     <%- include("./partials/landing.ejs") %>
-    
+
     <%- include("./partials/menu.ejs") %>
 
     <div id="aboutUsSection" class="about">
-        <%- include("partials/about") %> 
-    </div> 
+        <%- include("partials/about") %>
+    </div>
+    <%- include("./partials/galleryPhotos.ejs") %>
 
     <div class="workshop">
         <%- include("partials/workshop.ejs") %>
     </div>
     <%- include("./partials/footer.ejs") %>
-    
+
     <script src="/js/menu.js"></script>
     <script src="/js/landing.js"></script>
     <script src="/js/about.js"></script>
+    <script src="/js/galleryApp.js"></script>
 
     <!-- SCROLL ANIMATION PACKAGE -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -49,7 +50,8 @@
             delay: 0,
             duration: 1000,
         });
-        </script>
+    </script>
     <!-- SCROLL ANIMATION PACKAGE -->
 </body>
+
 </html>

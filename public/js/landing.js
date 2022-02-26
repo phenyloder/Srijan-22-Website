@@ -2,7 +2,6 @@ document.addEventListener("scroll", scrollChange);
 
 function scrollChange() {
   var x = document.documentElement.scrollTop;
-  
   var y = screen.width;
 
 

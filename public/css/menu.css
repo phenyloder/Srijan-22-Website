@@ -1,0 +1,219 @@
+/* ROOT */
+
+:root {
+    font-size: 16px;
+    --primary: #970ED9;
+    --secondary: #06A9CE;
+    --tertiary: #15131A;
+    --text-primary: #FFFFFF;
+}
+
+
+/* ROOT */
+
+
+/* MENU STYLES */
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 100;
+    overflow-y: visible;
+    height: 4.5rem;
+}
+
+#menuContainer{
+    height: 100vh;
+}
+
+.menuContainerActive {
+    position: relative;
+    right: 0;
+    display: flex;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.menuContainerInactive {
+    position: relative;
+    right: -100%;
+    display: flex;
+    height: 100%;
+    transition: 0.4s;
+}
+
+#menuBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tertiary);
+}
+
+#logo {
+    margin-left: 4%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    z-index: 3;
+}
+
+#menuToggleButton {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-right: 2%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#menuToggleButton::before {
+    content: "";
+    position: absolute;
+    background-color: var(--tertiary);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 95%;
+    height: 95%;
+}
+
+.menuToggleButtonActive {
+    background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.menuToggleButtonInctive {
+    background-color: var(--tertiary);
+}
+
+.menuToggleButtonLinesActive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 5%;
+    border-radius: 5rem;
+    background-color: var(--text-primary);
+    transition: 0.4s;
+}
+
+.menuToggleButtonLinesInactive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 5%;
+    border-radius: 5rem;
+    background-color: var(--text-primary);
+    transition: 0.4s;
+}
+
+.menuToggleButtonLinesActive#toggleButtonLineOne {
+    top: 50%;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.menuToggleButtonLinesInactive#toggleButtonLineOne {
+    top: 40%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+}
+
+.menuToggleButtonLinesActive#toggleButtonLineTwo {
+    top: 50%;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.menuToggleButtonLinesInactive#toggleButtonLineTwo {
+    top: 60%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+}
+
+#menuList {
+    background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    flex-grow: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+
+.menuItem {
+    text-decoration: none;
+    color: var(--text-primary);
+    margin-left: 25%;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+.menuItem:hover {
+    color: var(--tertiary);
+}
+
+#contactInfo {
+    background-color: var(--tertiary);
+    flex-grow: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+
+.contactInfoItem {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    margin-left: 18%;
+}
+
+.contactInfoItem>div {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contactInfoItem>div>a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.contactInfoItem#contactInfoHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+    #contactInfo {
+        display: none;
+        max-width: 0;
+    }
+    #menuList {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuToggleButton {
+        width: 3rem;
+        height: 3rem;
+        right: 4%;
+    }
+}
+
+
+/* MENU STYLES */

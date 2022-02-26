@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 :root{
     --gradient1:linear-gradient(#B621FE,#1FD1F9);
@@ -263,51 +262,3 @@ flex-direction: column;
         width:80%;
     }
 }
-=======
-/* styles */
-
-
-/* FONT */
-
-@font-face {
-    font-family: "Gilroy";
-    src: url("../font/Gilroy-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Gilroy";
-    src: url("../font/Gilroy-Light.ttf");
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Gilroy";
-    src: url("../font/Gilroy-Bold.ttf");
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-/* FONT */
-
-* {
-    font-family: Gilroy;
-}
-
-
-/* ROOT */
-
-:root {
-    font-size: 16px;
-    --primary: #970ED9;
-    --secondary: #06A9CE;
-    --tertiary: #15131A;
-    --text-primary: #FFFFFF;
-}
-
-
-/* ROOT */
->>>>>>> 21f8a332cecb64a726f239f12cdd0d3c3db156d6

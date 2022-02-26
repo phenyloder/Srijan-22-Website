@@ -1,4 +1,49 @@
 /* SOCIAL MEDIA LINKS */
+
+/* FONT */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* FONT */
+
+* {
+  font-family: Gilroy;
+}
+
+
+/* ROOT */
+
+:root {
+  font-size: 16px;
+  --primary: #970ED9;
+  --secondary: #06A9CE;
+  --tertiary: #15131A;
+  --text-primary: #FFFFFF;
+}
+
+
+/* ROOT */
+
 body{
     background-color: #15131a;
 }
@@ -74,4 +119,104 @@ body{
 
 
 /* EVENTS */
+#eventList{
+  border: 0.01rem solid rgb(255, 255, 255,0.24);
+  height: 30rem;
+  width: 60rem;
+}
+
+#eventType{
+  border: 0.01rem solid rgb(255, 255, 255,0.24);
+  outline: none;
+}
+#eventListContainer{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#eventDropDown {
+  position: relative;
+  width: 15rem;
+  height: 2.5rem;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--tertiary);
+  border: 0.01rem solid rgb(255, 255, 255,0.24);
+}
+
+#eventDropDown::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  transform: translate(0,-50%);
+  right: 10%;
+  z-index: 1000;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-bottom: 0.125rem solid var(--text-primary);
+  border-left: 0.125rem solid var(--text-primary);
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+#eventDropDown.active::before {
+  top: 45%;
+  transform: rotate(-225deg);
+}
+
+#CurrentEventText{
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-left: 10%;
+  border: none;
+  outline: none;
+}
+
+#dropDownOptionsContainer {
+  position: relative;
+  top: -50%;
+  width: 100%;
+  color: var(--text-primary);
+  background: var(--tertiary);
+  border-radius: 0.5rem;
+  border: 0.01rem solid rgb(255, 255, 255,0.24);
+  overflow: hidden;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#eventDropDown.active #dropDownOptionsContainer {
+  top: 25%;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#eventDropDown #dropDownOptionsContainer .dropDownOption  {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding-left: 10%;
+  transition: 0.3s;
+  border-bottom: 0.01rem solid rgb(255, 255, 255,0.24);
+  cursor: pointer;
+}
+#eventDropDown #dropDownOptionsContainer .dropDownOption:last-child  {
+  border: none;
+}
+
+#eventDropDown #dropDownOptionsContainer .dropDownOption:hover {
+  background-color: rgb(255, 255, 255,0.24);
+  color: var(--text-primary);
+}
+
+
 /* EVENTS */

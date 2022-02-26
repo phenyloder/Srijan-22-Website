@@ -1,4 +1,75 @@
 /* SOCIAL MEDIA LINKS */
+body{
+    background-color: #15131a;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 3rem;
+  top: 25%;
+  z-index: 130;
+}
+
+.socialIcons i {
+  margin-bottom: 10px;
+  transition: 250ms;
+}
+
+.fa-linkedin-in-1,
+.fa-facebook-f-1 {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  margin-left: 5px;
+  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: hsla(0, 0%, 100%);
+}
+
+.fa-instagram-1 {
+  font-size: 2.25rem;
+  padding: 1rem;
+  color: white;
+}
+
+.linkedin-1,
+.facebook-1 {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  margin-left: 5px;
+  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: hsla(0, 0%, 0%);
+}
+
+.instagram-1 {
+  font-size: 2.25rem;
+  padding: 1rem;
+  color: black;
+}
+
+.socialIcons i:hover {
+  transform: scale(0.85);
+  -webkit-text-stroke-width: 0px;
+  background-image: linear-gradient(0deg, #1fd1f9, #b621fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftVerticalLine {
+  height: 2px;
+  width: 120px;
+  background-color: white;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -1.9rem;
+  top: 135%;
+  border-radius: 5px;
+}
 /* SOCIAL MEDIA LINKS */
 
 

@@ -1,13 +1,17 @@
 const animBox = document.querySelector(".about-anim");
-const animBoxFlip = document.querySelector(".about-anim.flipped")
+const animBoxFlip = document.querySelector(".about-anim.flipped");
+const aboutEvent = document.querySelector(".about-event");
+const aboutNits = document.querySelector(".about-nits");
 const eventCircle = document.querySelector(".logo-circle-l");
 const nitsCircle = document.querySelector(".logo-circle-s");
 const logo1 = document.querySelector(".about-logo1");
 const logo2 = document.querySelector(".about-logo2");
+const width = window.innerWidth;
 animBox.classList.add("absolute");
 eventCircle.classList.remove("transition");
 nitsCircle.classList.remove("transition");
-
+let transit1 = 0;
+let transit2 = 0;
 
 
 
@@ -15,13 +19,13 @@ window.addEventListener("scroll", () => {
     // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
     // console.log(window.scrollY);
-    if(scrolled<800)
+    if(scrolled<800 && width>768)
     {
-        nitsCircle.classList.add("transition");
         if(animBox.classList.contains("flipped")){
-            eventCircle.classList.add("transition");
             logo2.classList.add("hidden");
             logo1.classList.add("hidden");
+            nitsCircle.classList.add("transition");
+            eventCircle.classList.add("transition");
         }
         setTimeout(()=>{
             if(animBox.classList.contains("flipped")){
@@ -29,23 +33,23 @@ window.addEventListener("scroll", () => {
             }
         }, 700);
         setTimeout(()=>{
-            animBox.classList.remove("animate-anticlockwise");
+            animBox.classList.remove("flipped");
             eventCircle.classList.remove("flipped");
             nitsCircle.classList.remove("flipped");
             nitsCircle.classList.remove("transition");
             eventCircle.classList.remove("transition");
             logo1.classList.remove("hidden");
             logo2.classList.add("hidden");
-            animBox.classList.remove("flipped");
+            animBox.classList.remove("animate-anticlockwise");
         },2200)
     }
-    else if(scrolled>=800)
+    else if(scrolled>=800 && width>768)
     { 
-        eventCircle.classList.add("transition");
         if(!animBox.classList.contains("flipped")){
-            nitsCircle.classList.add("transition");
             logo2.classList.add("hidden");
             logo1.classList.add("hidden");
+            eventCircle.classList.add("transition");
+            nitsCircle.classList.add("transition");
         }
         setTimeout(()=>{
             if(!animBox.classList.contains("flipped")){
@@ -53,14 +57,14 @@ window.addEventListener("scroll", () => {
             }
         }, 700);
         setTimeout(()=>{
-            animBox.classList.remove("animate-clockwise");
+            animBox.classList.add("flipped");
             eventCircle.classList.add("flipped");
             nitsCircle.classList.add("flipped");
             nitsCircle.classList.remove("transition");
             eventCircle.classList.remove("transition");
             logo2.classList.remove("hidden");
             logo1.classList.add("hidden");
-            animBox.classList.add("flipped");
+            animBox.classList.remove("animate-clockwise");
         }, 2200);
     }
     if(scrolled>1110 || scrolled<470)
@@ -69,5 +73,55 @@ window.addEventListener("scroll", () => {
     }
     else{
         animBox.classList.remove("absolute");
+    }
+
+
+    if(width <= 768)
+    {
+        if(scrolled>840)
+        {
+            animBox.classList.add("sticky");
+        }
+        if(scrolled>880 && transit1===0)
+        {
+            aboutEvent.classList.add("invisible");
+            logo1.classList.add("hidden");
+            transit2 = 0;
+            eventCircle.classList.add("transition");
+            setTimeout(()=>{
+                    eventCircle.innerHTML = '<img src="/logos/about2.svg" alt="" class="about-logo2">'
+                    logo1.classList.remove("hidden");
+                    eventCircle.classList.remove("transition");
+                    transit1 = 1;
+            }, 500)
+        }
+        else if(scrolled>880 && transit1===1)
+        {
+            logo1.classList.remove("hidden");
+            eventCircle.classList.remove("transition");
+        }
+        else if(scrolled<=880 && transit2===0){
+            logo1.classList.remove("hidden");
+            transit1 = 0;
+            aboutEvent.classList.remove("invisible");
+            eventCircle.classList.add("transition");
+
+            setTimeout(()=>{
+                eventCircle.innerHTML = '<img src="/logos/about1.svg" alt="" class="about-logo1">'
+                logo1.classList.remove("hidden");
+                eventCircle.classList.remove("transition");
+                transit2 = 1;
+        }, 500)
+        }
+        if(scrolled>1320)
+        {
+            aboutNits.classList.add("invisible");
+
+        }
+        else
+        {
+            aboutNits.classList.remove("invisible");
+        }
+        
     }
 })

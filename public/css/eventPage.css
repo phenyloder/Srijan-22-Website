@@ -120,16 +120,14 @@ body{
 
 /* EVENTS */
 #eventList{
-  border: 0.01rem solid rgb(255, 255, 255,0.24);
+  position: relative;
   height: 30rem;
   width: 60rem;
+  padding: 0.5rem;
+  overflow: hidden;
 }
 
 /* edited by manash */
-
-#eventList{
-  overflow-y: scroll;
-}
 
 #eventList::-webkit-scrollbar {
   display: none;
@@ -143,7 +141,7 @@ body{
 }
 #eventListContainer{
   position: absolute;
-  top: 55%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -153,6 +151,8 @@ body{
   width: 15rem;
   height: 2.5rem;
   margin-left: auto;
+  margin-right: 0.5rem;
+  z-index: 10;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   background-color: var(--tertiary);
@@ -240,10 +240,32 @@ body{
 }
 
 .eventContainer{
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  background-color: var(--tertiary);
+  height: 30rem;
+  width: 60rem;
   display: flex;
   flex-direction: row;
+  transition: 0.4s;
+  border-radius: 2rem;
+  border: 0.01rem solid rgb(255, 255, 255,0.24);
+  overflow: hidden;
+}
+
+.eventContainer.active{
+  opacity: 1;
+  bottom: 0;
+}
+
+.eventContainer.next{
+  opacity: 0;
+  bottom: -100%;
+}
+
+.eventContainer.previous{
+  transform: scale(0.5);
+  opacity: 0;
+  bottom: 0;
 }
 
 .eventImageWrapper{

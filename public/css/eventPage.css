@@ -290,3 +290,75 @@ body{
   -webkit-text-fill-color: transparent;
 }
 /* EVENT-CONTENTS */
+
+/* responsive-codes */
+
+@media(max-width: 415px){
+  .socialIcons{
+    display: none;
+  }
+
+  #eventList{
+    width: 100vw;
+    height: 78vh;
+  }
+
+  .eventContainer{
+    flex-direction: column;
+  }
+
+  .eventImageWrapper{
+    height: 40%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+
+  .eventContentWrapper{
+    height: 45%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .eventContentWrapper .eventHeader{
+    font-size: 2rem;
+  }
+
+  .eventContentWrapper .eventDetail{
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-bottom: 60px;
+  }
+
+  .registerFormLink{
+    font-size: 1rem;
+  }
+
+}
+
+@media(max-width: 376px){
+
+  .eventImageWrapper{
+    width: 70%;
+  }
+
+  .eventContentWrapper .eventHeader{
+    margin-bottom: 25px;
+  }
+
+  .eventContentWrapper .eventDetail{
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+  .registerFormLink{
+    font-size: 0.8rem;
+  }
+
+}
+/* for iphone se */
+
+
+/* for iphone se */
+
+/* responsive-codes */

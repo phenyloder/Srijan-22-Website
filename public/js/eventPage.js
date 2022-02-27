@@ -25,9 +25,7 @@ const eventList = document.getElementById("eventList");
 
 let eventCounter = 0;
 
-const handleScroll = (e) => {
-    console.log(e.deltaY);
-    
+const handleScroll = (e) => {    
     const events = [...document.getElementsByClassName("eventContainer")];
     
     if(e.deltaY>0){

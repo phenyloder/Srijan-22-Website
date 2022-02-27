@@ -247,7 +247,7 @@ body{
   display: flex;
   flex-direction: row;
   transition: 0.4s;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 0.01rem solid rgb(255, 255, 255,0.24);
   overflow: hidden;
 }
@@ -321,11 +321,14 @@ body{
   }
 
   #eventList{
-    width: 100vw;
-    height: 78vh;
+    top: 57%;
+    width: 90vw;
+    height: 75vh;
   }
 
   .eventContainer{
+    height: 75vh;
+    width: 90vw;
     flex-direction: column;
   }
 
@@ -376,7 +379,6 @@ body{
   .registerFormLink{
     font-size: 0.8rem;
   }
-
 }
 /* for iphone se */
 

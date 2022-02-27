@@ -49,6 +49,7 @@ body{
     position: absolute;
     left: 45%;
     top: 20%;
+    padding-bottom: 100px;
 }
 .team-name,.first-name,.last-name,.phone-number,.p-gender{
     position: relative;
@@ -200,6 +201,9 @@ body{
     .team-name,.first-name,.last-name,.phone-number,.p-gender{
         position: relative;
         font-size: 1.9rem;
+    }
+    .tname-extra{
+        display: none;
     }
     .name{
         display:flex;

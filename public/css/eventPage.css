@@ -125,6 +125,18 @@ body{
   width: 60rem;
 }
 
+/* edited by manash */
+
+#eventList{
+  overflow-y: scroll;
+}
+
+#eventList::-webkit-scrollbar {
+  display: none;
+}
+
+/* edited by manash */
+
 #eventType{
   border: 0.01rem solid rgb(255, 255, 255,0.24);
   outline: none;
@@ -220,3 +232,61 @@ body{
 
 
 /* EVENTS */
+
+/* EVENT-CONTENTS */
+
+.eventContainer > *{
+  margin: 0;
+}
+
+.eventContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.eventImageWrapper{
+  height: 100%;
+  width: 45%;
+  background-image: url(../eventPageImage/Untitled\ design\ \(2\).png);
+  background-size: cover;
+}
+
+.eventContentWrapper{
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 30px;  
+}
+
+.eventContentWrapper .eventHeader{
+  font-size: 3.375rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255);
+  margin: 0 0 40px 0;
+}
+
+.eventContentWrapper .eventDetail{
+  font-size: 1.25rem;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+  margin: 0 0 80px 0;
+}
+
+.registerFormLink{
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.registerFormLinkText{
+  background-image: linear-gradient(90deg, #22FAB0, #1FD1F9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* EVENT-CONTENTS */

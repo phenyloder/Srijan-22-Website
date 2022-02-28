@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ourTeam {
+    background-color: #15131A;
+    font-size: 16px;
+    font-family: Gilroy;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    scroll-snap-type: y mandatory;
+}
+
+.Patron {
+    background-color: #fff;
+    color: #15131A;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.developer {
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+}
+
+.ourTeam .team {
+    text-align: center;
+    font-size: 4.1rem;
+    padding-top: 3rem;
+}
+
+.team span {
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.chiefPatron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.chiefPatron p,
+.Patron p,
+.developer p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Patron .patroncard,
+.developer .developercard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ourTeam img {
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.Patron img {
+    width: 19rem;
+    height: 19rem;
+}
+
+.developer img {
+    width: 16rem;
+    height: 16rem;
+}
+
+.linkdin {
+    width: 32px;
+    height: 32px;
+}
+
+.facebook {
+    width: 17px;
+    height: 30px;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+}
+
+.ourTeam .fullName {
+    font-size: 2.3rem;
+    font-family: Gilroy;
+    font-weight: normal;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.social-icons svg {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.ourTeam .social-icons {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s;
+    flex-direction: column;
+    right: -4.5rem;
+    z-index: 130;
+}
+
+.ourTeam figure {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.ourTeam figure:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.ourTeam .social-icons:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:600px) {
+    .ourTeam img {
+        width: 19rem;
+        height: 19rem;
+    }
+    .ourTeam .social-icons {
+        top: 1rem;
+    }
+    .Patron .linkdin {
+        width: 23px;
+        height: 23px;
+    }
+    .Patron .facebook {
+        width: 12px;
+        height: 20px;
+    }
+    .Patron .instagram {
+        width: 20px;
+        height: 20px;
+    }
+    .Patron .social-icons {
+        right: -3rem;
+    }
+    .developer .linkdin {
+        width: 20px;
+        height: 20px;
+    }
+    .developer .facebook {
+        width: 12px;
+        height: 18px;
+    }
+    .developer .instagram {
+        width: 18px;
+        height: 18px;
+    }
+    .developer .social-icons {
+        right: -2.5rem;
+    }
+    .ourTeam .developercard {
+        display: flex;
+        flex-direction: column;
+    }
+    .ourTeam .patroncard {
+        display: flex;
+        flex-direction: column;
+    }
+    .Patron img {
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+    .developer img {
+        width: 12rem;
+        height: 12rem;
+    }
+    .developer .fullName,
+    .Patron .fullName {
+        font-size: 1.8rem;
+        padding-top: 0.8rem;
+        text-align: center;
+        padding-bottom: 2.6rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .ourTeam img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .Patron img {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .developer img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .developer .fullName,
+    .Patron .fullName {
+        font-size: 1.8rem;
+        padding-top: 0.8rem;
+        text-align: center;
+        padding-bottom: 2.6rem;
+    }
+    .chiefPatron .fullName {
+        font-size: 2rem;
+        padding-top: 0.8rem;
+        text-align: center;
+        padding-bottom: 2.6rem;
+    }
+    .chiefPatron p,
+    .Patron p,
+    .developer p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .ourTeam .developercard {
+        flex-wrap: wrap;
+    }
+}

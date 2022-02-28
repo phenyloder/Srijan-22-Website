@@ -124,7 +124,9 @@ body{
   height: 30rem;
   width: 60rem;
   padding: 0.5rem;
-  overflow: hidden;
+  overflow-y: hidden;
+  padding-right: 5%;
+  margin-right: -5%;
 }
 
 /* edited by manash */
@@ -151,7 +153,6 @@ body{
   width: 15rem;
   height: 2.5rem;
   margin-left: auto;
-  margin-right: 0.5rem;
   z-index: 10;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -311,7 +312,36 @@ body{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /* EVENT-CONTENTS */
+
+/* Event Scroll bar */
+
+.eventListScrollDotBar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+  width: 1rem;
+  gap: 0.5rem;
+  /* transition: 0.3s; */
+}
+
+.eventListScrollDot{
+  background-image: linear-gradient(94.73deg, #22FAB0 3%, #1FD1F9 59.59%);
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 0.37rem;
+  transition: 0.3s;
+}
+
+.eventListScrollDot.active{
+  height: 2rem;
+}
+
+/* Event Scroll bar */
 
 /* responsive-codes */
 
@@ -320,10 +350,17 @@ body{
     display: none;
   }
 
+  #eventDropDown{
+    width: 85vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   #eventList{
     top: 57%;
     width: 90vw;
     height: 75vh;
+    padding: 0.5rem;
   }
 
   .eventContainer{
@@ -360,6 +397,10 @@ body{
     font-size: 1rem;
   }
 
+
+  .eventListScrollDotBar{
+    display: none;
+  }
 }
 
 @media(max-width: 376px){

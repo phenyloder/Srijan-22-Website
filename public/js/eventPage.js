@@ -1,3 +1,34 @@
+let currentList = "events";
+const eventLists = [...document.querySelectorAll(".eventList")];
+let eventCounter = 0;
+
+const reset = () => {
+    eventLists.forEach(() => {
+        const events = [...document.querySelectorAll(`.eventList${`#${currentList}`} > .eventContainer`)];
+        const dots = [...document.querySelectorAll(`.eventList${`#${currentList}`} > .eventListScrollDotBar > .eventListScrollDot`)];
+
+        events.forEach((elem,idx) => {
+            elem.classList.remove("previous")
+            elem.classList.remove("next");
+            elem.classList.remove("active");
+            console.log(idx);
+            if(idx===0){
+                elem.classList.add("active");
+            }else{
+                elem.classList.add("next");
+            }
+        })
+
+        dots.forEach((elem,idx) => {
+            elem.classList.remove("active")
+            if(idx===0){
+                elem.classList.add("active");
+            }
+        })
+        eventCounter = 0;
+    })
+}
+
 // DROP DOWN
 
 const dropDown = document.getElementById("eventDropDown");
@@ -14,6 +45,12 @@ dropDown.addEventListener("focusout",() => {
     elem.addEventListener("click",(e) => {
         const dropDown = document.getElementById("CurrentEventText");
         dropDown.innerText = e?.target?.innerText;
+        currentList = e?.target?.getAttribute("value");
+        eventLists.forEach((elem) => elem?.classList?.remove("active"));
+
+        reset();
+
+        document.querySelector(`.eventList${`#${currentList}`}`)?.classList?.add("active");
     })
 })
 
@@ -21,13 +58,12 @@ dropDown.addEventListener("focusout",() => {
 
 // SCROLL EVENT ANIMATION
 
-const eventList = document.getElementById("eventList");
 
-let eventCounter = 0;
 
 const handleScroll = (e) => {    
-    const events = [...document.getElementsByClassName("eventContainer")];
-    const dots = [...document.querySelectorAll(".eventListScrollDot")];
+    const events = [...document.querySelectorAll(`.eventList${`#${currentList}`} > .eventContainer`)];
+    const dots = [...document.querySelectorAll(`.eventList${`#${currentList}`} > .eventListScrollDotBar > .eventListScrollDot`)];
+    
     events.forEach((elem) => {
         elem.classList.remove("active");
     })
@@ -50,9 +86,18 @@ const handleScroll = (e) => {
         dots[eventCounter].classList.add("active");
     }
     
-    eventList.removeEventListener("wheel",handleScroll);
-    setTimeout(() => eventList.addEventListener("wheel",handleScroll), 400);
+    // eventLists.forremoveEventListener("wheel",handleScroll);
+    eventLists.forEach((elem) => {
+        elem.removeEventListener("wheel",handleScroll);
+    })
+    setTimeout(() => {
+        eventLists.forEach((elem) => {
+            elem.addEventListener("wheel",handleScroll);
+        });
+    }, 400);
 }
-eventList.addEventListener(("wheel"),handleScroll);
+eventLists.forEach((elem) => {
+    elem.addEventListener("wheel",handleScroll);
+})
 
 // SCROLL EVENT ANIMATION

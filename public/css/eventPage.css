@@ -119,7 +119,7 @@ body{
 
 
 /* EVENTS */
-#eventList{
+.eventList{
   position: relative;
   height: 30rem;
   width: 60rem;
@@ -127,6 +127,12 @@ body{
   overflow-y: hidden;
   padding-right: 5%;
   margin-right: -5%;
+  
+  display: none;
+}
+
+.eventList.active{
+  display: block;
 }
 
 /* edited by manash */
@@ -356,7 +362,7 @@ body{
     margin-left: auto;
   }
 
-  #eventList{
+  .eventList{
     top: 57%;
     width: 90vw;
     height: 75vh;

@@ -405,12 +405,16 @@ body, .coverPage {
 
   .coverPage .socialIcons {
     top: 58%;
-    left: 1rem;
+    left: -0.5rem;
   }
 
   .floating-button {
     top: 82%;
-    right: -3.5rem;
+    right: -5.5rem;
+  }
+
+  .coverPage .leftVerticalLine{
+    left: -2.1rem;
   }
 }
 

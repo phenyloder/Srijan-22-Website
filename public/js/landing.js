@@ -2,7 +2,6 @@ document.addEventListener("scroll", scrollChange);
 
 function scrollChange() {
   var x = document.documentElement.scrollTop;
-  
   var y = screen.width;
 
 
@@ -23,7 +22,7 @@ function scrollChange() {
     else if (x > 457 && x <1760) {
       document.getElementById("scrollDownButton").innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "Register_Page_Link";
+      document.getElementById("scrollDownButton").href = "/events";
       document.getElementById("scrollDownButton").style.color = "black";
 
       document.getElementById("Linkedin").classList.add("linkedin-1");
@@ -39,7 +38,7 @@ function scrollChange() {
     else if (x > 1760) {
       document.getElementById("scrollDownButton").innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "Register_Page_Link";
+      document.getElementById("scrollDownButton").href = "/events";
       document.getElementById("scrollDownButton").style.color = "white";
 
       document.getElementById("Linkedin").classList.remove("linkedin-1");
@@ -68,7 +67,7 @@ function scrollChange() {
     else if (x > 348 && x <1596) {
       document.getElementById("scrollDownButton").innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "Register_Page_Link";
+      document.getElementById("scrollDownButton").href = "/events";
       document.getElementById("scrollDownButton").style.color = "black";
 
       document.getElementById("Linkedin").classList.add("linkedin-1");
@@ -84,7 +83,7 @@ function scrollChange() {
     else if (x > 1596) {
       document.getElementById("scrollDownButton").innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "Register_Page_Link";
+      document.getElementById("scrollDownButton").href = "/events";
       document.getElementById("scrollDownButton").style.color = "white";
 
       document.getElementById("Linkedin").classList.remove("linkedin-1");

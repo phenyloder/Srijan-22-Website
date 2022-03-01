@@ -94,7 +94,7 @@ const handleScroll = (e) => {
         eventLists.forEach((elem) => {
             elem.addEventListener("wheel",handleScroll);
         });
-    }, 400);
+    }, 150);
 }
 eventLists.forEach((elem) => {
     elem.addEventListener("wheel",handleScroll);

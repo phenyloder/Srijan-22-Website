@@ -34,7 +34,7 @@
     font-family: Gilroy;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 56px
+    line-height: 56px;
 }
 .about-span{
     background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
@@ -58,7 +58,7 @@
 }
 @keyframes spin2 {
     to{
-        transform: rotate(1turn);
+        transform: rotate(0turn);
     }
 }
 .about-anim.flipped{
@@ -67,14 +67,26 @@
     left: 60%;
     height: fit-content;
     transform: rotate(0.5turn);
-    animation: spin2 1.5s 1;
 }
 .about-anim{
     position: fixed;
     top: 25%;
     left: 60%;
     height: fit-content;
+}
+.about-anim.animate-clockwise{
+    position: fixed;
+    top: 25%;
+    left: 60%;
+    height: fit-content;
     animation: spin 1.5s 1;
+}
+.about-anim.animate-anticlockwise{
+    position: fixed;
+    top: 25%;
+    left: 60%;
+    height: fit-content;
+    animation: spin2 1.5s 1;
 }
 .about-anim.absolute{
     position: absolute;
@@ -107,8 +119,12 @@
     border-radius: 50%;
     top: 47%;
     left: -3.5%;
-    transition: all 2s ease;
+    transform: rotate(-0.5turn);
+    /* transition: all 0.5s ease; */
 }
+/* .logo-circle-l.transition{
+    transform: rotate(-0.5turn);
+} */
 .logo-circle-l{
     display: flex;
     align-items: center;
@@ -118,7 +134,7 @@
     border-radius: 50%;
     top: 37%;
     left: -11%;
-    transition: all 2s ease;
+    transition: all 0.5s ease;
 }
 .about-logo1.hidden{
     display: none;
@@ -136,8 +152,8 @@
     border-radius: 50%;
     top: 37%;
     right: -11%;
+    transition: all 0.5s ease;
     transform: rotate(0.5turn);
-    transition: all 3s ease;
 }
 .logo-circle-s.transition{
     width: 2rem;
@@ -152,7 +168,6 @@
     border-radius: 50%;
     top: 45%;
     right: -4%;
-    transition: all 3s ease;
 }
 .about-logo2.hidden{
     display: none;
@@ -180,11 +195,18 @@
         flex-direction: column;
         width: 100%;
         left: 0%;
+        scroll-snap-type: y mandatory;
     }
     .about-event, .about-nits{
         display: flex;
+        visibility: visible;
         flex-direction: column;
         align-items: center;
+        /* transition: all 2s ease; */
+    }
+    .about-event.invisible, .about-nits.invisible{
+        visibility: hidden;
+        transition: all 2s ease;
     }
     .about-heading{
         font-size: 1.3rem;
@@ -207,11 +229,10 @@
         transition: 0s;
         animation: 0s;
     }
-    .about-anim.flipped{
-        position: relative;
+    .about-anim.sticky{
+        position: sticky;
         left: 0;
-        margin-bottom: 10%;
-        animation-duration: 0s;
+        top: -14%;
         transition: 0s;
         animation: 0s;
     }
@@ -229,18 +250,20 @@
         top: 80%;
         left: 30%;
     }
-    .logo-circle-s.flipped{
+    .logo-circle-l.transition{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 7rem;
-        height: 7rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
-        top: -15%;
-        left: 34%;
-        transform: rotate(0.5turn);
+        top: 94%;
+        left: 43%;
     }
-    .logo-circle-l.flipped, .logo-circle-s{
+    .logo-circle-s{
+        display: none;
+    }
+    .about-logo1.hidden,.about-logo2.hidden{
         display: none;
     }
 }

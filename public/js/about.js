@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
     const percentScrolled = (scrolled / scrollable)*100;
-    console.log(percentScrolled);
+    // console.log(percentScrolled);
     if(percentScrolled<20 && width>768)
     {
         if(animBox.classList.contains("flipped")){

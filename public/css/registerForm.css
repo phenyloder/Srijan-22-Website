@@ -30,6 +30,7 @@ body{
     top: 0%;
     padding: 8%;
     margin-left: 2%;
+    margin-bottom: 100px;
 }
 .register-img img{
     width: 30%;
@@ -116,7 +117,11 @@ body{
     top: 0.75rem;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
-.add-member{
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+}
+.add-member, .sub-member{
     display: flex;
     align-items: center;
     position: relative;
@@ -125,7 +130,10 @@ body{
     font-weight: bold;
     font-size: 25px;
 }
-.add-btn{
+.sub-member{
+    display: none;
+}
+.add-btn, .sub-btn{
     position: relative;
     left: 5%;
     top: 3px;
@@ -223,6 +231,12 @@ body{
     #gender{
         font-size: 1.8rem;
         height: 45px;
+    }
+    .controls{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
     }
     .line{
         position: relative;

@@ -18,9 +18,8 @@ let transit2 = 0;
 window.addEventListener("scroll", () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
-    const percentScrolled = (scrolled / scrollable)*100;
-    // console.log(percentScrolled);
-    if(percentScrolled<20 && width>768)
+    // console.log(window.scrollY);
+    if(scrolled<800)
     {
         if(animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");

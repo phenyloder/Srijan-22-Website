@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/eventlist.css">
     <link rel="stylesheet" href="/css/workshop.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/landing.css">
@@ -31,7 +32,9 @@
         <%- include("partials/about") %>
     </div>
     <%- include("./partials/galleryPhotos.ejs") %>
-
+    <div class="eventList">
+        <%- include("partials/eventlist") %>
+    </div>
     <div class="workshop">
         <%- include("partials/workshop.ejs") %>
     </div>
@@ -41,6 +44,7 @@
     <script src="/js/landing.js"></script>
     <script src="/js/about.js"></script>
     <script src="/js/galleryApp.js"></script>
+    <script src="/js/eventlist.js"></script>
 
     <!-- SCROLL ANIMATION PACKAGE -->
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->

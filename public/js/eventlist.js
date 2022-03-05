@@ -1,58 +1,45 @@
-let event1 = document.getElementById("event1");
-let event2 = document.getElementById("event2");
-let event3 = document.getElementById("event3");
-let event4 = document.getElementById("event4");
-let event = document.querySelector(".event");
+let eventList = document.getElementById('event-scroll-container');
+let eventLogo = document.getElementById('event-logo');
+var query = matchMedia("(max-width:730px)")
+eventList.addEventListener('scroll',(e)=>{
+   
+    let eventList = document.getElementById('event-scroll-container');
+//   var x = eventList.scrollLeft;
 
-window.addEventListener("scroll",()=>{
-   // const scrollable = document.scrollHeight - window.innerHeight;
-   const scrolled=window.scrollY;
-console.log(scrolled)
-
-  
-   if(scrolled<64){
-      document.getElementById("logo").src="images/logo.png";
-      document.getElementById("event1").innerHTML =`<h2>IPL Auction1</h2>
-       <div class="desc">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit maxime, quae, minus quos delectus sequi numquam necessitatibus veniam maiores debitis fugiat. Unde omnis eveniet consequatur neque ad iusto voluptas quaerat aliquam.</p>
-       </div>
-       <button class="btn">Register Now</button>`
-     
-  }
-
-   if(scrolled>=64 && scrolled<128){
-       document.getElementById("logo").src="images/book-mark.png";
-       document.getElementById("event1").innerHTML = `<h2>IPL Auction2</h2>
-       <div class="desc">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit maxime, quae, minus quos delectus sequi numquam necessitatibus veniam maiores debitis fugiat. Unde omnis eveniet consequatur neque ad iusto voluptas quaerat aliquam.</p>
-       </div>
-       <button class="btn">Register Now</button>`
-       
-   }
-   if (scrolled>=128 && scrolled<192){
-       document.getElementById("logo").src="images/champagne.png";
-       document.getElementById("event1").innerHTML=` <h2>IPL Auction3</h2>
-       <div class="desc">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit maxime, quae, minus quos delectus sequi numquam necessitatibus veniam maiores debitis fugiat. Unde omnis eveniet consequatur neque ad iusto voluptas quaerat aliquam.</p>
-       </div>
-       <button class="btn">Register Now</button>`
-   }
-   if (scrolled>=192 && scrolled<256){
-    document.getElementById("logo").src="images/red-carpet.png";
-    document.getElementById("event1").innerHTML=` <h2>IPL Auction4</h2>
-    <div class="desc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit maxime, quae, minus quos delectus sequi numquam necessitatibus veniam maiores debitis fugiat. Unde omnis eveniet consequatur neque ad iusto voluptas quaerat aliquam.</p>
-    </div>
-    <button class="btn">Register Now</button>`
+  var y = eventList.scrollTop;
+  console.log(y);
+  if(!query.matches) {
+    if(y<398){
+        eventLogo.src='images/technerd.svg'
+    }
+    if(y>=398 && y<794){
+        eventLogo.src='images/en auction.svg'
+    }
+    if(y>=794 && y<1250){
+        eventLogo.src='images/pitch.svg'
+    }
+    if(y>=1250 && y<2300){
+        eventLogo.src='images/pannel discussion.svg'
+    }
+    if(y>=2300){
+        eventLogo.src='images/idea exchange.svg'
+    }
+}else{
+    if(y<398){
+        eventLogo.src='images/technerd.svg'
+    }
+    if(y>=398 && y<1338){
+        eventLogo.src='images/en auction.svg'
+    }
+    if(y>=1338 && y<2008){
+        eventLogo.src='images/pitch.svg'
+    }
+    if(y>=2008 && y<2675){
+        eventLogo.src='images/pannel discussion.svg'
+    }
+    if(y>=2675){
+        eventLogo.src='images/idea exchange.svg'
+    }
 }
-if (scrolled>=256){
-        document.getElementById("icon").style.display="none";
-        document.getElementById("event1").style.display='none';
-    }
-    else{
-        document.getElementById("event1").style.display='flex';
-        document.getElementById("icon").style.display="flex";
-    }
-    
-
+      
 })

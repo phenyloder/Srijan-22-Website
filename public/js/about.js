@@ -12,7 +12,7 @@ animBox.classList.add("absolute");
 window.addEventListener("scroll", () => {
     // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if(scrolled<800)
     {
         nitsCircle.classList.add("transition");

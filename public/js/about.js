@@ -18,8 +18,9 @@ let transit2 = 0;
 window.addEventListener("scroll", () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
-    // console.log(window.scrollY);
-    if(scrolled<800)
+    const percentScrolled = (scrolled / scrollable)*100;
+    // console.log(percentScrolled);
+    if(percentScrolled<20 && width>768)
     {
         if(animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");
@@ -67,7 +68,7 @@ window.addEventListener("scroll", () => {
             animBox.classList.remove("animate-clockwise");
         }, 2200);
     }
-    if(percentScrolled<12 || percentScrolled>29)
+    if(percentScrolled<12 || percentScrolled>24)
     {
         animBox.classList.add("absolute");
     }

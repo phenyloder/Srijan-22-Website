@@ -1,6 +1,7 @@
 let currentList = "events";
 const eventLists = [...document.querySelectorAll(".eventList")];
 let eventCounter = 0;
+const arrowButtons = [...document.querySelectorAll(".arrowButton")];
 
 const reset = () => {
     eventLists.forEach(() => {
@@ -11,7 +12,6 @@ const reset = () => {
             elem.classList.remove("previous")
             elem.classList.remove("next");
             elem.classList.remove("active");
-            console.log(idx);
             if(idx===0){
                 elem.classList.add("active");
             }else{
@@ -98,6 +98,20 @@ const handleScroll = (e) => {
 }
 eventLists.forEach((elem) => {
     elem.addEventListener("wheel",handleScroll);
+})
+
+arrowButtons.forEach((elem) => {
+    if(elem.classList.contains("up")){
+        elem.addEventListener("click", (e) => {
+            e.deltaY= -1;
+            handleScroll(e);
+        })
+    }else{
+        elem.addEventListener("click", (e) => {
+            e.deltaY = 1;
+            handleScroll(e);
+        })
+    }
 })
 
 // SCROLL EVENT ANIMATION

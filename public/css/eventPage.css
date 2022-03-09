@@ -359,6 +359,7 @@ body{
   right: 4%;
   top: 50%;
   transform: translate(50%,-50%);
+  z-index: 15;
 }
 
 .arrowButton{
@@ -386,7 +387,7 @@ body{
 
 /* responsive-codes */
 
-@media(max-width: 1000px){
+@media(max-width: 850px){
   .socialIcons{
     display: none;
   }
@@ -460,6 +461,15 @@ body{
     transform: translate(-50%,0);
   }
 
+  .eventContentWrapper .eventHeader{
+    font-size: 3rem;
+  }
+
+  .eventContentWrapper .eventDetail{
+    font-size: 1rem;
+    text-align: justify;
+  }
+
   .eventListScrollDotBar{
     top: unset;
     bottom: 3vh;
@@ -530,9 +540,5 @@ body{
     width: 1rem;
   }
 }
-/* for iphone se */
-
-
-/* for iphone se */
 
 /* responsive-codes */

@@ -176,6 +176,10 @@
     position: relative;
     width: 50%;
 }
+.about-event.invisible, .about-nits.invisible{
+    visibility: hidden;
+    transition: all 2s ease;
+}
 
 @media (max-width:768px) {
     .about-outer{

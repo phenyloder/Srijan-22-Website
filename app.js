@@ -1,10 +1,10 @@
 //jshint esversion:6
 
 //requiring pakages
-const express= require("express");
+const express = require("express");
 const path = require("path");
-const bodyParser= require("body-parser");
-const ejs= require("ejs");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
 const Routes = require("./routes/routes");
 
 const app = express();
@@ -16,8 +16,10 @@ app.use(express.static("public"));
 
 
 app.use("/", Routes);
-
-//listen to the port 3000
+app.use((req, res, next) => {
+        res.status(404).render("error");
+    })
+    //listen to the port 3000
 app.listen(3000, function() {
     console.log("Server is runnig in port 3000");
 });

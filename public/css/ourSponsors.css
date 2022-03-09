@@ -95,6 +95,9 @@ body{
     margin: 3% 0;
     flex-wrap: wrap;
 }
+.sp{
+    width: 80%;
+}
 
 @media (max-width:768px) {
     .heading{
@@ -122,8 +125,5 @@ body{
         display: flex;
         margin: 7% 0;
         justify-content: center;
-    }
-    .sp{
-        width: 80%;
     }
 }

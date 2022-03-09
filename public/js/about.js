@@ -27,6 +27,7 @@ window.addEventListener("scroll", () => {
             logo1.classList.add("hidden");
             nitsCircle.classList.add("transition");
             eventCircle.classList.add("transition");
+            aboutEvent.classList.remove("invisible");
         }
         setTimeout(()=>{
             if(animBox.classList.contains("flipped")){
@@ -51,6 +52,7 @@ window.addEventListener("scroll", () => {
             logo1.classList.add("hidden");
             eventCircle.classList.add("transition");
             nitsCircle.classList.add("transition");
+            aboutEvent.classList.add("invisible");
         }
         setTimeout(()=>{
             if(!animBox.classList.contains("flipped")){

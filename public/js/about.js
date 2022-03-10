@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
     const scrolled = window.scrollY;
     const percentScrolled = (scrolled / scrollable)*100;
     // console.log(percentScrolled);
-    if(percentScrolled<20 && width>768)
+    if(percentScrolled<19 && width>768)
     {
         if(animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");
@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
             animBox.classList.remove("animate-anticlockwise");
         },2200)
     }
-    else if(percentScrolled>20 && width>768)
+    else if(percentScrolled>19 && width>768)
     { 
         if(!animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");

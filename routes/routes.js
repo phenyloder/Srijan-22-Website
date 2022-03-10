@@ -7,6 +7,7 @@ const { getOurTeamPage } = require("../controllers/getOurTeamPage");
 const { getOurSponsorsPage } = require("../controllers/getOurSponsorsPage");
 const User=require("../models/registerInfo")
 
+const { getIndexPage, getEventPage, getLaunchPage } = require("../controllers/getIndexPage");
 
 const router = express.Router();
 
@@ -40,4 +41,5 @@ router.post('/register',async(req,res)=>{
 })
 
 
+router.get("/LaunchPage" , getLaunchPage); // serves lauch page
 module.exports = router;

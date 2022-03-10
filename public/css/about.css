@@ -20,7 +20,7 @@
     display: flex;
     position: relative;
     justify-content: space-evenly;
-    margin: 7%;
+    margin: 5% 7%;
     margin-left: 10%;
 }
 .about-text{
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    left: -17%;
+    /* left: -17%; */
 }
 .about-heading{
     font-family: Gilroy;
@@ -62,39 +62,39 @@
     }
 }
 .about-anim.flipped{
-    position: fixed;
+    position: sticky;
     top: 25%;
-    left: 60%;
+    right: 10%;
     height: fit-content;
     transform: rotate(0.5turn);
 }
 .about-anim{
-    position: fixed;
+    position: sticky;
     top: 25%;
-    left: 60%;
+    right: 10%;
     height: fit-content;
 }
 .about-anim.animate-clockwise{
-    position: fixed;
+    position: sticky;
     top: 25%;
-    left: 60%;
+    right: 10%;
     height: fit-content;
     animation: spin 1.5s 1;
 }
 .about-anim.animate-anticlockwise{
-    position: fixed;
+    position: sticky;
     top: 25%;
-    left: 60%;
+    right: 10%;
     height: fit-content;
     animation: spin2 1.5s 1;
 }
-.about-anim.absolute{
+/* .about-anim.absolute{
     position: absolute;
     top: 25%;
     left: 60%;
     height: fit-content;
     animation: spin 1.5s 1;
-}
+} */
 .circle{
     width: 27rem;
     height: 27rem;

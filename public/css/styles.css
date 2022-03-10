@@ -44,3 +44,11 @@
 
 
 /* ROOT */
+
+/* SMOOTH SCROLLING */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* SMOOTH SCROLLING */

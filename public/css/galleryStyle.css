@@ -1,3 +1,12 @@
+/* SETTING ANCHOR */
+#photoGalleryAnchor{
+  position: relative;
+  top: -7rem;
+  display: hidden;
+  pointer-events: none;
+}
+/* SETTING ANCHOR */
+
 .heading_photo_gallery {
   font-size: 3rem;
   font-family: 'Gilroy-Bold', sans-serif;

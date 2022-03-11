@@ -137,7 +137,7 @@ body, .coverPage {
 
 .coverPage .contentWrapper {
   width: 67.5vw;
-  height: 32.5vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
 }
@@ -168,6 +168,16 @@ body, .coverPage {
 .leftContentWrapper p {
   width: 90%;
   font-size: 1rem;
+  color: white;
+  opacity: 0.72;
+  font-family: "gil-roy";
+  font-weight: medium;
+  line-height: 149.3%;
+}
+
+#SubHeader {
+  width: 60%;
+  font-size: 1.2rem !important;
   color: white;
   opacity: 0.72;
   font-family: "gil-roy";
@@ -251,12 +261,12 @@ body, .coverPage {
   color: white;
   display: inline-block;
   position: absolute;
-  top: -45%;
+  top: -10%;
   left: 10%;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: "gil-roy";
-  font-size: 28px;
+  font-size: 25px;
 }
 
 /* Change color of each text in sphere on hover   */
@@ -354,6 +364,12 @@ body, .coverPage {
     margin-bottom: 14rem;
   }
 
+  #SubHeader{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .socialIcons i {
     margin-bottom: 5px;
   }
@@ -394,6 +410,7 @@ body, .coverPage {
   .contentWrapper .leftContentWrapper {
     width: 100%;
   }
+
 
   .leftContentWrapper h1 {
     font-size: 3rem;

@@ -137,7 +137,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .coverPage .contentWrapper {
   width: 67.5vw;
-  height: 32.5vh;
+  height: 42vh;
   display: flex;
   flex-direction: row;
 }
@@ -168,6 +168,16 @@ body::-webkit-scrollbar-thumb:hover {
 .leftContentWrapper p {
   width: 90%;
   font-size: 1rem;
+  color: white;
+  opacity: 0.72;
+  font-family: "gil-roy";
+  font-weight: medium;
+  line-height: 149.3%;
+}
+
+#SubHeader {
+  width: 60%;
+  font-size: 1.2rem !important;
   color: white;
   opacity: 0.72;
   font-family: "gil-roy";
@@ -251,12 +261,12 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
   display: inline-block;
   position: absolute;
-  top: -45%;
+  top: -25%;
   left: 10%;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: "gil-roy";
-  font-size: 28px;
+  font-size: 25px;
 }
 
 /* Change color of each text in sphere on hover   */
@@ -351,7 +361,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 760px) {
   .contentWrapper {
-    margin-bottom: 14rem;
+    margin-bottom: 7rem;
+  }
+
+  #SubHeader{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .socialIcons i {
@@ -391,9 +407,14 @@ body::-webkit-scrollbar-thumb:hover {
     width: 80vw;
   }
 
+  #SubHeader{
+    width: 90%;
+  }
+
   .contentWrapper .leftContentWrapper {
     width: 100%;
   }
+
 
   .leftContentWrapper h1 {
     font-size: 3rem;

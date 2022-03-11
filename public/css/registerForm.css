@@ -23,6 +23,7 @@ body{
     width: 100%;
     font-family: "Gilroy";
     font-weight: normal;
+    overflow-x: hidden;
 }
 
 .register-info{

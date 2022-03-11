@@ -1,13 +1,12 @@
 const express = require("express");
 const { get } = require("express/lib/response");
-const { getEventPage } = require("../controllers/getEventPage")
+const { getEventPage } = require("../controllers/getEventPage");
 const { getIndexPage } = require("../controllers/getIndexPage");
+const { getLaunchPage } = require("../controllers/getIndexPage");
 const { getRegisterPage } = require("../controllers/getRegisterPage");
 const { getOurTeamPage } = require("../controllers/getOurTeamPage");
 const { getOurSponsorsPage } = require("../controllers/getOurSponsorsPage");
 const User=require("../models/registerInfo")
-
-const { getIndexPage, getEventPage, getLaunchPage } = require("../controllers/getIndexPage");
 
 const router = express.Router();
 

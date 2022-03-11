@@ -30,6 +30,9 @@
     width: 60%;
     /* left: -17%; */
 }
+.about-event, .about-nits{
+    margin: 5% 0;
+}
 .about-heading{
     font-family: Gilroy;
     font-weight: bold;

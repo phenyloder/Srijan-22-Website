@@ -137,7 +137,7 @@ body, .coverPage {
 
 .coverPage .contentWrapper {
   width: 67.5vw;
-  height: 50vh;
+  height: 42vh;
   display: flex;
   flex-direction: row;
 }
@@ -261,7 +261,7 @@ body, .coverPage {
   color: white;
   display: inline-block;
   position: absolute;
-  top: -10%;
+  top: -25%;
   left: 10%;
   font-weight: bold;
   letter-spacing: 1px;
@@ -361,7 +361,7 @@ body, .coverPage {
 
 @media (max-width: 760px) {
   .contentWrapper {
-    margin-bottom: 14rem;
+    margin-bottom: 7rem;
   }
 
   #SubHeader{
@@ -405,6 +405,10 @@ body, .coverPage {
 @media (max-width: 415px) {
   .coverPage .contentWrapper {
     width: 80vw;
+  }
+
+  #SubHeader{
+    width: 90%;
   }
 
   .contentWrapper .leftContentWrapper {

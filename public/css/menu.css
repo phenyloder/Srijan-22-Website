@@ -56,12 +56,16 @@
     background-color: var(--tertiary);
 }
 
-#logo {
-    margin-left: 4%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 10rem;
+#menuLogoWrapper {
+    margin-left: 2%;
+    height: 5rem;
     z-index: 3;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#menuLogo{
+    height: 100%;
 }
 
 #menuToggleButton {
@@ -78,21 +82,22 @@
 #menuToggleButton::before {
     content: "";
     position: absolute;
-    background-color: var(--tertiary);
+    /* background-color: var(--tertiary); */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     width: 95%;
     height: 95%;
+    transition: 0.2s;
+}
+
+.menuToggleButtonActive::before{
+    background-color: var(--tertiary);
 }
 
 .menuToggleButtonActive {
     background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
-}
-
-.menuToggleButtonInctive {
-    background-color: var(--tertiary);
 }
 
 .menuToggleButtonLinesActive {

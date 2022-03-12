@@ -1,6 +1,9 @@
 let currentList = "events";
 const eventLists = [...document.querySelectorAll(".eventList")];
 let eventCounter = 0;
+const arrowButtons = [...document.querySelectorAll(".arrowButton")];
+
+let firstTouch = null;
 
 const reset = () => {
     eventLists.forEach(() => {
@@ -11,7 +14,6 @@ const reset = () => {
             elem.classList.remove("previous")
             elem.classList.remove("next");
             elem.classList.remove("active");
-            console.log(idx);
             if(idx===0){
                 elem.classList.add("active");
             }else{
@@ -98,6 +100,54 @@ const handleScroll = (e) => {
 }
 eventLists.forEach((elem) => {
     elem.addEventListener("wheel",handleScroll);
+})
+
+arrowButtons.forEach((elem) => {
+    if(elem.classList.contains("up")){
+        elem.addEventListener("click", (e) => {
+            e.deltaY= -1;
+            handleScroll(e);
+        })
+    }else{
+        elem.addEventListener("click", (e) => {
+            e.deltaY = 1;
+            handleScroll(e);
+        })
+    }
+})
+
+const handleTouchStart = (e) => {
+    firstTouch = e.touches[0].clientX;
+}
+
+const handleTouchMove = (e) => {
+    e.preventDefault();
+    const currTouch = e.touches[0].clientX;
+    
+    if(Math.abs(firstTouch - currTouch) >= 50){
+        e.deltaY = firstTouch - currTouch;
+        handleScroll(e);
+        eventLists.forEach((elem) => {
+            elem.removeEventListener("touchmove",handleTouchMove);
+        })
+    }
+}
+
+const handleTouchEnd = () => {
+    eventLists.forEach((elem) => {
+        elem.removeEventListener("touchmove",handleTouchMove);
+    })
+    eventLists.forEach((elem) => {
+        elem.addEventListener("touchmove",handleTouchMove);
+    })
+}
+
+eventLists.forEach((elem) => {
+    elem.addEventListener("touchstart", handleTouchStart);
+
+    elem.addEventListener("touchmove",handleTouchMove);
+
+    elem.addEventListener("touchend", handleTouchEnd);
 })
 
 // SCROLL EVENT ANIMATION

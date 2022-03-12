@@ -20,13 +20,14 @@ window.addEventListener("scroll", () => {
     const scrolled = window.scrollY;
     const percentScrolled = (scrolled / scrollable)*100;
     // console.log(percentScrolled);
-    if(percentScrolled<20 && width>768)
+    if(percentScrolled<16 && width>768)
     {
         if(animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");
             logo1.classList.add("hidden");
             nitsCircle.classList.add("transition");
             eventCircle.classList.add("transition");
+            aboutEvent.classList.remove("invisible");
         }
         setTimeout(()=>{
             if(animBox.classList.contains("flipped")){
@@ -44,13 +45,14 @@ window.addEventListener("scroll", () => {
             animBox.classList.remove("animate-anticlockwise");
         },2200)
     }
-    else if(percentScrolled>20 && width>768)
+    else if(percentScrolled>16 && width>768)
     { 
         if(!animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");
             logo1.classList.add("hidden");
             eventCircle.classList.add("transition");
             nitsCircle.classList.add("transition");
+            aboutEvent.classList.add("invisible");
         }
         setTimeout(()=>{
             if(!animBox.classList.contains("flipped")){
@@ -83,7 +85,7 @@ window.addEventListener("scroll", () => {
         {
             animBox.classList.add("sticky");
         }
-        if(percentScrolled>14 && transit1===0)
+        if(percentScrolled>11 && transit1===0)
         {
             aboutEvent.classList.add("invisible");
             logo1.classList.add("hidden");
@@ -96,12 +98,12 @@ window.addEventListener("scroll", () => {
                     transit1 = 1;
             }, 500)
         }
-        else if(percentScrolled>14 && transit1===1)
+        else if(percentScrolled>11 && transit1===1)
         {
             logo1.classList.remove("hidden");
             eventCircle.classList.remove("transition");
         }
-        else if(percentScrolled<=14 && transit2===0){
+        else if(percentScrolled<=11 && transit2===0){
             logo1.classList.remove("hidden");
             transit1 = 0;
             aboutEvent.classList.remove("invisible");

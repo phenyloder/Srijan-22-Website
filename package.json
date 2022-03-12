@@ -20,9 +20,13 @@
   "dependencies": {
     "aos": "^2.3.4",
     "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
+    "esm": "^3.2.25",
     "express": "^4.17.3",
-    "nodemon": "^2.0.15",
-    "owl.carousel": "^2.3.4"
+    "mongoose": "^6.2.4",
+    "owl.carousel": "^2.3.4",
+    "lottie-web": "^5.9.1",
+    "nodemon": "^2.0.15"
   }
 }

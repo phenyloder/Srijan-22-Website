@@ -8,10 +8,10 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const Routes = require("./routes/routes");
 dotenv.config();
-const connectToMongo=require('./db')
+const connectToMongo = require('./db')
 connectToMongo();
 
-const APP_PORT=process.env.PORT || 3001;
+const APP_PORT = process.env.PORT || 3001;
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -22,8 +22,8 @@ app.use(express.static("public"));
 
 app.use("/", Routes);
 app.use((req, res, next) => {
-        res.status(404).render("error");
-    })
+    res.status(404).render("error");
+})
 
 //listen to the port 3001
 app.listen(APP_PORT, function() {

@@ -22,89 +22,12 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-.pbg {
-    position: fixed;
-    filter: url(#round);
-    transform: scale(0.9, 0.9);
-    top: 15%;
-    left: 5%;
-    z-index: 0;
-}
-
-#rectangle1 {
-    position: absolute;
-    width: 3.5rem;
-    height: 6rem;
-    left: 80rem;
-    top: 40rem;
-    transform: rotate(39.16deg);
-}
-
-#triangle1 {
-    position: absolute;
-    width: 8rem;
-    height: 9rem;
-    left: 10rem;
-    top: 30rem;
-    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    transform: rotate(-13.23deg);
-}
-
-#rectangle2 {
-    position: absolute;
-    width: 2rem;
-    height: 9rem;
-    left: 33rem;
-    top: 4rem;
-    transform: rotate(10.49deg);
-}
-
-#ellipse1 {
-    position: absolute;
-    width: 6rem;
-    height: 8rem;
-    left: 70rem;
-    top: 6rem;
-    transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.8, 0.8);
-    border-radius: 50%;
-}
-
-#ellipse2 {
-    position: absolute;
-    width: 8.5rem;
-    height: 8.5rem;
-    left: 6rem;
-    top: 8rem;
-    border-radius: 50%;
-    transform: matrix(-1, 0, 0, 1, 0, 0) scale(0.8, 0.8);
-}
-
-#triangle3 {
-    position: absolute;
-    width: 5rem;
-    height: 7.5rem;
-    left: 85rem;
-    top: 16rem;
-    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    transform: rotate(-123.58deg);
-}
-
-.bgshapes {
-    background: linear-gradient(180deg, rgba(34, 250, 176, 0.65) 0%, rgba(31, 209, 249, 0.65) 100%);
-}
-
-@media (max-width:400px) {
-    .pbg {
-        visibility: hidden;
-    }
-}
-
 .ourTeam {
-    background-color: #15131A;
+    background-color: #fff;
     font-size: 16px;
     font-family: Gilroy;
     font-weight: bold;
-    color: #fff;
+    color: #111;
     scroll-snap-type: y mandatory;
 }
 
@@ -114,14 +37,15 @@ html {
     display: grid;
 }
 
-.Patron {
-    background-color: #fff;
-    color: #15131A;
-    padding-bottom: 2rem;
-    padding-top: 2.5rem;
+.Patron,
+.developer {
+    display: flex;
+    flex-direction: column;
 }
 
 .developer {
+    background-color: #15131A;
+    color: #fff;
     padding-bottom: 4rem;
     padding-top: 2.5rem;
 }
@@ -138,19 +62,15 @@ html {
     -webkit-background-clip: text;
 }
 
-.chiefPatron {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-
-.chiefPatron p,
 .Patron p,
 .developer p {
     text-align: center;
     font-size: 3rem;
     z-index: 2;
+}
+
+.Patron .patroncard .details {
+    padding-top: 4rem;
 }
 
 .developer .developercard .details {
@@ -163,68 +83,26 @@ html {
     align-items: center;
     justify-content: space-evenly;
     z-index: 2;
-}
-
-.developer .developercard {
-    flex-direction: column;
-}
-
-.developer .developercard .president_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    /* padding-bottom: 6rem; */
-}
-
-.developer .developercard .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-bottom: 1rem;
-}
-
-.developer .developercard .fullname span1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1.5rem;
-}
-
-.developer .developercard .container span {
-    font-size: 1.2rem;
-    font-family: Gilroy;
-    font-weight: bold;
-    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.developer .developercard .Leads_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    padding-bottom: 3rem;
 }
 
 .ourTeam img {
-    width: 20rem;
-    height: 20rem;
+    width: 17rem;
+    height: 17rem;
     object-fit: cover;
     margin: 0 auto;
     border-radius: 100%;
 }
 
 .Patron img {
-    width: 18rem;
-    height: 18rem;
+    width: 17rem;
+    height: 17rem;
 }
 
 .developer img {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
 }
 
 .linkdin {
@@ -243,18 +121,15 @@ html {
 }
 
 .ourTeam .fullName {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-family: Gilroy;
-    font-weight: normal;
-    padding-top: 2rem;
+    font-weight: bold;
+    padding-top: 1.3rem;
     text-align: center;
     z-index: 130;
 }
 
-.ourTeam .fullName span {
-    font-size: 1.5rem;
-    font-family: Gilroy;
-    font-weight: bold;
+.ourTeam .fullName span1 {
     background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -276,8 +151,9 @@ html {
     opacity: 0;
     transition: 0.2s;
     flex-direction: column;
-    right: -4.5rem;
+    right: -3rem;
     z-index: 130;
+    align-items: center;
 }
 
 .ourTeam figure {
@@ -357,6 +233,9 @@ html {
         text-align: center;
         padding-bottom: 2.6rem;
     }
+    .ourTeam .team {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -379,25 +258,9 @@ html {
         text-align: center;
         padding-bottom: 2.6rem;
     }
-    .chiefPatron .fullName {
-        font-size: 2rem;
-        padding-top: 0.8rem;
-        text-align: center;
-        padding-bottom: 2.6rem;
-    }
-    .chiefPatron p,
     .Patron p,
     .developer p {
         text-align: center;
         font-size: 2.5rem;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .ourTeam .developercard {
-        flex-wrap: wrap;
-    }
-    .ourTeam .patroncard {
-        flex-wrap: wrap;
     }
 }

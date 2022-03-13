@@ -32,6 +32,7 @@
 }
 .about-event, .about-nits{
     margin: 5% 0;
+
 }
 .about-heading{
     font-family: Gilroy;
@@ -53,6 +54,7 @@
     color: rgba(21, 19, 26, 0.72);
     width: 80%;
     font-weight: 500;
+    margin: 2% 0;
 }
 @keyframes spin {
     to{

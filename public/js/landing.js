@@ -1,167 +1,151 @@
 document.addEventListener("scroll", scrollChange);
-window.addEventListener("load",function(){
-  document.getElementById("scrollDownButton").href = "#aboutUsSection";
+
+const scrollDownButton = document.getElementById("scrollDownButton");
+
+window.addEventListener("load", function () {
+  scrollDownButton.href = "#aboutUsSection";
 });
+
+const Linkedin = document.getElementById("Linkedin");
+const Facebook = document.getElementById("Facebook");
+const Instagram = document.getElementById("Instagram");
+const VerticalLine = document.getElementById("VerticalLine");
 
 function scrollChange() {
   var x = document.documentElement.scrollTop;
   var y = screen.width;
 
-
   if (y > 500) {
-    if (x>=0 && x < 387) {
-      document.getElementById("scrollDownButton").innerHTML =
+    if (x >= 0 && x < 387) {
+      scrollDownButton.innerHTML =
         "SCROLL DOWN <i class='fa-solid fa-arrow-right-long' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "#aboutUsSection";
-      document.getElementById("scrollDownButton").style.color = "white";
-      document.getElementById("scrollDownButton").target= "";
+      scrollDownButton.href = "#aboutUsSection";
+      scrollDownButton.style.color = "white";
+      scrollDownButton.target = "";
 
-      document.getElementById("Linkedin").classList.remove("linkedin-1");
-      document.getElementById("Facebook").classList.remove("facebook-1");
-      document.getElementById("Instagram").classList.remove("instagram-1");
+      Linkedin.classList.remove("linkedin-1");
+      Facebook.classList.remove("facebook-1");
+      Instagram.classList.remove("instagram-1");
 
-      document.getElementById("VerticalLine").classList.add("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.remove("verticalLine");
-    }
-    else if (x > 387 && x <1813) {
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.add("leftVerticalLine");
+      VerticalLine.classList.remove("verticalLine");
+    } else if (x > 387 && x < 1813) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "black";
-      document.getElementById("scrollDownButton").target = "_blank"
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "black";
+      scrollDownButton.target = "_blank";
 
-      document.getElementById("Linkedin").classList.add("linkedin-1");
-      document.getElementById("Facebook").classList.add("facebook-1");
-      document.getElementById("Instagram").classList.add("instagram-1");
+      Linkedin.classList.add("linkedin-1");
+      Facebook.classList.add("facebook-1");
+      Instagram.classList.add("instagram-1");
 
-      document
-        .getElementById("VerticalLine")
-        .classList.remove("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.add("verticalLine");
-    }
-
-    else if (x > 1813 && x < 3189) {
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.remove("leftVerticalLine");
+      VerticalLine.classList.add("verticalLine");
+    } else if (x > 1813 && x < 3189) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "white";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "white";
 
-      document.getElementById("Linkedin").classList.remove("linkedin-1");
-      document.getElementById("Facebook").classList.remove("facebook-1");
-      document.getElementById("Instagram").classList.remove("instagram-1");
+      Linkedin.classList.remove("linkedin-1");
+      Facebook.classList.remove("facebook-1");
+      Instagram.classList.remove("instagram-1");
 
-      document.getElementById("VerticalLine").classList.add("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.remove("verticalLine");
-    }
-
-    else if (x> 3189 && x< 3644){
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.add("leftVerticalLine");
+      VerticalLine.classList.remove("verticalLine");
+    } else if (x > 3189 && x < 3644) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "black";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "black";
+      scrollDownButton.target = "_blank";
 
-      document.getElementById("Linkedin").classList.add("linkedin-1");
-      document.getElementById("Facebook").classList.add("facebook-1");
-      document.getElementById("Instagram").classList.add("instagram-1");
+      Linkedin.classList.add("linkedin-1");
+      Facebook.classList.add("facebook-1");
+      Instagram.classList.add("instagram-1");
 
-      document
-        .getElementById("VerticalLine")
-        .classList.remove("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.add("verticalLine");
-
-    }
-    else if(x>3644){
-
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.remove("leftVerticalLine");
+      VerticalLine.classList.add("verticalLine");
+    } else if (x > 3644) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "white";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "white";
 
-      document.getElementById("Linkedin").classList.remove("linkedin-1");
-      document.getElementById("Facebook").classList.remove("facebook-1");
-      document.getElementById("Instagram").classList.remove("instagram-1");
+      Linkedin.classList.remove("linkedin-1");
+      Facebook.classList.remove("facebook-1");
+      Instagram.classList.remove("instagram-1");
 
-      document.getElementById("VerticalLine").classList.add("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.remove("verticalLine");
-
+      VerticalLine.classList.add("leftVerticalLine");
+      VerticalLine.classList.remove("verticalLine");
     }
   }
 
   if (y < 500) {
     if (x < 348) {
-      document.getElementById("scrollDownButton").innerHTML =
+      scrollDownButton.innerHTML =
         "SCROLL DOWN <i class='fa-solid fa-arrow-right-long' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "#aboutUsSection";
-      document.getElementById("scrollDownButton").style.color = "white";
+      scrollDownButton.href = "#aboutUsSection";
+      scrollDownButton.style.color = "white";
+      scrollDownButton.target = "";
 
-      document.getElementById("Linkedin").classList.remove("linkedin-1");
-      document.getElementById("Facebook").classList.remove("facebook-1");
-      document.getElementById("Instagram").classList.remove("instagram-1");
+      Linkedin.classList.remove("linkedin-1");
+      Facebook.classList.remove("facebook-1");
+      Instagram.classList.remove("instagram-1");
 
-      document.getElementById("VerticalLine").classList.add("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.remove("verticalLine");
-    }
-    else if (x > 348 && x <1728) {
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.add("leftVerticalLine");
+      VerticalLine.classList.remove("verticalLine");
+    } else if (x > 348 && x < 1728) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "black";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "black";
+      scrollDownButton.target = "_blank";
 
-      document.getElementById("Linkedin").classList.add("linkedin-1");
-      document.getElementById("Facebook").classList.add("facebook-1");
-      document.getElementById("Instagram").classList.add("instagram-1");
+      Linkedin.classList.add("linkedin-1");
+      Facebook.classList.add("facebook-1");
+      Instagram.classList.add("instagram-1");
 
-      document
-        .getElementById("VerticalLine")
-        .classList.remove("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.add("verticalLine");
-    }
-
-    else if (x > 1728 && x <4165) {
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.remove("leftVerticalLine");
+      VerticalLine.classList.add("verticalLine");
+    } else if (x > 1728 && x < 4165) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "white";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "white";
 
-      document.getElementById("Linkedin").classList.remove("linkedin-1");
-      document.getElementById("Facebook").classList.remove("facebook-1");
-      document.getElementById("Instagram").classList.remove("instagram-1");
+      Linkedin.classList.remove("linkedin-1");
+      Facebook.classList.remove("facebook-1");
+      Instagram.classList.remove("instagram-1");
 
-      document.getElementById("VerticalLine").classList.add("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.remove("verticalLine");
-    }
-
-    else if(x>4165 &&x<4796){
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.add("leftVerticalLine");
+      VerticalLine.classList.remove("verticalLine");
+    } else if (x > 4165 && x < 4796) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "black";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "black";
+      scrollDownButton.target = "_blank";
 
-      document.getElementById("Linkedin").classList.add("linkedin-1");
-      document.getElementById("Facebook").classList.add("facebook-1");
-      document.getElementById("Instagram").classList.add("instagram-1");
+      Linkedin.classList.add("linkedin-1");
+      Facebook.classList.add("facebook-1");
+      Instagram.classList.add("instagram-1");
 
-      document
-        .getElementById("VerticalLine")
-        .classList.remove("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.add("verticalLine");
-    }
-
-    else if(x>4796){
-      document.getElementById("scrollDownButton").innerHTML =
+      VerticalLine.classList.remove("leftVerticalLine");
+      VerticalLine.classList.add("verticalLine");
+    } else if (x > 4796) {
+      scrollDownButton.innerHTML =
         "REGISTER NOW <i class='fa-solid fa-registered' style='width: 45px'></i>";
-      document.getElementById("scrollDownButton").href = "/events";
-      document.getElementById("scrollDownButton").style.color = "white";
+      scrollDownButton.href = "/events";
+      scrollDownButton.style.color = "white";
 
-      document.getElementById("Linkedin").classList.remove("linkedin-1");
-      document.getElementById("Facebook").classList.remove("facebook-1");
-      document.getElementById("Instagram").classList.remove("instagram-1");
+      Linkedin.classList.remove("linkedin-1");
+      Facebook.classList.remove("facebook-1");
+      Instagram.classList.remove("instagram-1");
 
-      document.getElementById("VerticalLine").classList.add("leftVerticalLine");
-      document.getElementById("VerticalLine").classList.remove("verticalLine");
+      VerticalLine.classList.add("leftVerticalLine");
+      VerticalLine.classList.remove("verticalLine");
     }
-
   }
 }
-
-

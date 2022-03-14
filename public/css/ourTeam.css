@@ -18,9 +18,10 @@ body {
     overflow-x: hidden;
 }
 
-html {
+
+/* html {
     scroll-snap-type: y mandatory;
-}
+} */
 
 .pbg {
     position: fixed;
@@ -105,11 +106,11 @@ html {
     font-family: Gilroy;
     font-weight: bold;
     color: #fff;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 .section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     min-height: 100vh;
     display: grid;
 }

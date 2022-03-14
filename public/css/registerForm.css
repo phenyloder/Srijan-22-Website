@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body{
+    background: #15131A;
+    color: white;
+    width: 100%;
+    font-family: "Gilroy";
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+.register-info{
+    position: fixed;
+    top: 0%;
+    padding: 8%;
+    margin-left: 2%;
+    margin-bottom: 100px;
+}
+.register-img img{
+    width: 30%;
+    border-radius: 10px;
+}
+.register-heading{
+    font-family: "Gilroy" ;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.register-description{
+    font-family: "Gilroy";
+    font-weight: normal;
+    width: 30%;
+}
+.register-form{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    padding-bottom: 100px;
+}
+.team-name,.first-name,.last-name,.phone-number,.p-gender{
+    position: relative;
+    font-size: 18px;
+}
+.tname-extra{
+   color: rgb(90, 90, 90); 
+}
+.name{
+    display: flex;
+    gap: 2rem;
+}
+#tname,#fname,#lname,#pnumber{
+    position: relative;
+    display: block;
+    background-color: #15131A;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 18rem;
+    height: 28px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    caret-color: white;
+}
+.number{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 38px;
+    width: 298px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.cc{
+    margin-left: 5px;
+}
+#pnumber{
+    display: inline;
+    border: none;
+    margin: 0;
+}
+#pnumber:focus{
+    border: none;
+    outline: none;
+}
+#gender{
+    display: block;
+    height: 38px;
+    width: 298px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #15131A;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    cursor: pointer;
+}
+#gender:focus{
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+.line{
+    position: relative;
+    top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+}
+.add-member, .sub-member{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 1.5rem;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 25px;
+}
+.sub-member{
+    display: none;
+}
+.add-btn, .sub-btn{
+    position: relative;
+    left: 5%;
+    top: 3px;
+    cursor: pointer;
+}
+.submit{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 57px;
+    top: 60px;
+    left: 30%;
+    background: linear-gradient(91.61deg, #B621FE 2.52%, #1FD1F9 100%);
+    border-radius: 8px;
+    font-family: "Gilroy";
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.submit-icon{
+    position: relative;
+    left: 5px;
+    transition: all 0.75s ease;
+}
+.submit:hover .submit-icon{
+    transform: translateX(10px);
+}
+
+@media (max-width:768px) {
+    .register-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
+        margin-top: 6rem;
+        padding: 0;
+        width: 100%;
+    }
+    .register-img{
+        display: flex;
+        justify-content: center;
+    }
+    .register-img img{
+        position: relative;
+        width: 90%;
+    }
+    .register-heading{
+        font-size:1.75rem;
+    }
+    .register-description{
+        display: none;
+    }
+    .register-form{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .r-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-name,.first-name,.last-name,.phone-number,.p-gender{
+        position: relative;
+        font-size: 1.9rem;
+    }
+    .tname-extra{
+        display: none;
+    }
+    .name{
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #tname,#fname,#lname,#pnumber{
+        font-size: 1.8rem;
+    }
+    .cc{
+        font-size: 1.8rem;
+    }
+    #pnumber{
+        width: 15rem;
+    }
+    .p-gender{
+        margin-top: 1rem;
+    }
+    #gender{
+        font-size: 1.8rem;
+        height: 45px;
+    }
+    .controls{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .line{
+        position: relative;
+        width: 90%;
+        top: 0;
+    }
+    .submit{
+        position: relative;
+        left: 0;
+    }
+}

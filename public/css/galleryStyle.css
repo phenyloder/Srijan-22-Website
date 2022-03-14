@@ -1,3 +1,12 @@
+/* SETTING ANCHOR */
+#photoGalleryAnchor{
+  position: relative;
+  top: -7rem;
+  display: hidden;
+  pointer-events: none;
+}
+/* SETTING ANCHOR */
+
 .heading_photo_gallery {
   font-size: 3rem;
   font-family: 'Gilroy-Bold', sans-serif;
@@ -12,13 +21,14 @@
 }
 
 .slideshow-container {
-max-width: 1000px;
+max-width: 1200px;
 position: relative;
 margin: auto;
+overflow: hidden;
 }
 
 .slideshow-inner img {
-max-height: 600px;
+height: 600px;
 }
 
 .mySlides {
@@ -26,55 +36,44 @@ display: none;
 height: 100%;
 }
 
-.prev,
-.next {
-cursor: pointer;
+.buttons{
 position: absolute;
-top: 30%;
-width: auto;
-margin-top: 0px;
-padding: 7rem 1rem;
-color: #222428;
-font-weight: bold;
-font-size: 30px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0
+top: 50%;
+width: 97%;
+display: flex;
+justify-content: space-between;
+padding: 0 1rem;
 }
 
-.next {
-right: -50px;
-border-radius: 3px 3px 3px 3px
+.buttons a {
+/* border: 2px solid #fff; */
+background-color: transparent;
+color: #fff;
+cursor: pointer;
+padding: 15px 20px;
+border-radius: 50% !important;
+outline: none;
 }
 
-.prev {
-left: -50px;
-border-radius: 3px 3px 3px 3px
-}
-
-.prev:hover,
-.next:hover {
-color: #f2f2f2;
-background-color: rgba(0, 0, 0, 0.8)
+.buttons a:hover{
+background-color: #fff;
+color: #333;
 }
 
 @media (max-width: 450px) {
-  .heading_photo_gallery {
-    font-size: 2rem;
-  }
-  
-  .slideshow-container {
-    max-width: 300px;
-  }
-  .slideshow-inner img {
-    width: 100%;
-  }
-  .prev,
-.next {
-top: 25%;
-width: auto;
-margin-top: 0px;
-margin-left: 0px;
-margin-right: 0px;
-padding: 2rem 0.5rem;
+.heading_photo_gallery {
+  font-size: 2rem;
+}
+
+.slideshow-container {
+  max-width: 350px;
+}
+.slideshow-inner img {
+  height: 100%;
+}
+.buttons{
+  position: absolute;
+  top: 40%;
+  width: 90%;
 }
 }

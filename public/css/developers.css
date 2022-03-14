@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* 
+html {
+    scroll-snap-type: y mandatory;
+} */
+
+.ourTeam {
+    background-color: #fff;
+    font-size: 16px;
+    font-family: Gilroy;
+    font-weight: bold;
+    color: #111;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+    /* min-height: 100vh; */
+    display: grid;
+}
+
+.Patron,
+.developer {
+    display: flex;
+    flex-direction: column;
+}
+
+.developer {
+    background-color: #15131A;
+    color: #fff;
+    padding-bottom: 4rem;
+    padding-top: 2.5rem;
+}
+
+.Designer {
+    background-color: #fff;
+    color: #15131A;
+}
+
+.ourTeam .team {
+    text-align: center;
+    font-size: 4.1rem;
+    padding-top: 6rem;
+}
+
+.team span {
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.Patron p,
+.developer p {
+    text-align: center;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.Patron .patroncard .details {
+    padding-top: 4rem;
+}
+
+.developer .developercard .details {
+    padding-top: 4rem;
+}
+
+.Patron .patroncard,
+.developer .developercard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+.ourTeam img {
+    width: 17rem;
+    height: 17rem;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.Patron img {
+    width: 17rem;
+    height: 17rem;
+}
+
+.developer img {
+    width: 14rem;
+    height: 14rem;
+}
+
+.linkdin {
+    width: 32px;
+    height: 32px;
+}
+
+.facebook {
+    width: 17px;
+    height: 30px;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+}
+
+.ourTeam .fullName {
+    font-size: 1.8rem;
+    font-family: Gilroy;
+    font-weight: bold;
+    padding-top: 1.3rem;
+    text-align: center;
+    z-index: 130;
+}
+
+.ourTeam .fullName span1 {
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.social-icons svg {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.ourTeam .social-icons {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s;
+    flex-direction: column;
+    right: -3rem;
+    z-index: 130;
+    align-items: center;
+}
+
+.ourTeam figure {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.ourTeam figure:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.ourTeam .social-icons:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:600px) {
+    .ourTeam img {
+        width: 19rem;
+        height: 19rem;
+    }
+    .ourTeam .social-icons {
+        top: 1rem;
+    }
+    .Patron .linkdin {
+        width: 23px;
+        height: 23px;
+    }
+    .Patron .facebook {
+        width: 12px;
+        height: 20px;
+    }
+    .Patron .instagram {
+        width: 20px;
+        height: 20px;
+    }
+    .Patron .social-icons {
+        right: -3rem;
+    }
+    .developer .linkdin {
+        width: 20px;
+        height: 20px;
+    }
+    .developer .facebook {
+        width: 12px;
+        height: 18px;
+    }
+    .developer .instagram {
+        width: 18px;
+        height: 18px;
+    }
+    .developer .social-icons {
+        right: -2.5rem;
+    }
+    .ourTeam .developercard {
+        display: flex;
+        flex-direction: column;
+    }
+    .ourTeam .patroncard {
+        display: flex;
+        flex-direction: column;
+    }
+    .Patron img {
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+    .developer img {
+        width: 12rem;
+        height: 12rem;
+    }
+    .developer .fullName,
+    .Patron .fullName {
+        font-size: 1.8rem;
+        padding-top: 0.8rem;
+        text-align: center;
+        padding-bottom: 2.6rem;
+    }
+    .ourTeam .team {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .ourTeam img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .Patron img {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .developer img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .developer .fullName,
+    .Patron .fullName {
+        font-size: 1.8rem;
+        padding-top: 0.8rem;
+        text-align: center;
+        padding-bottom: 2.6rem;
+    }
+    .Patron p,
+    .developer p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}

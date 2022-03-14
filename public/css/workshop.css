@@ -76,7 +76,7 @@ body {
 
 .workshop .title {
     font-size: 2.5rem;
-    text-align: left;
+    /* text-align: left; */
     line-height: 0.3rem;
     padding-top: 1.5rem;
 }

@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Medium.ttf");
+  font-weight: medium;
+  font-style: normal;
+}
+
+/* styles to make menu transparent */
+
+#menuBar {
+  background-color: unset;
+}
+
+/* styles to make menu transparent */
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  background: linear-gradient(180deg, #b621fe 0%, #1fd1f9 100%);
+  height: 35rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+.heading {
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+}
+.description {
+  font-family: "Gilroy";
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: normal;
+  font-size: 16px;
+  width: 70%;
+  text-align: center;
+  margin: 1%;
+}
+.sponsor-box {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 57%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 36px;
+  margin: 5% 0;
+  padding: 4% 0;
+  box-shadow: 0px 2px 62px 0px #0000001f;
+  background: #ffffff;
+  box-shadow: 0px 2px 62px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
+.grad-font {
+  background: linear-gradient(180deg, #b621fe 0%, #1fd1f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-sponsors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+  margin-bottom: 10%;
+  width: 100%;
+}
+#ts1 {
+  height: 6rem;
+}
+.sponsors {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 90%;
+  margin: 3% 0;
+  flex-wrap: wrap;
+}
+.sp {
+  width: 80%;
+}
+
+footer {
+  position: absolute;
+  top: 320vh;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: sans-serif;
+  padding-top: 9%;
+  padding-bottom: 5%;
+  color: #fff;
+}
+.footer_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer_content p {
+  max-width: 70%;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 20px;
+  /* margin: 25px auto; */
+  font-family: "Gilroy";
+  padding: 0px 15px;
+}
+.social_icon {
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+}
+.social_icon li {
+  margin: 0px 15px;
+}
+
+.fa-linkedin-in-1,
+.fa-facebook-f-1 {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  margin-left: 5px;
+  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: hsla(0, 0%, 100%);
+}
+
+.fa-instagram-1 {
+  font-size: 2.25rem;
+  padding: 1rem;
+  color: white;
+}
+
+.linkedin-1,
+.facebook-1 {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  margin-left: 5px;
+  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: hsla(0, 0%, 0%);
+}
+
+.instagram-1 {
+  font-size: 2.25rem;
+  padding: 1rem;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .sponsor-box {
+    top: 60%;
+    font-size: 2rem;
+    padding: 7% 0;
+  }
+  .title-sponsors {
+    margin-bottom: 15%;
+    height: fit-content;
+  }
+  #ts1 {
+    height: 8rem;
+  }
+  .sponsors {
+    flex-direction: column;
+  }
+  .sponsor-logo {
+    display: flex;
+    margin: 7% 0;
+    justify-content: center;
+  }
+  footer {
+    top: 380vh;
+  }
+}

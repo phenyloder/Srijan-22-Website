@@ -17,6 +17,7 @@
 
 body{
   scroll-snap-type: y mandatory;
+  width: 100vw;
 }
 .eventList{
     font-size: 16px;
@@ -41,7 +42,7 @@ body{
 }
 
 .event-heading{
-    top:0;
+    top:38px;
     position: sticky;
   /* top:40px; */
    /* z-index: 1; */
@@ -122,7 +123,8 @@ body{
     #event-logo{
         width: 60px;
         height: 60px;
-        padding: 34px
+        padding: 34px;
+       
     
     }
 .event h2{
@@ -200,12 +202,13 @@ transition:color 0.4s linear;
     display: flex;
     justify-content: center;
     background-color: #15131A;
-    top:267px;
+    top:250px;
     z-index:1;
 
 }
 .event-heading{
   padding: 55px 0;
+  /* top:70px; */
 }
 
 .event{
@@ -219,6 +222,7 @@ transition:color 0.4s linear;
 }
 
 @media screen and (max-width:500px){
+
   .event-title h1{
     font-size: 3.1rem;
   }
@@ -244,7 +248,7 @@ transition:color 0.4s linear;
     padding: 26px;
 }
 .event-image{
-  top:234px;
+  top:264px;
 }
 
 

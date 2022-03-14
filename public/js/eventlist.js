@@ -30,56 +30,56 @@ window.addEventListener('scroll',(e)=>{
   
 // }
 // else 
+// if(query2.matches){
+//     if(x<2714){
+//         eventLogo.src='images/technerd.png'
+//     }
+//     if(x>=2714 && x<3008){
+//         eventLogo.src='images/en auction.png'
+//     }
+//     if(x>=3008 && x<3268.6){
+//         eventLogo.src='images/pitch.png'
+//     }
+//     if(x>=3268.6 && x<3554.6){
+//         eventLogo.src='images/pannel discussion.png'
+//     }
+//     if(x>=3554.6){
+//         eventLogo.src='images/idea exchange.png'
+//     }
+// }
 if(query2.matches){
-    if(x<2714){
+    if(x<2890.6){
         eventLogo.src='images/technerd.svg'
     }
-    if(x>=2714 && x<3008){
+    if(x>=2890.6 && x<3176.6){
         eventLogo.src='images/en auction.svg'
     }
-    if(x>=3008 && x<3268.6){
+    if(x>=3176.6 && x<3523.3){
         eventLogo.src='images/pitch.svg'
     }
-    if(x>=3268.6 && x<3554.6){
+    if(x>=3523.3 && x<3816){
         eventLogo.src='images/pannel discussion.svg'
     }
-    if(x>=3554.6){
+    if(x>=3816){
         eventLogo.src='images/idea exchange.svg'
     }
 }
-// if(query2.matches){
-//     if(x<2472.6){
-//         eventLogo.src='images/technerd.svg'
-//     }
-//     if(x>=2472.6 && x<2814){
-//         eventLogo.src='images/en auction.svg'
-//     }
-//     if(x>=2814 && x<3076){
-//         eventLogo.src='images/pitch.svg'
-//     }
-//     if(x>=3076 && x<3337){
-//         eventLogo.src='images/pannel discussion.svg'
-//     }
-//     if(x>=3337){
-//         eventLogo.src='images/idea exchange.svg'
-//     }
-// }
 else{
    
-    if(x<2440){
-        eventLogo.src='images/technerd.svg'
+    if(x<2777){
+        eventLogo.src='images/technerd.png'
     }
-    if(x>=2440 && x<2819.7){
-        eventLogo.src='images/en auction.svg'
+    if(x>=2777 && x<3152.6){
+        eventLogo.src='images/en auction.png'
     }
-    if(x>=2819.7 && x<3172.6){
-        eventLogo.src='images/pitch.svg'
+    if(x>=3152.6 && x<3513.3){
+        eventLogo.src='images/pitch.png'
     }
-    if(x>=3172.6 && x<3592.7){
-        eventLogo.src='images/pannel discussion.svg'
+    if(x>=3513.3 && x<3882.6){
+        eventLogo.src='images/pannel discussion.png'
     }
-    if(x>=3592.7){
-        eventLogo.src='images/idea exchange.svg'
+    if(x>=3882.6){
+        eventLogo.src='images/idea exchange.png'
     }
   
 }

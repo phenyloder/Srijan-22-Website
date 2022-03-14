@@ -2,9 +2,13 @@ document.addEventListener("scroll", scrollChange);
 
 const scrollDownButton = document.getElementById("scrollDownButton");
 
-window.addEventListener("load", function () {
-  scrollDownButton.href = "#aboutUsSection";
+window.addEventListener("DOMContentLoaded", function () {
+  scrollDownButton.href = "javascript:scrollWin(0,650)";
 });
+
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}
 
 const Linkedin = document.getElementById("Linkedin");
 const Facebook = document.getElementById("Facebook");
@@ -18,7 +22,7 @@ function scrollChange() {
   function InitialState() {
     scrollDownButton.innerHTML =
       "SCROLL DOWN <i class='fa-solid fa-arrow-right-long' style='width: 45px'></i>";
-    scrollDownButton.href = "#aboutUsSection";
+      scrollDownButton.href = "javascript:scrollWin(0,650)";
     scrollDownButton.style.color = "white";
     scrollDownButton.target = "";
 

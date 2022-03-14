@@ -14,7 +14,6 @@ const handleMenuToggle = () => {
         menuToggleButton.className = MENU_TOGGLE_BUTTON_INACTIVE;
         menuToggleButtonLines[0].className = MENU_TOGGLE_BUTTON_LINES_INACTIVE;
         menuToggleButtonLines[1].className = MENU_TOGGLE_BUTTON_LINES_INACTIVE;
-        document.getElementsByClassName(floating-button).style.display = "none";
     }else{
         menuContainer.className = MENU_ACTIVE;
         menuToggleButton.className = MENU_TOGGLE_BUTTON_ACTIVE;

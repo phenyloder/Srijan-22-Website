@@ -43,6 +43,7 @@
 .about-span{
     background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .about-description{

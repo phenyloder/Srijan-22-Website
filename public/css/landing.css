@@ -5,7 +5,12 @@
   text-decoration: none;
 }
 
-body, .coverPage {
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+.coverPage {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -364,7 +369,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 7rem;
   }
 
-  #SubHeader{
+  #SubHeader {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -407,14 +412,13 @@ body::-webkit-scrollbar-thumb:hover {
     width: 80vw;
   }
 
-  #SubHeader{
+  #SubHeader {
     width: 90%;
   }
 
   .contentWrapper .leftContentWrapper {
     width: 100%;
   }
-
 
   .leftContentWrapper h1 {
     font-size: 3rem;
@@ -434,49 +438,47 @@ body::-webkit-scrollbar-thumb:hover {
     right: -5.5rem;
   }
 
-  .coverPage .leftVerticalLine{
+  .coverPage .leftVerticalLine {
     left: -2.1rem;
   }
 }
 
-@media (max-width: 361px),(height: 740px){
-  .coverPage .leftVerticalLine{
-      width: 80px;
-      left: -0.75rem;
+@media (max-width: 361px), (height: 740px) {
+  .coverPage .leftVerticalLine {
+    width: 80px;
+    left: -0.75rem;
   }
-  .verticalLine{
-      width: 80px;
-      left: -0.75rem;
+  .verticalLine {
+    width: 80px;
+    left: -0.75rem;
   }
 }
 
-
-@media (max-width: 376px),(height: 667px){
-
-  .contentWrapper{
-      margin-bottom: 11.5rem;
+@media (max-width: 376px), (height: 667px) {
+  .contentWrapper {
+    margin-bottom: 11.5rem;
   }
-  .coverPage .leftVerticalLine{
-      width: 60px;
-      left: -0.2rem;
-      top: 120%;
+  .coverPage .leftVerticalLine {
+    width: 60px;
+    left: -0.2rem;
+    top: 120%;
   }
-  .verticalLine{
-      width: 60px;
-      left: -0.2rem;
-      top: 115%;
+  .verticalLine {
+    width: 60px;
+    left: -0.2rem;
+    top: 115%;
   }
-  .floating-button{
-      top: 79%;
+  .floating-button {
+    top: 79%;
   }
 
-  .leftContentWrapper h1{
-      font-size: 3.25rem;
-      margin-bottom: 1rem;
+  .leftContentWrapper h1 {
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
   }
 
-  .leftContentWrapper p{
-      font-size: 0.825rem;
-      width: 95%;
+  .leftContentWrapper p {
+    font-size: 0.825rem;
+    width: 95%;
   }
 }

@@ -17,6 +17,7 @@ router.get("/register", getRegisterPage); //serves register page
 router.get("/our-team", getOurTeamPage); //serves our-team page
 router.get("/our-developers", getOurDevelopersPage); //serves our-team page
 router.get("/sponsors", getOurSponsorsPage); //serves our-sponsers page
+<<<<<<< Updated upstream
 router.post('/register', async(req, res) => {
     console.log(req.body.fname.length)
     let team_members = [];
@@ -27,6 +28,18 @@ router.post('/register', async(req, res) => {
             lname: req.body.lname[i],
             cnumber: req.body.cnumber[i],
             gender: req.body.gender[i],
+=======
+router.post('/register',async(req,res)=>{
+    //console.log(req.body.fname.length)
+    let team_members=[];
+    //console.log(req.body.fname[0]);
+    for(let i=0;i<req.body.fname.length;i++){
+        let data={
+            fname:req.body.fname[i],
+            lname:req.body.lname[i],
+            cnumber:req.body.cnumber[i],
+            gender:req.body.gender[i],
+>>>>>>> Stashed changes
         }
         team_members.push(data);
     }

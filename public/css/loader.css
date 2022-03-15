@@ -1,0 +1,101 @@
+:root {
+    font-size: 16px;
+    --primary: #970ED9;
+    --secondary: #06A9CE;
+    --tertiary: #15131A;
+    --text-primary: #FFFFFF;
+}
+
+#loaderBackground{
+    position: absolute;
+    background-color: #00283F;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+#loader{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5rem;
+}
+
+#loaderFlameContainer{
+    position: relative;
+    width: 35%;
+    margin: 0 auto;
+    animation: loaderFlameSize 1s infinite alternate ease-in-out;
+}
+
+.loaderFlames{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#loaderFlame1{
+    width: 100%;
+}
+
+#loaderFlame2{
+    width: 55%;
+}
+
+#loaderFlame3{
+    width: 28%;
+}
+
+#loaderLinesContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#loaderLine1{
+    position: absolute;
+    left: -45%;
+    top: 20%;
+    width: 20%;
+    animation: loaderlineFade 1s infinite alternate ease-in-out;
+}
+#loaderLine2{
+    position: absolute;
+    right: -45%;
+    top: -30%;
+    width: 20%;
+    animation: loaderlineFade 1s infinite alternate ease-in-out;
+}
+
+
+/* lines fade keyframe */
+
+@keyframes loaderlineFade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* lines fade keyframe */
+
+/* flame size keyframe */
+
+@keyframes loaderFlameSize {
+    0%{
+        width: 35%;
+    }
+    100%{
+        width: 46%;
+    }
+}
+
+/* flame size keyframe */

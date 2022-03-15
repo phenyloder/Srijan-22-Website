@@ -26,9 +26,8 @@ body {
 .pbg {
     position: fixed;
     filter: url(#round);
-    transform: scale(0.9, 0.9);
-    top: 15%;
-    left: 5%;
+    top: 5%;
+    /* left: 5%; */
     z-index: 0;
 }
 
@@ -37,8 +36,30 @@ body {
     width: 3.5rem;
     height: 6rem;
     left: 80rem;
-    top: 40rem;
-    transform: rotate(39.16deg);
+    top: 38rem;
+    transform: rotate(39.16deg) scale(0.6, 0.6);
+}
+
+#rectangle1:hover {
+    animation-duration: 1s;
+    animation-name: slidein10;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+@keyframes slidein10 {
+    from {
+        left: 80rem;
+        top: 38rem;
+        transform: rotate(39.16deg) scale(0.6, 0.6);
+    }
+  
+    to {
+        left: 81rem;
+        top: 37rem;
+        transform: rotate(39.16deg) scale(0.8, 0.8);
+    }
 }
 
 #triangle1 {
@@ -48,8 +69,31 @@ body {
     left: 10rem;
     top: 30rem;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    transform: rotate(-13.23deg);
+    transform: rotate(-13.23deg) scale(0.6, 0.6);
 }
+
+#triangle1:hover {
+    animation-duration: 1.5s;
+    animation-name: slidein12;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+@keyframes slidein12 {
+    from {
+      transform: rotate(-13.23deg) scale(0.6, 0.6);
+      left: 10rem;
+      top: 30rem;
+    }
+  
+    to {
+      transform: rotate(-13.23deg) scale(0.6, 0.6);
+      left: 9.5rem;
+      top: 28.7rem;
+    }
+}
+
 
 #rectangle2 {
     position: absolute;
@@ -57,7 +101,29 @@ body {
     height: 9rem;
     left: 33rem;
     top: 4rem;
-    transform: rotate(10.49deg);
+    transform: rotate(10.49deg) scale(0.6, 0.6);
+}
+
+#rectangle2:hover {
+    animation-duration: 1s;
+    animation-name: slidein11;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+@keyframes slidein11 {
+    from {
+      transform: rotate(10.49deg) scale(0.6, 0.6);
+      left: 33rem;
+      top: 4rem;
+    }
+  
+    to {
+      transform: rotate(10.49deg) scale(0.8, 0.8);
+      left: 32rem;
+      top: 3.5rem;
+    }
 }
 
 #ellipse1 {
@@ -66,8 +132,30 @@ body {
     height: 8rem;
     left: 70rem;
     top: 6rem;
-    transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.8, 0.8);
+    transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.6, 0.6);
     border-radius: 50%;
+}
+
+#ellipse1:hover {
+    animation-duration: 1s;
+    animation-name: slidein13;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+@keyframes slidein13 {
+    from {
+      transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.6, 0.6);
+      left: 70rem;
+      top: 6rem;
+    }
+  
+    to {
+      transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.8, 0.8);
+      left: 72rem;
+      top: 7rem;
+    }
 }
 
 #ellipse2 {
@@ -77,7 +165,29 @@ body {
     left: 6rem;
     top: 8rem;
     border-radius: 50%;
-    transform: matrix(-1, 0, 0, 1, 0, 0) scale(0.8, 0.8);
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(0.6, 0.6);
+}
+
+#ellipse2:hover {
+    animation-duration: 1s;
+    animation-name: slidein14;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+@keyframes slidein14 {
+    from {
+      transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.6, 0.6);
+      left: 6rem;
+      top: 8rem;
+    }
+  
+    to {
+      transform: matrix(-0.64, 0.77, 0.77, 0.64, 0, 0) scale(0.7, 0.7);
+      left: 5rem;
+      top: 7rem;
+    }
 }
 
 #triangle3 {
@@ -87,7 +197,29 @@ body {
     left: 85rem;
     top: 16rem;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    transform: rotate(-123.58deg);
+    transform: rotate(-123.58deg) scale(0.6, 0.6);
+}
+
+#triangle3:hover {
+    animation-duration: 1.5s;
+    animation-name: slidein15;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+@keyframes slidein15 {
+    from {
+      transform: rotate(-123.58deg) scale(0.6, 0.6);
+      left: 85rem;
+      top: 16rem;
+    }
+  
+    to {
+      transform: rotate(-123.58deg) scale(0.7, 0.7);
+      left: 86rem;
+      top: 16.5rem;
+    }
 }
 
 .bgshapes {
@@ -137,6 +269,7 @@ body {
     background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .chiefPatron {
@@ -201,6 +334,7 @@ body {
     background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .developer .developercard .Leads_div {
@@ -252,6 +386,10 @@ body {
     z-index: 130;
 }
 
+.ourTeam {
+    z-index: 2;
+}
+
 .ourTeam .fullName span {
     font-size: 1.5rem;
     font-family: Gilroy;
@@ -259,6 +397,7 @@ body {
     background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .social-icons svg {

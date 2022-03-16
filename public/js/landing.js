@@ -2,9 +2,13 @@ document.addEventListener("scroll", scrollChange);
 
 const scrollDownButton = document.getElementById("scrollDownButton");
 
-window.addEventListener("load", function () {
-  scrollDownButton.href = "#aboutUsSection";
+window.addEventListener("DOMContentLoaded", function () {
+  scrollDownButton.href = "javascript:scrollWin(0,650)";
 });
+
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}
 
 const Linkedin = document.getElementById("Linkedin");
 const Facebook = document.getElementById("Facebook");
@@ -14,11 +18,27 @@ const VerticalLine = document.getElementById("VerticalLine");
 function scrollChange() {
   var x = document.documentElement.scrollTop;
   var y = screen.width;
+  // console.log(x);
 
   function InitialState() {
     scrollDownButton.innerHTML =
       "SCROLL DOWN <i class='fa-solid fa-arrow-right-long' style='width: 45px'></i>";
-    scrollDownButton.href = "#aboutUsSection";
+      scrollDownButton.href = "javascript:scrollWin(0,650)";
+    scrollDownButton.style.color = "white";
+    scrollDownButton.target = "";
+
+    Linkedin.classList.remove("linkedin-1");
+    Facebook.classList.remove("facebook-1");
+    Instagram.classList.remove("instagram-1");
+
+    VerticalLine.classList.add("leftVerticalLine");
+    VerticalLine.classList.remove("verticalLine");
+  }
+
+  function MobileInitialState() {
+    scrollDownButton.innerHTML =
+      "SCROLL DOWN <i class='fa-solid fa-arrow-right-long' style='width: 45px'></i>";
+      scrollDownButton.href = "javascript:scrollWin(0,836)";
     scrollDownButton.style.color = "white";
     scrollDownButton.target = "";
 
@@ -75,7 +95,7 @@ function scrollChange() {
 
   if (y < 500) {
     if (x < 348) {
-      InitialState();
+      MobileInitialState();
     } else if (x > 348 && x < 1926) {
       changeColorToBlack();
     } else if (x > 1926 && x < 6222) {

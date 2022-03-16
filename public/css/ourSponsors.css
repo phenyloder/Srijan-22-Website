@@ -78,12 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 15rem;
-  margin-bottom: 10%;
   width: 100%;
-}
-#ts1 {
-  height: 6rem;
 }
 .sponsors {
   position: relative;
@@ -95,16 +90,45 @@ body {
   margin: 3% 0;
   flex-wrap: wrap;
 }
-.sp {
-  width: 80%;
+.sponsor-logo{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 50%;
 }
-
+#ecell{
+  position: relative;
+  width: 45%;
+}
+#nits{
+  position: relative;
+  width: 30%;
+}
+#iic{
+  position: relative;
+  width: 32%;
+  left: 5%;
+}
+#ieee{
+  width: 30%;
+}
+#ts,#fp{
+  width: 100%;
+}
+#gdsc{
+  position: relative;
+  width: 50%;
+  right: 0.5%;
+}
+#tc{
+  width: 15%;
+}
 footer {
-  position: absolute;
-  top: 320vh;
+  position: relative;
+  top: 65vh;
   background: #111;
   height: auto;
-  width: 100%;
+  width: 125%;
   font-family: sans-serif;
   padding-top: 9%;
   padding-bottom: 5%;
@@ -179,25 +203,44 @@ footer {
   }
   .sponsor-box {
     top: 60%;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 7% 0;
   }
-  .title-sponsors {
-    margin-bottom: 15%;
-    height: fit-content;
+  #flf{
+    font-size: 1.5rem;
   }
-  #ts1 {
-    height: 8rem;
+  #ecell{
+    position: relative;
+    width: 60%;
   }
-  .sponsors {
-    flex-direction: column;
+  #nits{
+    position: relative;
+    width: 32%;
+  }
+  #iic{
+    position: relative;
+    width: 40%;
+    left: 0%;
+    margin: 7% 0;
+  }
+  #ieee{
+    width: 40%;
+  }
+  #gdsc{
+    position: relative;
+    width: 98%;
+    right: 0.5%;
+    margin-top: 7%;
+  }
+  #tc{
+    margin-top: 7%;
+    width: 35%;
   }
   .sponsor-logo {
-    display: flex;
-    margin: 7% 0;
-    justify-content: center;
+    width: 100%;
+    margin: 2% 0;
   }
   footer {
-    top: 380vh;
+    top: 70vh;
   }
 }

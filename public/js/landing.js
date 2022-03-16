@@ -18,7 +18,7 @@ const VerticalLine = document.getElementById("VerticalLine");
 function scrollChange() {
   var x = document.documentElement.scrollTop;
   var y = screen.width;
-  // console.log(x);
+  console.log(x);
 
   function InitialState() {
     scrollDownButton.innerHTML =
@@ -79,7 +79,7 @@ function scrollChange() {
     VerticalLine.classList.remove("verticalLine");
   }
 
-  //normal-view: breakpoints 376-2256-3764-4284 before announcement
+  //normal-view: breakpoints 376-2256-3764-4996 before announcement
 
   if (y > 500) {
     if ( x < 376) {
@@ -88,14 +88,14 @@ function scrollChange() {
       changeColorToBlack();
     } else if (x > 2256 && x < 3764) {
       changeColorToWhite();
-    } else if (x > 3764 && x < 4284) {
+    } else if (x > 3764 && x < 4996) {
       changeColorToBlack();
-    } else if (x > 4284) {
+    } else if (x > 4996) {
       changeColorToWhite();
     }
   }
 
-  //mobile-view : breakpoints 243-2171-4044-4935 before announcement
+  //mobile-view : breakpoints 243-2171-4044-5173 before announcement
 
   if (y < 500) {
     if (x < 243) {
@@ -104,9 +104,9 @@ function scrollChange() {
       changeColorToBlack();
     } else if (x > 2171 && x < 4044) {
       changeColorToWhite();
-    } else if (x > 4044 && x < 4935) {
+    } else if (x > 4044 && x < 5173) {
       changeColorToBlack();
-    } else if (x > 4935) {
+    } else if (x > 5173) {
       changeColorToWhite();
     }
   }

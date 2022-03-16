@@ -467,6 +467,9 @@ body::-webkit-scrollbar-thumb:hover {
   .coverPage .leftVerticalLine {
     left: -2.1rem;
   }
+  .verticalLine {
+    left: -2.1rem;
+  }
 }
 
 @media (max-width: 361px),

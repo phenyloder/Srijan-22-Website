@@ -79,31 +79,64 @@ function scrollChange() {
     VerticalLine.classList.remove("verticalLine");
   }
 
+  //normal-view: breakpoints 376-2256-3764-4996 before announcement
+
   if (y > 500) {
-    if (x >= 0 && x < 387) {
+    if ( x < 376) {
       InitialState();
-    } else if (x > 387 && x < 2084) {
+    } else if (x > 387 && x < 2256) {
       changeColorToBlack();
-    } else if (x > 2084 && x < 5308) {
+    } else if (x > 2256 && x < 3764) {
       changeColorToWhite();
-    } else if (x > 5308 && x < 5788) {
+    } else if (x > 3764 && x < 4996) {
       changeColorToBlack();
-    } else if (x > 5788) {
+    } else if (x > 4996) {
       changeColorToWhite();
     }
   }
 
+  //mobile-view : breakpoints 243-2171-4044-5173 before announcement
+
   if (y < 500) {
-    if (x < 348) {
+    if (x < 243) {
       MobileInitialState();
-    } else if (x > 348 && x < 1926) {
+    } else if (x > 243 && x < 2171) {
       changeColorToBlack();
-    } else if (x > 1926 && x < 6222) {
+    } else if (x > 2171 && x < 4044) {
       changeColorToWhite();
-    } else if (x > 6222 && x < 6830) {
+    } else if (x > 4044 && x < 5173) {
       changeColorToBlack();
-    } else if (x > 6830) {
+    } else if (x > 5173) {
       changeColorToWhite();
     }
   }
+
+  // if (y > 500) {
+  //   if (x >= 0 && x < 387) {
+  //     InitialState();
+  //   } else if (x > 387 && x < 2084) {
+  //     changeColorToBlack();
+  //   } else if (x > 2084 && x < 5308) {
+  //     changeColorToWhite();
+  //   } else if (x > 5308 && x < 5788) {
+  //     changeColorToBlack();
+  //   } else if (x > 5788) {
+  //     changeColorToWhite();
+  //   }
+  // }
+
+  // if (y < 500) {
+  //   if (x < 348) {
+  //     MobileInitialState();
+  //   } else if (x > 348 && x < 1926) {
+  //     changeColorToBlack();
+  //   } else if (x > 1926 && x < 6222) {
+  //     changeColorToWhite();
+  //   } else if (x > 6222 && x < 6830) {
+  //     changeColorToBlack();
+  //   } else if (x > 6830) {
+  //     changeColorToWhite();
+  //   }
+  // }
+
 }

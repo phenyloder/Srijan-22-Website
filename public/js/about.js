@@ -81,11 +81,11 @@ window.addEventListener("scroll", () => {
 
     if(width <= 768)
     {
-        if(percentScrolled>8)
+        if(percentScrolled>10)
         {
             animBox.classList.add("sticky");
         }
-        if(percentScrolled>11.5 && transit1===0)
+        if(percentScrolled>14 && transit1===0)
         {
             aboutEvent.classList.add("invisible");
             logo1.classList.add("hidden");
@@ -98,12 +98,12 @@ window.addEventListener("scroll", () => {
                     transit1 = 1;
             }, 500)
         }
-        else if(percentScrolled>11.5 && transit1===1)
+        else if(percentScrolled>14 && transit1===1)
         {
             logo1.classList.remove("hidden");
             eventCircle.classList.remove("transition");
         }
-        else if(percentScrolled<=11.5 && transit2===0){
+        else if(percentScrolled<=14 && transit2===0){
             logo1.classList.remove("hidden");
             transit1 = 0;
             aboutEvent.classList.remove("invisible");
@@ -116,7 +116,7 @@ window.addEventListener("scroll", () => {
                 transit2 = 1;
         }, 500)
         }
-        if(percentScrolled>27)
+        if(percentScrolled>28)
         {
             aboutNits.classList.add("invisible");
 

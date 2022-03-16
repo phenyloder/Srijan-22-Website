@@ -68,6 +68,13 @@
     .child_info {
         margin: 25px auto;
     }
+    .otherLinks ul{
+        flex-direction: column;
+
+    }
+    .otherLinks ul a{
+        font-size: 1rem;
+    }
 }
 
 body {
@@ -120,6 +127,7 @@ footer {
     list-style: none;
     display: flex;
     margin-top: 40px;
+    
 }
 
 .social_icon i {
@@ -141,4 +149,24 @@ footer {
 
 .child_info {
     text-align: center;
+}
+
+.otherLinks{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+
+.otherLinks ul{
+    list-style: none;
+    display:flex;
+    width:45vw;
+    justify-content: space-between;
+}
+.otherLinks ul a{
+    background-image:linear-gradient(0deg, #1fd1f9, #b621fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
+    font-size: 1.2rem;
 }

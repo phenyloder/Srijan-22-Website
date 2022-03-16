@@ -18,7 +18,7 @@ const VerticalLine = document.getElementById("VerticalLine");
 function scrollChange() {
   var x = document.documentElement.scrollTop;
   var y = screen.width;
-  console.log(x);
+  // console.log(x);
 
   function InitialState() {
     scrollDownButton.innerHTML =

@@ -1,0 +1,59 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+:root{
+    --gradient1:linear-gradient(#B621FE,#1FD1F9);
+    --gradient2:linear-gradient(to right,#22FAB0 0%,#1FD1F9 59.44%);
+    --title-font:'Gilroy-Bold', sans-serif;
+    --desc-font:'Gilroy-Medium', sans-serif;
+    --border-width:2px;
+    --background-color:#15131A;
+    --font-color:rgba(255, 255, 255, 0.72);
+}
+
+.privacy-policy{
+    font-size: 16px;
+    width:100%;
+    background-color: #15131A;
+    display: flex;
+    justify-content: center;
+
+}
+
+.secondContainer{
+    width:70vw;
+    color:white;
+    margin: 30px 0;
+}
+
+.privacy-policy-title{
+    font-family: var(--title-font);
+    font-size: 3rem;
+    background-image:var(--gradient1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.privacy-subtopics{
+    font-family: var(--title-font);
+    font-size:2rem;
+    background-image:var(--gradient2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.privacy-desc{
+    font-family: var(--desc-font);
+    margin:15px 0;
+    font-size:1.3rem;
+    line-height: 2rem;
+}
+
+.privacy-topics{
+    margin:30px 0;
+}
+
+@media screen and (max-width:730px) {
+    .secondContainer{
+        width:90vw
+    }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/css/loader.css" />
+    <link rel="stylesheet" href="/css/preAnnouncement.css" />
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/eventPage.css" />
@@ -28,9 +29,10 @@
     <%- include("./partials/menu.ejs") %>
 
     <div id="main">
-      <!-- SOCIAL MEDIA LINKS -->
-      <div class="socialIcons">
-        <a id="icon-s" target="_blank" href="https://www.linkedin.com/company/srijan-nit-silchar"
+      <%- include("./partials/preAnnouncement.ejs", {heading: {first: "Event", second: "List"}}) %>
+        <!-- SOCIAL MEDIA LINKS -->
+        <!-- <div class="socialIcons">
+          <a id="icon-s" target="_blank" href="https://www.linkedin.com/company/srijan-nit-silchar"
           ><i
             id="Linkedin"
             class="fa-brands fa-linkedin-in fa-linkedin-in-1"
@@ -43,11 +45,11 @@
           ><i id="Instagram" class="fa-brands fa-instagram fa-instagram-1"></i
         ></a>
         <hr id="VerticalLine" class="leftVerticalLine" />
-      </div>
+      </div> -->
       <!-- SOCIAL MEDIA LINKS -->
 
       <!-- EVENTS -->
-      <div id="eventListContainer">
+      <!-- <div id="eventListContainer">
         <div tabindex="0" id="eventDropDown">
           <div id="CurrentEventText">Events</div>
           <div id="dropDownOptionsContainer">
@@ -257,12 +259,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- EVENTS -->
     </div>
 
     <script src="/js/loader.js"></script>
     <script src="/js/menu.js"></script>
-    <script src="/js/eventPage.js"></script>
+    <!-- <script src="/js/eventPage.js"></script> -->
   </body>
 </html>

@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
     const scrolled = window.scrollY;
     const percentScrolled = (scrolled / scrollable)*100;
     // console.log(percentScrolled);
-    if(percentScrolled<15 && width>768)
+    if(percentScrolled<13 && width>768)
     {
         if(animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");
@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
             animBox.classList.remove("animate-anticlockwise");
         },2200)
     }
-    else if(percentScrolled>15 && width>768)
+    else if(percentScrolled>13 && width>768)
     { 
         if(!animBox.classList.contains("flipped")){
             logo2.classList.add("hidden");
@@ -81,11 +81,11 @@ window.addEventListener("scroll", () => {
 
     if(width <= 768)
     {
-        if(percentScrolled>9)
+        if(percentScrolled>7)
         {
             animBox.classList.add("sticky");
         }
-        if(percentScrolled>9 && transit1===0)
+        if(percentScrolled>8 && transit1===0)
         {
             aboutEvent.classList.add("invisible");
             logo1.classList.add("hidden");
@@ -98,12 +98,12 @@ window.addEventListener("scroll", () => {
                     transit1 = 1;
             }, 500)
         }
-        else if(percentScrolled>9 && transit1===1)
+        else if(percentScrolled>8 && transit1===1)
         {
             logo1.classList.remove("hidden");
             eventCircle.classList.remove("transition");
         }
-        else if(percentScrolled<=9 && transit2===0){
+        else if(percentScrolled<=8 && transit2===0){
             logo1.classList.remove("hidden");
             transit1 = 0;
             aboutEvent.classList.remove("invisible");
@@ -116,7 +116,7 @@ window.addEventListener("scroll", () => {
                 transit2 = 1;
         }, 500)
         }
-        if(percentScrolled>19)
+        if(percentScrolled>18)
         {
             aboutNits.classList.add("invisible");
 

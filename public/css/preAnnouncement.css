@@ -1,0 +1,59 @@
+#preAnnouncement{
+    height: 100vh;
+    position: relative;
+}
+
+#preAnnouncementLottieAnimation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 20rem;
+    width: 20rem;
+    transform: translate(-50%, -50%);
+}
+
+#preAnnouncementHeading{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    font-size: 4rem;
+    font-family: Gilroy;
+    font-weight: bold;
+    top: 10vh;
+}
+
+#preAnnouncementHeading > #firstWord{
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#preAnnouncementHeading > #secondWord{
+    color: #FFFFFF;
+    margin-left: 1rem;
+}
+
+#preAnnouncementText{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    bottom: 15vh;
+}
+
+@media screen and (max-width:900px) {
+    #preAnnouncementText{
+        font-size: 1rem;
+    }
+
+    #preAnnouncementHeading{
+        font-size: 3rem;
+    }
+
+    #preAnnouncementLottieAnimation{
+        width: 15rem;
+        height: 15rem;
+    }
+}

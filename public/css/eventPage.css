@@ -30,6 +30,11 @@
   font-family: Gilroy;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 
 /* ROOT */
 

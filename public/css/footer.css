@@ -39,6 +39,9 @@
 .further_info h5 {
   font-weight: normal;
 }
+.Address h5 {
+  margin: 2px auto;
+}
 
 @media only screen and (max-width: 500px) {
   .further_info {

@@ -11,7 +11,7 @@ const Routes = require("./routes/routes");
 // const connectToMongo = require('./db')
 // connectToMongo();
 
-const APP_PORT = process.env.PORT || 3001;
+const APP_PORT = process.env.PORT || 3000;
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     res.status(404).render("error");
 })
 
-//listen to the port 3001
+//listen to the port 3000
 app.listen(APP_PORT, function() {
-    console.log("Server is running in port 3001");
+    console.log("Server is running in port 3000");
 });

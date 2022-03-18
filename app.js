@@ -7,9 +7,9 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const Routes = require("./routes/routes");
-// dotenv.config();
-// const connectToMongo = require('./db')
-// connectToMongo();
+dotenv.config();
+const connectToMongo = require('./db')
+connectToMongo();
 
 const APP_PORT = process.env.PORT || 3000;
 const app = express();

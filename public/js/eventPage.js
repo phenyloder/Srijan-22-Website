@@ -70,10 +70,13 @@ const handleScroll = (e) => {
         elem.classList.remove("active");
     })
 
+    
+    if(events.length===1){
+        return;
+    }
     dots.forEach((elem) => {
         elem.classList.remove("active");
     })
-
     if(e.deltaY>0){
         eventCounter = Math.min(events.length-1,eventCounter+1);
         events[eventCounter-1].classList.add("previous");

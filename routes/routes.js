@@ -12,7 +12,7 @@ const { getRefundPolicy } = require("../controllers/getRefundPolicy");
 const { getTermsConditions } = require("../controllers/getTermsConditions");
 const { getEventDetails } = require("../controllers/getEventDetails");
 const User = require("../models/registerinfo");
-const Pitch = require("../models/pitchPlease");
+const PitchPlease = require("../models/pitchPlease");
 
 const router = express.Router();
 
@@ -26,8 +26,7 @@ router.get("/sponsors", getOurSponsorsPage); //serves our-sponsers page
 router.get("/privacyPolicy", getPrivacyPolicy); //serves privacy-policy page
 router.get("/refund-policy", getRefundPolicy); //serves refund-policy page
 router.get("/terms&conditions", getTermsConditions); //serves terms and conditions page
-router.get("/events/pitchPlease", getEventDetails);  //serves details of event
-
+router.get("/events/pitchPlease", getEventDetails); //serves details of event
 
 router.post("/register", async (req, res) => {
   //console.log(req.body.fname.length)
@@ -53,27 +52,35 @@ router.post("/register", async (req, res) => {
   res.render("register");
 });
 router.post("/register/pitch-please", async (req, res) => {
-  //console.log(req.body.fname.length)
-  let team_members = [];
-  //console.log(req.body.fname[0]);
-  for (let i = 0; i < req.body.name.length; i++) {
-    let data = {
-      name: req.body.name[i],
-      email: req.body.email[i],
-      cnumber: req.body.cnumber[i],
-      gender: req.body.gender[i],
-    };
-    team_members.push(data);
-  }
+  try {
+    //console.log(req.body.fname.length)
+    let team_members = [];
+    //console.log(req.body.fname[0]);
+    for (let i = 0; i < req.body.name.length; i++) {
+      let data = {
+        name: req.body.name[i],
+        email: req.body.email[i],
+        cnumber: req.body.cnumber[i],
+        gender: req.body.gender[i],
+      };
+      team_members.push(data);
+    }
 
-  const user = new Pitch({
-    tname: req.body.tname,
-    members: team_members,
-    // ...req.body
-  });
-  const result = await user.save();
-  // res.send("data saved successfully");
-  res.render("index");
+    const pitchPlease = await PitchPlease.create({
+      tname: req.body.tname,
+      members: team_members,
+    });
+    // console.log(pitchPlease);
+    await pitchPlease.save();
+    // res.send("data saved successfully");
+    res.render("index");
+  } catch (err) {
+    console.log("ERR", err);
+    return res.status(400).json({
+      status: "fail",
+      message: err,
+    });
+  }
 });
 
 router.get("/LaunchPage", getLaunchPage); // serves lauch page

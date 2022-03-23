@@ -1,14 +1,13 @@
-const mongoose=require('mongoose');
+const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-  const pitchPleaseSchema = new Schema({
-    tname:{
-        type:String,
-    },
-    members:{
-        type:Array
-    },
-    
-  });
+const pitchPleaseSchema = new Schema({
+  tname: {
+    type: String,
+  },
+  members: {
+    type: Array,
+  },
+});
 
-  module.exports=mongoose.model('PitchPlease',pitchPleaseSchema)
+module.exports = mongoose.model("PitchPlease", pitchPleaseSchema);

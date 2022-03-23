@@ -33,10 +33,10 @@ router.post("/register", async (req, res) => {
   //console.log(req.body.fname.length)
   let team_members = [];
   //console.log(req.body.fname[0]);
-  for (let i = 0; i < req.body.fname.length; i++) {
+  for (let i = 0; i < req.body.name.length; i++) {
     let data = {
-      fname: req.body.fname[i],
-      lname: req.body.lname[i],
+      name: req.body.name[i],
+      email: req.body.email[i],
       cnumber: req.body.cnumber[i],
       gender: req.body.gender[i],
     };
@@ -56,10 +56,10 @@ router.post("/register/pitch-please", async (req, res) => {
   //console.log(req.body.fname.length)
   let team_members = [];
   //console.log(req.body.fname[0]);
-  for (let i = 0; i < req.body.fname.length; i++) {
+  for (let i = 0; i < req.body.name.length; i++) {
     let data = {
-      fname: req.body.fname[i],
-      lname: req.body.lname[i],
+      name: req.body.name[i],
+      email: req.body.email[i],
       cnumber: req.body.cnumber[i],
       gender: req.body.gender[i],
     };

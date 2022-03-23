@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const { Schema } = mongoose;
 
-  const registerSchema = new Schema({
+  const pitchPleaseSchema = new Schema({
     tname:{
         type:String,
     },
@@ -11,4 +11,4 @@ const { Schema } = mongoose;
     
   });
 
-  module.exports=mongoose.model('Register Events',registerSchema)
+  module.exports=mongoose.model('PitchPlease',pitchPleaseSchema)

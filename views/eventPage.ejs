@@ -46,9 +46,9 @@
     <%- include("./partials/menu.ejs") %>
 
     <div id="main">
-      <%- include("./partials/preAnnouncement.ejs", {heading: {first: "Event", second: "List"}}) %>
+      <!-- <%- include("./partials/preAnnouncement.ejs", {heading: {first: "Event", second: "List"}}) %> -->
         <!-- SOCIAL MEDIA LINKS -->
-        <!-- <div class="socialIcons">
+        <div class="socialIcons">
           <a id="icon-s" target="_blank" href="https://www.linkedin.com/company/srijan-nit-silchar"
           ><i
             id="Linkedin"
@@ -62,17 +62,17 @@
           ><i id="Instagram" class="fa-brands fa-instagram fa-instagram-1"></i
         ></a>
         <hr id="VerticalLine" class="leftVerticalLine" />
-      </div> -->
+      </div>
       <!-- SOCIAL MEDIA LINKS -->
 
       <!-- EVENTS -->
-      <!-- <div id="eventListContainer">
+      <div id="eventListContainer">
         <div tabindex="0" id="eventDropDown">
           <div id="CurrentEventText">Events</div>
           <div id="dropDownOptionsContainer">
             <div class="dropDownOption" value="events">Events</div>
-            <div class="dropDownOption" value="workshops">Workshops</div>
-            <div class="dropDownOption" value="speakerSessions">Speaker Sessions</div>
+            <!-- <div class="dropDownOption" value="workshops">Workshops</div>
+            <div class="dropDownOption" value="speakerSessions">Speaker Sessions</div> -->
           </div>
         </div>
 
@@ -80,9 +80,9 @@
 
           <div class="eventListScrollDotBar">
             <div class="eventListScrollDot active"></div>
+            <!-- <div class="eventListScrollDot"></div>
             <div class="eventListScrollDot"></div>
-            <div class="eventListScrollDot"></div>
-            <div class="eventListScrollDot"></div>
+            <div class="eventListScrollDot"></div> -->
           </div>
 
           <div class="arrowButtonContainer">
@@ -92,17 +92,22 @@
 
           <div class="eventContainer active">
             <div class="eventImageWrapper">
-              <img class="eventImage" src="/eventImages/event1.png" alt=".png">
+              <img class="eventImage" src="/eventImages/pitchpleases.png" alt=".png">
             </div>
             <div class="eventContentWrapper">
-              <h1 class="eventHeader">IPL Auction</h1>
+              <h1 class="eventHeader">Pitch Please</h1>
               <p class="eventDetail">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-                augue mattis condimentum gravida ultrices nunc sagittis,
-                faucibus lacus. Ornare urna nibh pellentesque odio senectus
-                habitasse eu enim sit. Urna enim egestas diam nulla sit......
+                Aiming to provide the right stage to showcase the business ideas and models, creating potentiality of early-stage startups help ignite the enthusiastic minds. To evaluate their plan in a risk-free environment by panel of judges would bridge the gap between ideas and reality of an enterprise......<a class="readMore" href="/events/pitchPlease"><b>Read More</b></a>
               </p>
-              <a href="" class="registerFormLink"
+
+              <div class="eventDates">
+                <p>
+                  <b>Date</b><br>
+                  Stage 1 - 10 April 2022 <br>
+                  Stage 2 - 12 April 2022
+                </p>
+              </div>
+              <a href="/register/pitch-please" class="registerFormLink"
                 ><span class="registerFormLinkText">
                   Register Now <i class="fa-solid fa-arrow-right"></i>
                 </span>
@@ -110,7 +115,7 @@
             </div>
           </div>
 
-          <div class="eventContainer next">
+          <!-- <div class="eventContainer next">
             <div class="eventImageWrapper">
               <img class="eventImage" src="/eventImages/event1.png" alt=".png">
             </div>
@@ -168,7 +173,7 @@
                 </span>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="eventList" id="workshops">
@@ -248,7 +253,7 @@
                 faucibus lacus. Ornare urna nibh pellentesque odio senectus
                 habitasse eu enim sit. Urna enim egestas diam nulla sit......
               </p>
-              <a href="" class="registerFormLink"
+              <a href="/register/pitch-please" class="registerFormLink"
                 ><span class="registerFormLinkText">
                   Register Now <i class="fa-solid fa-arrow-right"></i>
                 </span>
@@ -268,7 +273,7 @@
                 faucibus lacus. Ornare urna nibh pellentesque odio senectus
                 habitasse eu enim sit. Urna enim egestas diam nulla sit......
               </p>
-              <a href="" class="registerFormLink"
+              <a href="/register/pitch-please" class="registerFormLink"
                 ><span class="registerFormLinkText">
                   Register Now <i class="fa-solid fa-arrow-right"></i>
                 </span>
@@ -276,12 +281,12 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- EVENTS -->
     </div>
 
     <script src="/js/loader.js"></script>
     <script src="/js/menu.js"></script>
-    <!-- <script src="/js/eventPage.js"></script> -->
+    <script src="/js/eventPage.js"></script>
   </body>
 </html>

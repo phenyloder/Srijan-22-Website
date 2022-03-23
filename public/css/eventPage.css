@@ -309,6 +309,17 @@ body{
   margin: 0;
 }
 
+.readMore{
+  color: rgb(255, 255, 255, 0.72);
+  cursor: pointer;
+}
+
+.eventDates{
+  font-family: Gilroy;
+  color: rgb(255, 255, 255, 0.72);
+  margin: auto 0;
+}
+
 .registerFormLink{
   font-size: 1.25rem;
   font-weight: bold;

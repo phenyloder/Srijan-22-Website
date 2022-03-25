@@ -443,11 +443,16 @@ body{
     margin: 0 1.25rem;
     margin-top: 1.25rem;
     border-radius: 0.75rem;
+    object-fit: contain;
+  }
+
+  .eventDates{
+    font-size: 0.75rem;
   }
 
   .eventImage{
-    height: auto;
-    width: 100%;
+    height: 100%;
+    width: auto;
   }
 
   .eventContentWrapper{

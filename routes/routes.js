@@ -10,7 +10,7 @@ const { getOurSponsorsPage } = require("../controllers/getOurSponsorsPage");
 const { getPrivacyPolicy } = require("../controllers/getPrivacyPolicy");
 const { getRefundPolicy } = require("../controllers/getRefundPolicy");
 const { getTermsConditions } = require("../controllers/getTermsConditions");
-const { getEventDetails } = require("../controllers/getEventDetails");
+const { getEventDetails, getTechnerdDetails } = require("../controllers/getEventDetails");
 const User = require("../models/registerinfo");
 const Pitch = require("../models/pitchPlease");
 
@@ -27,6 +27,7 @@ router.get("/privacyPolicy", getPrivacyPolicy); //serves privacy-policy page
 router.get("/refund-policy", getRefundPolicy); //serves refund-policy page
 router.get("/terms&conditions", getTermsConditions); //serves terms and conditions page
 router.get("/events/pitchPlease", getEventDetails);  //serves details of event
+router.get("/events/technerd", getTechnerdDetails);  //serves details of event
 
 
 router.post("/register", async (req, res) => {

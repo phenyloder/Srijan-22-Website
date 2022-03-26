@@ -42,14 +42,14 @@ const events_list = [
             ]
         }
     },
-    {
+    { 
         id: "technerds",
         name: "Technerds",
         is_team_event: true,
         min_team_members: 2,
         max_team_members: 4,
         event_type: "competition",
-        poster_img: "pitchpleases.png",
+        poster_img: "technerd.png",
         icon_img: "",
         is_registering: true,
         stages_timeline: [

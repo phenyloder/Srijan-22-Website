@@ -2,6 +2,9 @@ const mongoose=require('mongoose');
 const { Schema } = mongoose;
 
   const registerSchema = new Schema({
+    event_name:{
+      type:String,
+    },
     tname:{
         type:String,
     },
@@ -11,4 +14,4 @@ const { Schema } = mongoose;
     
   });
 
-  module.exports=mongoose.model('Register Events',registerSchema)
+  module.exports=mongoose.model('RegisterEvents',registerSchema)

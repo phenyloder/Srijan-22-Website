@@ -18,7 +18,7 @@
 
 
 <!-- REGISTER IMG & DESCRIPTION -->
-<div class="register-info">
+<!-- <div class="register-info">
     <div class="register-img">
         <img src="/eventImages/pitchpleases.png" alt="">
     </div>
@@ -30,8 +30,28 @@
     <div class="register-description">
         <p></p>
     </div>
-</div>
+</div> -->
 <!-- REGISTER IMG & DESCRIPTION -->
+
+<% for(var i=0;i<events_list.length;i++){%>
+    <% if(event_id === events_list[i].id){%>
+        <div class="register-info">
+            <div class="register-img">
+                <img src="/eventImages/<%=events_list[i].poster_img%>" alt="">
+            </div>
+            <div class="register-heading">
+                <h1>
+                    <%=events_list[i].name %>
+                </h1>
+            </div>
+            <div class="register-description">
+                <p></p>
+            </div>
+        </div>
+
+<%}%>
+<%}%>
+
 
 
 <!-- REGISTRATION FORM  -->

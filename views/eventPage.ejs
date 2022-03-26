@@ -111,7 +111,7 @@
                 </div>
 
                 <% if(event_list[0].is_registering === true){ %>
-                  <a href="/register/pitch-please" class="registerFormLink"
+                  <a href="/register/" class="registerFormLink"
                     ><span class="registerFormLinkText">
                       Register Now <i class="fa-solid fa-arrow-right"></i>
                     </span>
@@ -150,7 +150,7 @@
                   </div>
 
                   <% if(event_list[i].is_registering === true){ %>
-                    <a href="/register/pitch-please" class="registerFormLink"
+                    <a href="register/<%= event_list[i].id %>" class="registerFormLink"
                       ><span class="registerFormLinkText">
                         Register Now <i class="fa-solid fa-arrow-right"></i>
                       </span>

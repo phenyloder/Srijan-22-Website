@@ -90,7 +90,84 @@
             <div class="arrowButton down"></div>
           </div>
 
-          <div class="eventContainer active">
+          <% if(event_list[0].event_type === "competition"){%>
+             <div class="eventContainer active">
+              <div class="eventImageWrapper">
+                <img class="eventImage" src="/eventImages/pitchpleases.png" alt=".png">
+              </div>
+              <div class="eventContentWrapper">
+                <h1 class="eventHeader"><%= event_list[0].name %></h1>
+                <p class="eventDetail">
+                  <%= event_list[0].content.outcome[0] %>......<a class="readMore" href="/events/pitchPlease"><b>Read More</b></a>
+                </p>
+  
+                <div class="eventDates">
+                  <p>
+                    <b>Date</b><br>
+                    <% for(var j=0;j<event_list[0].stages_timeline.length;j++){%>
+                      <%= event_list[0].stages_timeline[j].stage_name %> - <%= event_list[0].stages_timeline[j].stage_start_datetime %><br> 
+                    <%}%>
+                  </p>
+                </div>
+
+                <% if(event_list[0].is_registering === true){ %>
+                  <a href="/register/pitch-please" class="registerFormLink"
+                    ><span class="registerFormLinkText">
+                      Register Now <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                <% }else{%>
+                  <a href="" class="registerFormLink"
+                    ><span class="registerFormLinkText">
+                      Registrations Closed <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <%}%>
+              </div>
+            </div> 
+          <%}%>
+          
+
+          <% for(var i=1;i<event_list.length;i++){ %>
+            <% if(event_list[i].event_type === "competition"){ %>
+              <div class="eventContainer next">
+                <div class="eventImageWrapper">
+                  <img class="eventImage" src="/eventImages/pitchpleases.png" alt=".png">
+                </div>
+                <div class="eventContentWrapper">
+                  <h1 class="eventHeader"><%= event_list[i].name %></h1>
+                  <p class="eventDetail">
+                    <%= event_list[i].content.outcome[0] %>......<a class="readMore" href="/events/pitchPlease"><b>Read More</b></a>
+                  </p>
+    
+                  <div class="eventDates">
+                    <p>
+                      <b>Date</b><br>
+                      <% for(var j=0;j<event_list[i].stages_timeline.length;j++){%>
+                        <%= event_list[i].stages_timeline[j].stage_name %> - <%= event_list[i].stages_timeline[j].stage_start_datetime %><br> 
+                      <%}%>
+                    </p>
+                  </div>
+
+                  <% if(event_list[i].is_registering === true){ %>
+                    <a href="/register/pitch-please" class="registerFormLink"
+                      ><span class="registerFormLinkText">
+                        Register Now <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                  <% }else{%>
+                    <a href="" class="registerFormLink"
+                      ><span class="registerFormLinkText">
+                        Registrations Closed <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                    <%}%>
+                </div>
+              </div>
+            <%}%>
+            
+          <%}%>
+          <!-- <div class="eventContainer active">
             <div class="eventImageWrapper">
               <img class="eventImage" src="/eventImages/pitchpleases.png" alt=".png">
             </div>
@@ -142,7 +219,7 @@
                 </span>
               </a>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="eventContainer next">
             <div class="eventImageWrapper">
               <img class="eventImage" src="/eventImages/event1.png" alt=".png">
@@ -215,7 +292,7 @@
             <div class="arrowButton up"></div>
             <div class="arrowButton down"></div>
           </div>
-
+          <% if(event_list[1].event_type === "workshop"){%>
           <div class="eventContainer active">
             <div class="eventImageWrapper">
               <img class="eventImage" src="/eventImages/event1.png" alt=".png">
@@ -235,7 +312,10 @@
               </a>
             </div>
           </div>
+        <%}%>
 
+        <% for(var i=1;i<event_list.length;i++){ %>
+          <% if(event_list[i].event_type === "competition"){ %>
           <div class="eventContainer next">
             <div class="eventImageWrapper">
               <img class="eventImage" src="/eventImages/event1.png" alt=".png">
@@ -255,6 +335,8 @@
               </a>
             </div>
           </div>
+        <%}%>
+      <%}%>
         </div>
 
         <div class="eventList" id="speakerSessions">
@@ -268,6 +350,7 @@
             <div class="arrowButton up"></div>
             <div class="arrowButton down"></div>
           </div>
+          <% if(event_list[1].event_type === "workshop"){%>
 
           <div class="eventContainer active">
             <div class="eventImageWrapper">
@@ -288,6 +371,9 @@
               </a>
             </div>
           </div>
+        <%}%>
+        <% for(var i=1;i<event_list.length;i++){ %>
+          <% if(event_list[i].event_type === "competition"){ %>
 
           <div class="eventContainer next">
             <div class="eventImageWrapper">
@@ -308,6 +394,8 @@
               </a>
             </div>
           </div>
+        <%}%>
+      <%}%>
         </div>
       </div>
       <!-- EVENTS -->

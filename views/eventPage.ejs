@@ -98,7 +98,7 @@
               <div class="eventContentWrapper">
                 <h1 class="eventHeader"><%= event_list[0].name %></h1>
                 <p class="eventDetail">
-                  <%= event_list[0].content.outcome[0] %>......<a class="readMore" href="/events/pitchPlease"><b>Read More</b></a>
+                  <%= event_list[0].content.outcome[0] %>......<a class="readMore" href="/events/<%=event_list[0].id%>"><b>Read More</b></a>
                 </p>
   
                 <div class="eventDates">
@@ -137,7 +137,7 @@
                 <div class="eventContentWrapper">
                   <h1 class="eventHeader"><%= event_list[i].name %></h1>
                   <p class="eventDetail">
-                    <%= event_list[i].content.outcome[0] %>......<a class="readMore" href="/events/pitchPlease"><b>Read More</b></a>
+                    <%= event_list[i].content.outcome[0] %>......<a class="readMore" href="/events/<%=event_list[i].id%>"><b>Read More</b></a>
                   </p>
     
                   <div class="eventDates">

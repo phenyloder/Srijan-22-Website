@@ -85,7 +85,7 @@ const events_list = [
                 },
                 {
                     stage_id: "stage_2",
-                    stage_name: "Stage 2 (Economic Expansions and Implementation Discussion)",
+                    stage_name: "Stage 2(Economic Expansions and Implementation Discussion)",
                     stage_content: ["", ""],
                     stage_rules: ["->Same rules", "->The marking is subject to the judge","->The selected teams have to brief the judge about the economic viability, expanding capability and scalability of their idea, and present the overall business model, along with an estimation of their gross net revenue over a year."],
                 }

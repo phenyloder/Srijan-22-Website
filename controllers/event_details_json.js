@@ -1,4 +1,4 @@
-const events_list = [
+const event_list = [
     {
         id: "pitch_please",
         name: "Pitch Please",
@@ -94,5 +94,5 @@ const events_list = [
     }
 ]
 
-module.exports=events_list;
+module.exports=event_list;
 

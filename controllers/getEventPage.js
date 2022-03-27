@@ -95,7 +95,7 @@
 //     }
 // ];
 
- const events_list=require("../public/js/event_details_json.js");
+const events_list=require("./event_details_json");
 
 const getEventPage = (req, res) => {
     res.render('eventPage',  {event_list:events_list});

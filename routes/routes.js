@@ -13,7 +13,7 @@ const { getTermsConditions } = require("../controllers/getTermsConditions");
 const { getEventDetails } = require("../controllers/getEventDetails");
 const User = require("../models/registerinfo");
 const Pitch = require("../models/pitchPlease");
-const events_list=require("../public/js/event_details_json");
+const events_list=require("../controllers/event_details_json");
 // const events_list = [
 //   {
 //       id: "pitch_please",

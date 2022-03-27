@@ -10,7 +10,7 @@ const { getOurSponsorsPage } = require("../controllers/getOurSponsorsPage");
 const { getPrivacyPolicy } = require("../controllers/getPrivacyPolicy");
 const { getRefundPolicy } = require("../controllers/getRefundPolicy");
 const { getTermsConditions } = require("../controllers/getTermsConditions");
-const { getEventDetails, getTechnerdDetails } = require("../controllers/getEventDetails");
+const { getEventDetails } = require("../controllers/getEventDetails");
 const User = require("../models/registerinfo");
 const Pitch = require("../models/pitchPlease");
 const events_list=require("../public/js/event_details_json");
@@ -130,12 +130,14 @@ router.get("/sponsors", getOurSponsorsPage); //serves our-sponsers page
 router.get("/privacyPolicy", getPrivacyPolicy); //serves privacy-policy page
 router.get("/refund-policy", getRefundPolicy); //serves refund-policy page
 router.get("/terms&conditions", getTermsConditions); //serves terms and conditions page
+
 //router.get("/events/pitchPlease", getEventDetails);  //serves details of event
 //router.get("/events/technerd", getTechnerdDetails);  //serves details of event
 router.get("/events/:event_name",function(req,res){
     const event_id=req.params.event_name;
     res.render('eventDetail',{event_id:event_id,event_list:events_list});
 });
+
 
 router.post("/register/:event_name", async (req, res) => {
   //console.log(req.body.fname.length)

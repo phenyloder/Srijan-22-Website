@@ -111,7 +111,7 @@
                 </div>
 
                 <% if(event_list[0].is_registering === true){ %>
-                  <a href="/register/" class="registerFormLink"
+                  <a href="/register/<%=event_list[0].id%>" class="registerFormLink"
                     ><span class="registerFormLinkText">
                       Register Now <i class="fa-solid fa-arrow-right"></i>
                     </span>
@@ -132,7 +132,7 @@
             <% if(event_list[i].event_type === "competition"){ %>
               <div class="eventContainer next">
                 <div class="eventImageWrapper">
-                  <img class="eventImage" src="/eventImages/pitchpleases.png" alt=".png">
+                  <img class="eventImage" src="/eventImages/<%=event_list[i].poster_img%>" alt=".png">
                 </div>
                 <div class="eventContentWrapper">
                   <h1 class="eventHeader"><%= event_list[i].name %></h1>

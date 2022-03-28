@@ -91,7 +91,52 @@ const event_list = [
                 }
             ]
         }
+    },
+    { 
+        id: "outwith_the_boardroom",
+        name: "Outwith the Boardroom",
+        is_team_event: true,
+        min_team_members: 5,
+        max_team_members: 5,
+        event_type: "competition",
+        poster_img: "outwit.png",
+        icon_img: "",
+        is_registering: true,
+        stages_timeline: [
+            {
+                stage_id: "stage_1",
+                stage_name: "Stage 1",
+                stage_start_datetime: "9 April 2022",
+                stage_end_datetime: "",
+            },
+            {
+                stage_id: "stage_2",
+                stage_name: "",
+                stage_start_datetime: "",
+                stage_end_datetime: "",
+            }
+        ],
+        content: {
+            overview: [""],
+            outcome: ["“Outwith the BoardRoom” is the ultimate test of a startups’ core players’ decision making ability, juggling the restraints as they go. Teams of five, each member attaining the role of a vital team player, will play the the first round which quizes the individual responsibilities of each Board Member. ","Seven teams will advance to the second and final round. This round entails a problem statement with resource restrictions (funds, equity, employees’ ability and more). Each team gets 1.5 hrs to discuss and pull the most efficient solution out of the bag. The CEO makes the final call and here forth presents a 15 min presentation of the same to the judging panel. The judges make the last ruling based on their assessment to declare the winner!"],
+            guidelines: ["->Participants should register in teams of 5 members each.","->Each team shall contain one of each of the following mandatorily.Chief Executive Officer(CEO), Chief Technology Officer(CTO), Chief Financial Officer(CFO), Chief Marketing Officer(CMO), Human Resources Manager(HR)","->𝘋𝘦𝘢𝘥𝘭𝘪𝘯𝘦-  9 𝘈𝘱𝘳𝘪𝘭 2021"],
+            stages: [
+                {
+                    stage_id: "stage_1",
+                    stage_name: "Stage 1 (Knockout Quiz)",
+                    stage_content: ["", ""],
+                    stage_rules: ["The Quiz will be based on the individual roles and responsibilities of each Board Member, as preferred upon registration.","Seven teams will advance for the final round based on the total team score.The information regarding the Quiz will be sent through the WhatsApp group."],
+                },
+                {
+                    stage_id: "stage_2",
+                    stage_name: "Stage 2(Final Round)",
+                    stage_content: ["", ""],
+                    stage_rules: ["A Problem Statement will be presented to the teams along with certain resource constraints (eg- Restricted accessibility of funds, a larger share of investors' equity in the company (CFO comes to the rescue), hiring the right talent (HR should ensure this), ignorance of Marketing Strategies (CMO should play well here), and so on.)","In 1.5 hours, the teams must discuss and build the most efficient solution (complying with the constraints).","Following the discussion, the CEO will make the final call and present the PPT to the judging panel, which will be based on their company's effective strategies and solutions drawn out for the constraint.","Time Limit- 15 mins (12 mins presentation + 3 mins QnA)"],
+                }
+            ]
+        }
     }
+
 ]
 
 module.exports=event_list;

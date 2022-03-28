@@ -99,7 +99,7 @@
                             <% if(event_list[i].content.guidelines[k].indexOf(":") !== -1){ %> 
                                 <%=event_list[i].content.guidelines[k].substring(0,event_list[i].content.guidelines[k].indexOf(":")) %><a href=<%=event_list[i].content.guidelines[k].substring(event_list[i].content.guidelines[k].indexOf(":")+1) %>>here</a><br><br>
                             <% }else{%>
-                                <%=event_list[i].content.guidelines[k]%>
+                                <%=event_list[i].content.guidelines[k]%><br><br>
                             <%} %>
                             
                         <% } %>  

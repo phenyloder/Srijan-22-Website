@@ -97,7 +97,7 @@
                     <p class="privacy-desc">
                         <% for(var k=0;k<event_list[i].content.guidelines.length;k++){ %>
                             <% if(event_list[i].content.guidelines[k].indexOf(":") !== -1){ %> 
-                                <%=event_list[i].content.guidelines[k].substring(0,event_list[i].content.guidelines[k].indexOf(":")) %><a href=<%=event_list[i].content.guidelines[k].substring(event_list[i].content.guidelines[k].indexOf(":")+1) %>>here</a><br><br>
+                                <%=event_list[i].content.guidelines[k].substring(0,event_list[i].content.guidelines[k].indexOf(":")) %><a target="_blank" href=<%=event_list[i].content.guidelines[k].substring(event_list[i].content.guidelines[k].indexOf(":")+1) %>>here</a><br><br>
                             <% }else{%>
                                 <%=event_list[i].content.guidelines[k]%><br><br>
                             <%} %>

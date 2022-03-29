@@ -75,7 +75,7 @@ const event_list = [
         content: {
             overview: ["In this fast-paced global world, technology is flourishing at a tremendous rate and has become a cornerstone in making a concept develop into reality", "Are you excited to flaunt your technological prowess and help in resolving real-world issues?"],
             outcome: ["Here it is!! The right place for you. Srijan 3.0 provides you with a sporting chance, Technerd, a competition that allows you to demonstrate your technical expertise. Utilize your technical competencies to overcome all the barriers to your idea and bring about a satisfactory output that is beneficial to everyone.", "So, what are you waiting for?Come up with your crew and show your unabashed technical expertise by devising a solution for a given problem statement."],
-            guidelines: ["2-4 People in Each Team(min. 2, max. 4)"],
+            guidelines: ["2-4 People in Each Team(min. 2, max. 4)","Problem statement : https://docs.google.com/document/d/1nlw30VLzBgKrLEAS0vL3LyDgbBBn-kcWfGmwqtg2jnU/edit?usp=sharing"],
             stages: [
                 {
                     stage_id: "stage_1",

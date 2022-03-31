@@ -138,8 +138,8 @@ const event_list = [
     },
     { 
         id: "exchange_your_idea",
-        name: "exchange your idea",
-        Is_team_event: true,
+        name: "Exchange Your Idea",
+        Is_team_event: false,
         min_team_members: 1,
         max_team_members: 1,
         event_type: "competition",
@@ -158,20 +158,20 @@ const event_list = [
         ],
         content: {
             overview: ["Have you ever noticed how two people can have completely different perspectives on the same idea?"],
-            outcome: ["Diverse perspectives can also aid in the discovery of fresh unique and creative ideologies on the same topic. You obtain a broader range of feedback when you present your idea to someone else", "Exchange Your Idea gives you an excellent opportunity to learn about other people's opinions and solutions to a given problem or issue. This enhances your thinking skills and allows you to explore  your idea in a more thorough manner, elevating it higher.7"],
-            guidelines: [""],
+            outcome: ["Diverse perspectives can also aid in the discovery of fresh unique and creative ideologies on the same topic. You obtain a broader range of feedback when you present your idea to someone else", "Exchange Your Idea gives you an excellent opportunity to learn about other people's opinions and solutions to a given problem or issue. This enhances your thinking skills and allows you to explore  your idea in a more thorough manner, elevating it higher."],
+            guidelines: ["-> This is not a team event."],
             stages: [
                 {
                     stage_id: "stage_1",
                     stage_name: "Round 1",
                     stage_content: ["", ""],
-                    stage_rules: ["->Participants should prepare a one page content consisting of an Entrepreneurial idea which they think might best complement the current mercantile coterie. Be it a startup idea, or a solution to any of the state-of-the-art commercial challenges.", "->Expected submission format - .docx only.","-> Font Size throughout the document should be 12 px.","->Font Family throughout the document should be Times New Roman.","-> Content of the submission should not exceed one page.","->Maximum word limit- 300 words.","->Screening will be done on the basis of quality of the idea along with some weightage given to the semantics."],
+                    stage_rules: ["-> Participants should prepare a one page content consisting of an Entrepreneurial idea which they think might best complement the current mercantile coterie. Be it a startup idea, or a solution to any of the state-of-the-art commercial challenges.", "-> Expected submission format - .docx only.","-> Font Size throughout the document should be 12 px.","-> Font Family throughout the document should be Times New Roman.","-> Content of the submission should not exceed one page.","-> Maximum word limit- 300 words.","-> Screening will be done on the basis of quality of the idea along with some weightage given to the semantics."],
                 },
                 {
                     stage_id: "stage_2",
                     stage_name: "Round 2",
                     stage_content: ["", ""],
-                    stage_rules: ["->Shortlisted candidates will be divided into groups of two in which their ideas will be exchanged with one another.", "->Candidates will be informed of their assigned ideas prior to their presentations and are expected to explain their understanding of it in a detailed and organized manner.","->Each individual will be allotted a time limit of 5 minutes to present about the respective idea assigned to them.","-> Considering how well they fit into others’ shoes, candidates will be judged."],
+                    stage_rules: ["-> Shortlisted candidates will be divided into groups of two in which their ideas will be exchanged with one another.", "-> Candidates will be informed of their assigned ideas prior to their presentations and are expected to explain their understanding of it in a detailed and organized manner.","-> Each individual will be allotted a time limit of 5 minutes to present about the respective idea assigned to them.","-> Considering how well they fit into others’ shoes, candidates will be judged."],
                 }
             ]
         }

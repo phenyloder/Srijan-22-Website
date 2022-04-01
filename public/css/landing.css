@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .coverPage {
   height: 100vh;
+  min-height: 668px;
   width: 100vw;
   background-color: #15131a;
   display: flex;
@@ -289,7 +290,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1367px) {
 
   .fa-linkedin-in,
   .fa-facebook-f {
@@ -305,12 +306,20 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .leftContentWrapper h1 {
-    font-size: 3.75rem;
+    font-size: 3.25rem;
   }
 
-  .leftContentWrapper p {
+  .leftContentWrapper h2 {
+    width: 95% !important;
+  }
+
+  #SubHeader {
     font-size: 0.875rem;
-    width: 80%;
+    width: 95% !important;
+  }
+
+  .tagcloud{
+    width: 350px !important;
   }
 }
 

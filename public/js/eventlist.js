@@ -54,12 +54,12 @@ if(query2.matches){
     if(x>=2890.6 && x<3176.6){
         eventLogo.src='images/technerd.png'
     }
-    if(x>=3176.6){
+    if(x>=3176.6 && x<3816){
         eventLogo.src='images/pitch.png'
     }
-    // if(x>=3523.3 && x<3816){
-    //     eventLogo.src='images/pannel discussion.svg'
-    // }
+    if(x>=3523.3){
+        eventLogo.src='images/idea exchange.png'
+    }
     // if(x>=3816){
     //     eventLogo.src='images/idea exchange.svg'
     // }
@@ -72,12 +72,12 @@ else{
     if(x>=2777 && x<3512.6){
         eventLogo.src='images/technerd.png'
     }
-    if(x>=3152.6 ){
+    if(x>=3152.6 && x<3513.3){
         eventLogo.src='images/pitch.png'
     }
-    // if(x>=3513.3 && x<3882.6){
-    //     eventLogo.src='images/pannel discussion.png'
-    // }
+    if(x>=3513.3){
+        eventLogo.src='images/idea exchange.png'
+    }
     // if(x>=3882.6){
     //     eventLogo.src='images/idea exchange.png'
     // }

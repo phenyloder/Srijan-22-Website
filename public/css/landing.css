@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .coverPage {
   height: 100vh;
+  min-height: 668px;
   width: 100vw;
   background-color: #15131a;
   display: flex;

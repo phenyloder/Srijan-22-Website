@@ -429,15 +429,16 @@ body{
   }
 
   .eventContainer{
-    height: 70vh;
+    height: unset;
+    min-height: 70vh;
     width: 65vw;
     flex-direction: column;
     align-items: center;
   }
 
   .eventImageWrapper{
-    height: 30%;
-    width: auto;
+    height: auto;
+    width: 50%;
     overflow: hidden;
     border-radius: 0.25rem;
     margin: 0 1.25rem;
@@ -446,7 +447,7 @@ body{
   }
 
   .eventImage{
-    height: auto;
+    height: 100%;
     width: 100%;
   }
 
@@ -533,7 +534,8 @@ body{
   }
 
   .eventContentWrapper .eventHeader{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
   }
 
   .eventContentWrapper .eventDetail{

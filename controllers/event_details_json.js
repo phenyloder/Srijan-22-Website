@@ -132,7 +132,7 @@ const event_list = [{
 {
     id: "exchange_your_idea",
     name: "Exchange Your Idea",
-    Is_team_event: false,
+    is_team_event: false,
     min_team_members: 1,
     max_team_members: 1,
     event_type: "competition",
@@ -171,7 +171,7 @@ const event_list = [{
 {
     id: "start_up_expo",
     name: "Start-Up Expo",
-    Is_team_event: true,
+    is_team_event: true,
     min_team_members: 1,
     max_team_members: 4,
     event_type: "competition",
@@ -210,7 +210,7 @@ const event_list = [{
 {
     id: "entrepreneurship_auction",
     name: "Entrepreneurship Auction",
-    Is_team_event: true,
+    is_team_event: false,
     min_team_members: 1,
     max_team_members: 1,
     event_type: "competition",

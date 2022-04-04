@@ -76,7 +76,7 @@ const event_list = [{
             stage_id: "stage_1",
             stage_name: "Stage 1 (Technical Presentation)",
             stage_content: ["", ""],
-            stage_rules: ["->Teams must have at least 2 and at max members to be a valid participating team.", "->Teams have to submit their solution on the given problem statement for their solution to be considered valid", "->Members of one team should only be registered once. If any discrepancies are found, and a member of the team is found in more than one team, both the teams will be disqualified.", "Teams are required to submit the solution to only one problem statement. Only the submission at the time of closing will be considered a valid submission.", "The teams will be required to submit a document of not more than 500 words and 3-4 pictures after registering for the event", "->The submission should be mailed to technerds.srijan@gmail.com on or before 11.59 PM, 7 April 2022", "->Following the initial screening, the participating teams will be invited in front of a panel of judges, who shall judge the idea’s technical viability and question the participants regarding the implementation of their said ideas.", "->The top 10 selected teams will be sent to the next round."],
+            stage_rules: ["->Teams must have at least 2 and at max members to be a valid participating team.", "->Teams have to submit their solution on the given problem statement for their solution to be considered valid", "->Members of one team should only be registered once. If any discrepancies are found, and a member of the team is found in more than one team, both the teams will be disqualified.", "Teams are required to submit the solution to only one problem statement. Only the submission at the time of closing will be considered a valid submission.", "The teams will be required to submit a document of not more than 500 words and 3-4 pictures after registering for the event", "->The submission should be mailed to technerds.srijan@gmail.com on or before 11.59 PM, 7 April 2022", "->Following the initial screening, the participating teams will be invited in front of a panel of judges, who shall judge the idea's technical viability and question the participants regarding the implementation of their said ideas.", "->The top 10 selected teams will be sent to the next round."],
         },
         {
             stage_id: "stage_2",
@@ -112,8 +112,8 @@ const event_list = [{
     ],
     content: {
         overview: [""],
-        outcome: ["“outwit the BoardRoom” is the ultimate test of a startups’ core players’ decision making ability, juggling the restraints as they go. Teams of five, each member attaining the role of a vital team player, will play the the first round which quizes the individual responsibilities of each Board Member. ", "Seven teams will advance to the second and final round. This round entails a problem statement with resource restrictions (funds, equity, employees’ ability and more). Each team gets 1.5 hrs to discuss and pull the most efficient solution out of the bag. The CEO makes the final call and here forth presents a 15 min presentation of the same to the judging panel. The judges make the last ruling based on their assessment to declare the winner!"],
-        guidelines: ["->Participants should register in teams of 5 members each.", "->Each team shall contain one of each of the following mandatorily.Chief Executive Officer(CEO), Chief Technology Officer(CTO), Chief Financial Officer(CFO), Chief Marketing Officer(CMO), Human Resources Manager(HR)", "->𝘋𝘦𝘢𝘥𝘭𝘪𝘯𝘦-  9 𝘈𝘱𝘳𝘪𝘭 2022"],
+        outcome: ["“outwit the BoardRoom” is the ultimate test of a startups' core players' decision making ability, juggling the restraints as they go. Teams of five, each member attaining the role of a vital team player, will play the the first round which quizes the individual responsibilities of each Board Member. ", "Seven teams will advance to the second and final round. This round entails a problem statement with resource restrictions (funds, equity, employees' ability and more). Each team gets 1.5 hrs to discuss and pull the most efficient solution out of the bag. The CEO makes the final call and here forth presents a 15 min presentation of the same to the judging panel. The judges make the last ruling based on their assessment to declare the winner!"],
+        guidelines: ["->Participants should register in teams of 5 members each.", "->Each team shall contain one of each of the following mandatorily.Chief Executive Officer(CEO), Chief Technology Officer(CTO), Chief Financial Officer(CFO), Chief Marketing Officer(CMO), Human Resources Manager(HR)", "->Deadline-  9 April 2022"],
         stages: [{
             stage_id: "stage_1",
             stage_name: "Stage 1 (Knockout Quiz)",
@@ -163,7 +163,7 @@ const event_list = [{
             stage_id: "stage_2",
             stage_name: "Round 2",
             stage_content: ["", ""],
-            stage_rules: ["-> Shortlisted candidates will be divided into groups of two in which their ideas will be exchanged with one another.", "-> Candidates will be informed of their assigned ideas prior to their presentations and are expected to explain their understanding of it in a detailed and organized manner.", "-> Each individual will be allotted a time limit of 5 minutes to present about the respective idea assigned to them.", "-> Considering how well they fit into others’ shoes, candidates will be judged."],
+            stage_rules: ["-> Shortlisted candidates will be divided into groups of two in which their ideas will be exchanged with one another.", "-> Candidates will be informed of their assigned ideas prior to their presentations and are expected to explain their understanding of it in a detailed and organized manner.", "-> Each individual will be allotted a time limit of 5 minutes to present about the respective idea assigned to them.", "-> Considering how well they fit into others' shoes, candidates will be judged."],
         }
         ]
     }
@@ -190,7 +190,7 @@ const event_list = [{
     ],
     content: {
         overview: [""],
-        outcome: ["Startup Expo is the one-in-all stop to get your startup the boost it needs to reach its full potential. It is the ideal avenue that lures investors, influencers and attendees from anywhere and everywhere. We believe the right sum up would be “Exposure at its best!”.", "A high visibility platform where emerging entrepreneurs can showcase their ideas and ventures, and attract partnerships, guidance and opportunities? Sounds ideal, wouldn’t you agree? ", "Don’t let the hurdles of hesitation or doubt or stop you from exploring the glorious opportunities that accompany this very mega event! Afterall it’s all about “Obstacles to Opportunities”.", "Got a hunger for new heights? Then let’s get on with it!", "Start-up Expo is an open platform for all the budding start-ups of students at NIT, Silchar, start-ups of our Alumni as well as all the start-ups from Silchar outside the college. It is a platform where they will be briefing us about the working and how their start-ups operate.", "Following this, if a startup is looking for a Co-founder, CTO, CFO, etc, can list its openings and criteria looking for the appropriate candidate for its venture. Also, a start-up can list any openings for internships at a stipulated stipend for the students of NIT Silchar and participating institutions for their experience as well as the Startup’s benefit. ", "Criterion: All the start-ups taking part in the event must be registered or be incubated start-ups.", "So, come up with your start-ups and let them rise to new heights. "],
+        outcome: ["Startup Expo is the one-in-all stop to get your startup the boost it needs to reach its full potential. It is the ideal avenue that lures investors, influencers and attendees from anywhere and everywhere. We believe the right sum up would be “Exposure at its best!”.", "A high visibility platform where emerging entrepreneurs can showcase their ideas and ventures, and attract partnerships, guidance and opportunities? Sounds ideal, wouldn't you agree? ", "Don't let the hurdles of hesitation or doubt or stop you from exploring the glorious opportunities that accompany this very mega event! Afterall it's all about “Obstacles to Opportunities”.", "Got a hunger for new heights? Then let's get on with it!", "Start-up Expo is an open platform for all the budding start-ups of students at NIT, Silchar, start-ups of our Alumni as well as all the start-ups from Silchar outside the college. It is a platform where they will be briefing us about the working and how their start-ups operate.", "Following this, if a startup is looking for a Co-founder, CTO, CFO, etc, can list its openings and criteria looking for the appropriate candidate for its venture. Also, a start-up can list any openings for internships at a stipulated stipend for the students of NIT Silchar and participating institutions for their experience as well as the Startup's benefit. ", "Criterion: All the start-ups taking part in the event must be registered or be incubated start-ups.", "So, come up with your start-ups and let them rise to new heights. "],
         guidelines: ["-> Must be a registered or incubated Startup."],
         stages: [{
             stage_id: "",
@@ -202,7 +202,7 @@ const event_list = [{
             stage_id: "",
             stage_name: "Eligibility Criteria 2",
             stage_content: ["", ""],
-            stage_rules: ["Can provide entrepreneurship opportunities to students of NIT Silchar", "->  If a startup is looking for Co-founder, CTO, CFO, etc, it can list its openings and look for appropriate candidates for its venture. ", "->  Can list any openings for students of NIT Silchar and participating institutions for the students’ experience as well as the Startup’s benefit."],
+            stage_rules: ["Can provide entrepreneurship opportunities to students of NIT Silchar", "->  If a startup is looking for Co-founder, CTO, CFO, etc, it can list its openings and look for appropriate candidates for its venture. ", "->  Can list any openings for students of NIT Silchar and participating institutions for the student's experience as well as the Startup's benefit."],
         }
         ]
     }
@@ -211,12 +211,12 @@ const event_list = [{
     id: "entrepreneurship_auction",
     name: "Entrepreneurship Auction",
     Is_team_event: true,
-    // min_team_members: 
-    // max_team_members: 
+    min_team_members: 1,
+    max_team_members: 1,
     event_type: "competition",
     poster_img: "auction.png",
     icon_img: "",
-    is_registering: false,
+    is_registering: true,
     stages_timeline: [
 
         {

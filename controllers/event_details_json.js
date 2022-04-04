@@ -216,7 +216,7 @@ const event_list = [{
     event_type: "competition",
     poster_img: "auction.png",
     icon_img: "",
-    is_registering: false,
+    is_registering: true,
     stages_timeline: [
 
         {

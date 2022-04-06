@@ -10,13 +10,13 @@ const event_list = [{
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1 (Online Screening)",
-                stage_start_datetime: "11:59 pm, 10 April 2021",
+                stage_start_datetime: "11:59 pm, 10 April 2022",
                 stage_end_datetime: "",
             },
             {
                 stage_id: "stage_2",
                 stage_name: "Stage 2 (Pitching)",
-                stage_start_datetime: "11:59 pm, 10 April 2021",
+                stage_start_datetime: "11:59 pm, 10 April 2022",
                 stage_end_datetime: "",
             }
         ],
@@ -76,7 +76,7 @@ const event_list = [{
                     stage_id: "stage_1",
                     stage_name: "Stage 1 (Technical Presentation)",
                     stage_content: ["", ""],
-                    stage_rules: ["->Teams must have at least 2 and at max members to be a valid participating team.", "->Teams have to submit their solution on the given problem statement for their solution to be considered valid", "->Members of one team should only be registered once. If any discrepancies are found, and a member of the team is found in more than one team, both the teams will be disqualified.", "Teams are required to submit the solution to only one problem statement. Only the submission at the time of closing will be considered a valid submission.", "The teams will be required to submit a document of not more than 500 words and 3-4 pictures after registering for the event", "->The submission should be mailed to technerds.srijan@gmail.com on or before 11.59 PM, 7 April 2022", "->Following the initial screening, the participating teams will be invited in front of a panel of judges, who shall judge the idea’s technical viability and question the participants regarding the implementation of their said ideas.", "->The top 10 selected teams will be sent to the next round."],
+                    stage_rules: ["->Teams must have at least 2 and at max members to be a valid participating team.", "->Teams have to submit their solution on the given problem statement for their solution to be considered valid", "->Members of one team should only be registered once. If any discrepancies are found, and a member of the team is found in more than one team, both the teams will be disqualified.", "Teams are required to submit the solution to only one problem statement. Only the submission at the time of closing will be considered a valid submission.", "The teams will be required to submit a document of not more than 500 words and 3-4 pictures after registering for the event", "->The submission should be mailed to technerds.srijan@gmail.com on or before 11.59 PM, 7 April 2022", "->Following the initial screening, the participating teams will be invited in front of a panel of judges, who shall judge the idea's technical viability and question the participants regarding the implementation of their said ideas.", "->The top 10 selected teams will be sent to the next round."],
                 },
                 {
                     stage_id: "stage_2",
@@ -100,7 +100,7 @@ const event_list = [{
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1",
-                stage_start_datetime: "9 April 2022",
+                stage_start_datetime: "10 April 2022",
                 stage_end_datetime: "",
             },
             {
@@ -112,8 +112,8 @@ const event_list = [{
         ],
         content: {
             overview: [""],
-            outcome: ["“outwit the BoardRoom” is the ultimate test of a startups’ core players’ decision making ability, juggling the restraints as they go. Teams of five, each member attaining the role of a vital team player, will play the the first round which quizes the individual responsibilities of each Board Member. ", "Seven teams will advance to the second and final round. This round entails a problem statement with resource restrictions (funds, equity, employees’ ability and more). Each team gets 1.5 hrs to discuss and pull the most efficient solution out of the bag. The CEO makes the final call and here forth presents a 15 min presentation of the same to the judging panel. The judges make the last ruling based on their assessment to declare the winner!"],
-            guidelines: ["->Participants should register in teams of 5 members each.", "->Each team shall contain one of each of the following mandatorily.Chief Executive Officer(CEO), Chief Technology Officer(CTO), Chief Financial Officer(CFO), Chief Marketing Officer(CMO), Human Resources Manager(HR)", "->𝘋𝘦𝘢𝘥𝘭𝘪𝘯𝘦-  9 𝘈𝘱𝘳𝘪𝘭 2021"],
+            outcome: ["“Outwit The BoardRoom” is the ultimate test of a startups' core players' decision making ability, juggling the restraints as they go. Teams of five, each member attaining the role of a vital team player, will play the the first round which quizes the individual responsibilities of each Board Member. ", "Seven teams will advance to the second and final round. This round entails a problem statement with resource restrictions (funds, equity, employees' ability and more). Each team gets 1.5 hrs to discuss and pull the most efficient solution out of the bag. The CEO makes the final call and here forth presents a 15 min presentation of the same to the judging panel. The judges make the last ruling based on their assessment to declare the winner!"],
+            guidelines: ["->Participants should register in teams of 5 members each.", "->Each team shall contain one of each of the following mandatorily.Chief Executive Officer(CEO), Chief Technology Officer(CTO), Chief Financial Officer(CFO), Chief Marketing Officer(CMO), Human Resources Manager(HR)", "->Deadline-  9 April 2022"],
             stages: [{
                     stage_id: "stage_1",
                     stage_name: "Stage 1 (Knockout Quiz)",
@@ -132,7 +132,7 @@ const event_list = [{
     {
         id: "exchange_your_idea",
         name: "Exchange Your Idea",
-        Is_team_event: false,
+        is_team_event: false,
         min_team_members: 1,
         max_team_members: 1,
         event_type: "competition",
@@ -163,7 +163,7 @@ const event_list = [{
                     stage_id: "stage_2",
                     stage_name: "Round 2",
                     stage_content: ["", ""],
-                    stage_rules: ["-> Shortlisted candidates will be divided into groups of two in which their ideas will be exchanged with one another.", "-> Candidates will be informed of their assigned ideas prior to their presentations and are expected to explain their understanding of it in a detailed and organized manner.", "-> Each individual will be allotted a time limit of 5 minutes to present about the respective idea assigned to them.", "-> Considering how well they fit into others’ shoes, candidates will be judged."],
+                    stage_rules: ["-> Shortlisted candidates will be divided into groups of two in which their ideas will be exchanged with one another.", "-> Candidates will be informed of their assigned ideas prior to their presentations and are expected to explain their understanding of it in a detailed and organized manner.", "-> Each individual will be allotted a time limit of 5 minutes to present about the respective idea assigned to them.", "-> Considering how well they fit into others' shoes, candidates will be judged."],
                 }
             ]
         }
@@ -171,7 +171,7 @@ const event_list = [{
     {
         id: "start_up_expo",
         name: "Start-Up Expo",
-        Is_team_event: true,
+        is_team_event: true,
         min_team_members: 1,
         max_team_members: 4,
         event_type: "competition",
@@ -190,7 +190,7 @@ const event_list = [{
         ],
         content: {
             overview: [""],
-            outcome: ["Startup Expo is the one-in-all stop to get your startup the boost it needs to reach its full potential. It is the ideal avenue that lures investors, influencers and attendees from anywhere and everywhere. We believe the right sum up would be “Exposure at its best!”.", "A high visibility platform where emerging entrepreneurs can showcase their ideas and ventures, and attract partnerships, guidance and opportunities? Sounds ideal, wouldn’t you agree? ", "Don’t let the hurdles of hesitation or doubt or stop you from exploring the glorious opportunities that accompany this very mega event! Afterall it’s all about “Obstacles to Opportunities”.", "Got a hunger for new heights? Then let’s get on with it!", "Start-up Expo is an open platform for all the budding start-ups of students at NIT, Silchar, start-ups of our Alumni as well as all the start-ups from Silchar outside the college. It is a platform where they will be briefing us about the working and how their start-ups operate.", "Following this, if a startup is looking for a Co-founder, CTO, CFO, etc, can list its openings and criteria looking for the appropriate candidate for its venture. Also, a start-up can list any openings for internships at a stipulated stipend for the students of NIT Silchar and participating institutions for their experience as well as the Startup’s benefit. ", "Criterion: All the start-ups taking part in the event must be registered or be incubated start-ups.", "So, come up with your start-ups and let them rise to new heights. "],
+            outcome: ["Startup Expo is the one-in-all stop to get your startup the boost it needs to reach its full potential. It is the ideal avenue that lures investors, influencers and attendees from anywhere and everywhere. We believe the right sum up would be “Exposure at its best!”.", "A high visibility platform where emerging entrepreneurs can showcase their ideas and ventures, and attract partnerships, guidance and opportunities? Sounds ideal, wouldn't you agree? ", "Don't let the hurdles of hesitation or doubt or stop you from exploring the glorious opportunities that accompany this very mega event! Afterall it's all about “Obstacles to Opportunities”.", "Got a hunger for new heights? Then let's get on with it!", "Start-up Expo is an open platform for all the budding start-ups of students at NIT, Silchar, start-ups of our Alumni as well as all the start-ups from Silchar outside the college. It is a platform where they will be briefing us about the working and how their start-ups operate.", "Following this, if a startup is looking for a Co-founder, CTO, CFO, etc, can list its openings and criteria looking for the appropriate candidate for its venture. Also, a start-up can list any openings for internships at a stipulated stipend for the students of NIT Silchar and participating institutions for their experience as well as the Startup's benefit. ", "Criterion: All the start-ups taking part in the event must be registered or be incubated start-ups.", "So, come up with your start-ups and let them rise to new heights. "],
             guidelines: ["-> Must be a registered or incubated Startup."],
             stages: [{
                     stage_id: "",
@@ -202,11 +202,101 @@ const event_list = [{
                     stage_id: "",
                     stage_name: "Eligibility Criteria 2",
                     stage_content: ["", ""],
-                    stage_rules: ["Can provide entrepreneurship opportunities to students of NIT Silchar", "->  If a startup is looking for Co-founder, CTO, CFO, etc, it can list its openings and look for appropriate candidates for its venture. ", "->  Can list any openings for students of NIT Silchar and participating institutions for the students’ experience as well as the Startup’s benefit."],
+                    stage_rules: ["Can provide entrepreneurship opportunities to students of NIT Silchar", "->  If a startup is looking for Co-founder, CTO, CFO, etc, it can list its openings and look for appropriate candidates for its venture. ", "->  Can list any openings for students of NIT Silchar and participating institutions for the student's experience as well as the Startup's benefit."],
                 }
             ]
         }
-    }
+    },
+    {
+        id: "entrepreneurship_auction",
+        name: "Entrepreneurship Auction",
+        is_team_event: true,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "competition",
+        poster_img: "auction.png",
+        icon_img: "",
+        is_registering: true,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: [""],
+            outcome: ["E-Cell NIT Silchar, as a part of e-summit Srijan 3.0, brings a stirring opportunity for tactical planning in the guise of an entrepreneurial auction.", "An entrepreneurial auction is a strategical auction bout providing a favorable mix of circumstances for like-minded startup enthusiasts to bid on entrepreneurial necessities such as venture capitalists, debt, money, guidance, and mentorship. Growing business aptitude and strategic thinking through auctioning will succor the skills of managing finances and bidding.", "Paving the route to structure goal by bidding for essentials against the firm stock entrepreneurial auction is all a budding entrepreneur needs not only to invest but also to keep a check on their budget.", "So why wait and regret it later. Buckle up and get ready to be a part of this exciting journey."],
+            guidelines: ["This is an individual event"],
+            stages: [{
+                    stage_id: "",
+                    stage_name: "ROUND 1",
+                    stage_content: [""],
+                    stage_rules: ["1. Participants need to submit a startup name and its requirements(startup either existing or new) upon which they think that might stand out and be a prominent startup.", "2. Submission should consist of the whole Entrepreneurial gist of requirements needed to build their startup idea including Venture Capital, Debt, Equity, Office and location space, Technical needs, etc.", "3. Submission format .pdf or .docx.", "4. Shortlisting will be done on the basis of the quality of the idea submitted."],
+                },
+                {
+                    stage_id: "",
+                    stage_name: "ROUND 2",
+                    stage_content: ["", ""],
+                    stage_rules: ["1. Shortlisted candidates need to roup-sale (bid) for their requirements to develop a fully functional business prototype of their idea.", "2. Jury will be more inclined towards the ideas with ideal requirements (maximum profit, minimum equity) and only a few top selected combination will pitch in front of the jury.", "3. Best model will be declared as the winner.", "4. All other on spot auction rules will be declared on the day of auction."],
+                }
+            ]
+        }
+    },
+
+    {
+        id: "stock_market_stimulation",
+        name: "Stock Market Stimulation",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "competition",
+        poster_img: "stockMarket.jpeg",
+        icon_img: "",
+        is_registering: true,
+        stages_timeline: [
+            // {
+            //     stage_id: "",
+            //     stage_name: "",
+            //     stage_start_datetime: "",
+            //     stage_end_datetime: "",
+            // },
+            {
+                stage_id: "stage_1",
+                stage_name: "Stage 1",
+                stage_start_datetime: "9:15 am, 10 April 2022",
+                stage_end_datetime: "3:30 pm, 11 April 2022",
+            },
+            // {
+            //     stage_id: "",
+            //     stage_name: "",
+            //     stage_start_datetime: "",
+            //     stage_end_datetime: "",
+            // }
+        ],
+        content: {
+            overview: ["E-Cell NIT Silchar presents before you the most awaited event under Financial module, the Stock Market Simulation. Which, may appear as a simulation to the outer world but the dynamics inside are just fascinating?"],
+            outcome: [" '“If you aren’t thinking about owning a stock for ten years, don’t even think about owning it for ten minutes'  ~ Warren Buffet", "We are very familiar with the terms 'shares and stocks'. Investment plays a significant role in the stock market. Most individuals in the country have picked stock investment as a primary source to run or expand their businesses. It provides liquidity to trade their securities. But having a prior knowledge about the stock market alone won’t make any good for an individual. Proper execution and investment in the stocks will provide ample profits. But without proper guidance and knowledge, this could create a huge loss to the investors. Although it is hard to predict the future changes in stock prices, the more time individuals participate in stock trading, the more insights they will learn on how the stock market operates and how to avoid losses."],
+            guidelines: ["This is an individual event"],
+            stages: [{
+                    stage_id: "stage_1",
+                    stage_name: "Rules",
+                    stage_content: ["", ""],
+                    stage_rules: ["-> A registration link will be shared along with referral code.","-> All must download the trading simulator using the registration link only.","->  Multiple registrations by the same participant are not allowed.","-> The event will be live at 09-15AM on 10-04-2022 till 03-30PM on 11-04-2022.","-> Each participant will be allocated a virtual amount of INR 10,00,000 at the start of the trading contest.", "-> Trading on the above-mentioned dates will be active only during the market hours - 09-15 AM to 03-30 PM IST.","-> You can buy sell or short sell all Nifty 500 companies only." ,"-> Participants must execute a minimum of 3 transactions to be eligible for the prizes.","-> Winners will be declared based on their net worth (cash in hand + value of stocks held) which will be highlighted on the leaderboard. Traders with the highest net worth will be declared as winners." ,"->  In case of any conflicts, the decision made by the jury will be considered final and abiding.","-> Join this whatsapp group after successful registration : https://chat.whatsapp.com/Ilk7SGjOxjM9bKz6xmttSd"],
+                },
+                {
+                    stage_id: "",
+                    stage_name: "",
+                    stage_content: ["", ""],
+                    stage_rules: [""],
+                }
+            ]
+        }
+    },
+
 
 ]
 

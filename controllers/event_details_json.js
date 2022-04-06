@@ -245,7 +245,58 @@ const event_list = [{
                 }
             ]
         }
-    }
+    },
+
+    {
+        id: "stock_market_stimulation",
+        name: "Stock Market Stimulation",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "competition",
+        poster_img: "stockMarket.jpeg",
+        icon_img: "",
+        is_registering: true,
+        stages_timeline: [
+            // {
+            //     stage_id: "",
+            //     stage_name: "",
+            //     stage_start_datetime: "",
+            //     stage_end_datetime: "",
+            // },
+            {
+                stage_id: "stage_1",
+                stage_name: "Stage 1",
+                stage_start_datetime: "9:15 am, 10 April 2022",
+                stage_end_datetime: "3:30 pm, 11 April 2022",
+            },
+            // {
+            //     stage_id: "",
+            //     stage_name: "",
+            //     stage_start_datetime: "",
+            //     stage_end_datetime: "",
+            // }
+        ],
+        content: {
+            overview: ["E-Cell NIT Silchar presents before you the most awaited event under Financial module, the Stock Market Simulation. Which, may appear as a simulation to the outer world but the dynamics inside are just fascinating?"],
+            outcome: [" '“If you aren’t thinking about owning a stock for ten years, don’t even think about owning it for ten minutes'  ~ Warren Buffet", "We are very familiar with the terms 'shares and stocks'. Investment plays a significant role in the stock market. Most individuals in the country have picked stock investment as a primary source to run or expand their businesses. It provides liquidity to trade their securities. But having a prior knowledge about the stock market alone won’t make any good for an individual. Proper execution and investment in the stocks will provide ample profits. But without proper guidance and knowledge, this could create a huge loss to the investors. Although it is hard to predict the future changes in stock prices, the more time individuals participate in stock trading, the more insights they will learn on how the stock market operates and how to avoid losses."],
+            guidelines: ["This is an individual event"],
+            stages: [{
+                    stage_id: "stage_1",
+                    stage_name: "Rules",
+                    stage_content: ["", ""],
+                    stage_rules: ["-> A registration link will be shared along with referral code.","-> All must download the trading simulator using the registration link only.","->  Multiple registrations by the same participant are not allowed.","-> The event will be live at 09-15AM on 10-04-2022 till 03-30PM on 11-04-2022.","-> Each participant will be allocated a virtual amount of INR 10,00,000 at the start of the trading contest.", "-> Trading on the above-mentioned dates will be active only during the market hours - 09-15 AM to 03-30 PM IST.","-> You can buy sell or short sell all Nifty 500 companies only." ,"-> Participants must execute a minimum of 3 transactions to be eligible for the prizes.","-> Winners will be declared based on their net worth (cash in hand + value of stocks held) which will be highlighted on the leaderboard. Traders with the highest net worth will be declared as winners." ,"->  In case of any conflicts, the decision made by the jury will be considered final and abiding.","-> Join this whatsapp group after successful registration : https://chat.whatsapp.com/Ilk7SGjOxjM9bKz6xmttSd"],
+                },
+                {
+                    stage_id: "",
+                    stage_name: "",
+                    stage_content: ["", ""],
+                    stage_rules: [""],
+                }
+            ]
+        }
+    },
+
 
 ]
 

@@ -14,6 +14,7 @@ const { getEventDetails } = require("../controllers/getEventDetails");
 const User = require("../models/registerinfo");
 const Pitch = require("../models/pitchPlease");
 const event_list=require("../controllers/event_details_json");
+const { getCollaborationPage } = require("../controllers/getCollaborationPage");
 
 
 const router = express.Router();
@@ -34,6 +35,7 @@ router.get("/sponsors", getOurSponsorsPage); //serves our-sponsers page
 router.get("/privacyPolicy", getPrivacyPolicy); //serves privacy-policy page
 router.get("/refund-policy", getRefundPolicy); //serves refund-policy page
 router.get("/terms&conditions", getTermsConditions); //serves terms and conditions page
+router.get("/collaboration", getCollaborationPage); //serves terms and conditions page
 
 //router.get("/events/pitchPlease", getEventDetails);  //serves details of event
 //router.get("/events/technerd", getTechnerdDetails);  //serves details of event

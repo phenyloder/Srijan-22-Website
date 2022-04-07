@@ -15,6 +15,8 @@ const User = require("../models/registerinfo");
 const Pitch = require("../models/pitchPlease");
 const event_list = require("../controllers/event_details_json");
 const { getCollaborationPage } = require("../controllers/getCollaborationPage");
+const RegisterEvents = require("../models/registerinfo");
+const json2xls = require("json2xls");
 
 const router = express.Router();
 
@@ -94,6 +96,12 @@ router.post("/register/:event_name", async (req, res) => {
 //   // res.send("data saved successfully");
 //   res.render("index");
 // });
+
+router.get("/getExcel", json2xls.middleware, async (req, res) => {
+  const result = await RegisterEvents.find();
+  res.xls("data.xlsx", result);
+  // res.send(result);
+});
 
 router.get("/LaunchPage", getLaunchPage); // serves lauch page
 module.exports = router;

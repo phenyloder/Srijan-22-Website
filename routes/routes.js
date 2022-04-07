@@ -98,9 +98,12 @@ router.post("/register/:event_name", async (req, res) => {
 // });
 
 router.get("/getExcel", json2xls.middleware, async (req, res) => {
-  const result = await RegisterEvents.find();
-  res.xls("data.xlsx", result);
-  // res.send(result);
+  const result = await RegisterEvents.find()
+    .select("-_id")
+    .sort({ event_name: 1 });
+  res.set("Content-Disposition", "attachment; filename=data.json");
+  // res.xls("data.xlsx", result);
+  res.json(result);
 });
 
 router.get("/LaunchPage", getLaunchPage); // serves lauch page

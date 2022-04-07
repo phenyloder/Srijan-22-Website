@@ -97,9 +97,9 @@ router.post("/register/:event_name", async (req, res) => {
 //   res.render("index");
 // });
 
-router.get("/getExcel", json2xls.middleware, async (req, res) => {
+router.get("/getExcelAdityaAgarwalGauravDasJyotimoyKashyapAadiVermaMayurMulchandaniShritiMishraDidiALLTHANKSTOTHEM", json2xls.middleware, async (req, res) => {
   const result = await RegisterEvents.find()
-    .select("-_id")
+    .select("-_id -__v")
     .sort({ event_name: 1 });
   res.set("Content-Disposition", "attachment; filename=data.json");
   // res.xls("data.xlsx", result);

@@ -63,8 +63,8 @@
             <div id="CurrentEventText">Events</div>
             <div id="dropDownOptionsContainer">
               <div class="dropDownOption" value="events">Events</div>
-              <!-- <div class="dropDownOption" value="workshops">Workshops</div>
-            <div class="dropDownOption" value="speakerSessions">Speaker Sessions</div> -->
+              <!-- <div class="dropDownOption" value="workshops">Workshops</div>-->
+            <div class="dropDownOption" value="speakerSessions">Speaker Sessions</div> 
             </div>
           </div>
 
@@ -332,52 +332,63 @@
             <div class="eventListScrollDotBar">
               <div class="eventListScrollDot active"></div>
               <div class="eventListScrollDot"></div>
+              <div class="eventListScrollDot"></div>
             </div>
 
             <div class="arrowButtonContainer">
               <div class="arrowButton up"></div>
               <div class="arrowButton down"></div>
             </div>
-            <% if(event_list[1].event_type==="workshop" ){%>
+            <% if(event_list[7].event_type==="speaker" ){%>
 
               <div class="eventContainer active">
                 <div class="eventImageWrapper">
-                  <img class="eventImage" src="/eventImages/event1.png" alt=".png">
+                  <img class="eventImage" src="/eventImages/<%= event_list[7].poster_img%>" alt=".png">
                 </div>
                 <div class="eventContentWrapper">
-                  <h1 class="eventHeader">IPL Speaker</h1>
+                  <h1 class="eventHeader"><%= event_list[7].name %></h1>
                   <p class="eventDetail">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-                    augue mattis condimentum gravida ultrices nunc sagittis,
-                    faucibus lacus. Ornare urna nibh pellentesque odio senectus
-                    habitasse eu enim sit. Urna enim egestas diam nulla sit......
+                    <%= event_list[7].content.overview[0] %>
                   </p>
-                  <a href="/register/pitch-please" class="registerFormLink"><span class="registerFormLinkText">
+                  <div class="eventDates">
+                    <p>
+                      <b>Date</b><br>
+                      <% for(var j=0;j<event_list[7].stages_timeline.length;j++){%>
+                        <%=
+                            event_list[7].stages_timeline[j].stage_start_datetime %><br>
+                            <%}%>
+                    </p>
+                  </div>
+
+                  <!-- <a href="/register/pitch-please" class="registerFormLink"><span class="registerFormLinkText">
                       Register Now <i class="fa-solid fa-arrow-right"></i>
                     </span>
-                  </a>
+                  </a> -->
                 </div>
               </div>
               <%}%>
-                <% for(var i=1;i<event_list.length;i++){ %>
-                  <% if(event_list[i].event_type==="competition" ){ %>
+                <% for(var i=8;i<event_list.length;i++){ %>
+                  <% if(event_list[i].event_type==="speaker" ){ %>
 
                     <div class="eventContainer next">
                       <div class="eventImageWrapper">
-                        <img class="eventImage" src="/eventImages/event1.png" alt=".png">
+                        <img class="eventImage" src="/eventImages/<%= event_list[i].poster_img%>" alt=".png">
                       </div>
                       <div class="eventContentWrapper">
-                        <h1 class="eventHeader">IPL Seapker</h1>
+                        <h1 class="eventHeader"><%= event_list[i].name %></h1>
                         <p class="eventDetail">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-                          augue mattis condimentum gravida ultrices nunc sagittis,
-                          faucibus lacus. Ornare urna nibh pellentesque odio senectus
-                          habitasse eu enim sit. Urna enim egestas diam nulla sit......
+                          <%= event_list[i].content.overview[0] %>
                         </p>
-                        <a href="/register/pitch-please" class="registerFormLink"><span class="registerFormLinkText">
-                            Register Now <i class="fa-solid fa-arrow-right"></i>
-                          </span>
-                        </a>
+                        <div class="eventDates">
+                          <p>
+                            <b>Date</b><br>
+                            <% for(var j=0;j<event_list[i].stages_timeline.length;j++){%>
+                              <%=
+                                  event_list[i].stages_timeline[j].stage_start_datetime %><br>
+                                  <%}%>
+                          </p>
+                        </div>
+                        
                       </div>
                     </div>
                     <%}%>

@@ -1,301 +1,329 @@
 @font-face {
-  font-family: "Gilroy";
-  src: url("../font/Gilroy-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: "Gilroy";
-  src: url("../font/Gilroy-Medium.ttf");
-  font-weight: medium;
-  font-style: normal;
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Medium.ttf");
+    font-weight: medium;
+    font-style: normal;
 }
+
 
 /* styles to make menu transparent */
 
 #menuBar {
-  background-color: unset;
+    background-color: unset;
 }
+
 
 /* styles to make menu transparent */
 
 body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .header {
-  display: flex;
-  position: relative;
-  background: linear-gradient(180deg, #b621fe 0%, #1fd1f9 100%);
-  height: 35rem;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  color: #ffffff;
+    display: flex;
+    position: relative;
+    background: linear-gradient(180deg, #b621fe 0%, #1fd1f9 100%);
+    height: 35rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
 }
+
 .heading {
-  font-family: "Gilroy";
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
 }
+
 .description {
-  font-family: "Gilroy";
-  color: rgba(255, 255, 255, 0.72);
-  font-weight: normal;
-  font-size: 16px;
-  width: 70%;
-  text-align: center;
-  margin: 1%;
+    font-family: "Gilroy";
+    color: rgba(255, 255, 255, 0.72);
+    font-weight: normal;
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
+    margin: 1%;
 }
+
 .sponsor-box {
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  top: 57%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Gilroy";
-  font-weight: bold;
-  font-size: 36px;
-  margin: 5% 0;
-  padding: 4% 0;
-  box-shadow: 0px 2px 62px 0px #0000001f;
-  background: #ffffff;
-  box-shadow: 0px 2px 62px rgba(0, 0, 0, 0.12);
-  border-radius: 16px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 36px;
+    margin: 5% 0;
+    padding: 4% 0;
+    box-shadow: 0px 2px 62px 0px #0000001f;
+    background: #ffffff;
+    box-shadow: 0px 2px 62px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
 }
+
 .grad-font {
-  background: linear-gradient(180deg, #b621fe 0%, #1fd1f9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, #b621fe 0%, #1fd1f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .title-sponsors {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
 .sponsors {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  width: 90%;
-  margin: 3% 0;
-  flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 90%;
+    margin: 3% 0;
+    flex-wrap: wrap;
 }
-.sponsor-logo{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  width: 50%;
+
+.sponsor-logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 50%;
 }
-#ecell{
-  position: relative;
-  width: 45%;
+
+#ecell {
+    position: relative;
+    width: 45%;
 }
-#nits{
-  position: relative;
-  width: 28%;
+
+#nits {
+    position: relative;
+    width: 28%;
 }
-#iic{
-  position: relative;
-  width: 32%;
-  left: 5%;
+
+#iic {
+    position: relative;
+    width: 32%;
+    left: 5%;
 }
-#ieee{
-  width: 30%;
+
+#ieee {
+    width: 30%;
 }
-#ts,#fp{
-  width: 100%;
+
+#ts,
+#fp {
+    width: 100%;
 }
-#gdsc{
-  position: relative;
-  width: 50%;
-  right: 0.5%;
+
+#assamStartup {
+    position: relative;
+    width: 25%;
 }
-#tc{
-  width: 15%;
+
+#gdsc {
+    position: relative;
+    width: 50%;
+    right: 0.5%;
 }
+
+#tc {
+    width: 15%;
+}
+
 footer {
-  background: #111;
-  height: auto;
-  width: 125%;
-  top: 8vh;
-  position: relative;
-  font-family: sans-serif;
-  padding-top: 9%;
-  padding-bottom: 8%;
-  color: #fff;
+    background: #111;
+    height: auto;
+    width: 125%;
+    top: 8vh;
+    position: relative;
+    font-family: sans-serif;
+    padding-top: 9%;
+    padding-bottom: 8%;
+    color: #fff;
 }
 
 .footer_content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer_text {
-  flex-direction: wrap;
-  /*margin-left: 8%;*/
-  margin-right: 5%;
-  font-family: 'Gilroy';
-  font-weight: normal;
-  font-size: 1rem;
+    flex-direction: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 .footer_text span {
-  font-size: 2rem;
-  background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-family: 'Gilroy';
-  font-weight: bold;
+    font-size: 2rem;
+    background: linear-gradient(180deg, #B621FE 0%, #1FD1F9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Gilroy';
+    font-weight: bold;
 }
 
 .footer_text span1 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .social_icon {
-  list-style: none;
-  display: flex;
-  margin-top: 40px;
-  
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
 }
 
 .social_icon i {
-  transition: 250ms;
+    transition: 250ms;
 }
 
 .social_icon i:hover {
-  transform: scale(0.85);
-  -webkit-text-stroke-width: 0px;
-  background-image: linear-gradient(0deg, #1fd1f9, #b621fe);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    transform: scale(0.85);
+    -webkit-text-stroke-width: 0px;
+    background-image: linear-gradient(0deg, #1fd1f9, #b621fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .social_icon li {
-  margin: 0px 15px;
+    margin: 0px 15px;
 }
 
 .child_info {
-  text-align: center;
+    text-align: center;
 }
 
-.otherLinks{
-  display:flex;
-  width:100%;
-  justify-content: center;
+.otherLinks {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-.otherLinks ul{
-  list-style: none;
-  display:flex;
-  width:45vw;
-  justify-content: space-between;
-  padding-left: 0%;
+.otherLinks ul {
+    list-style: none;
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+    padding-left: 0%;
 }
-.otherLinks ul a{
-  background-image:linear-gradient(0deg, #1fd1f9, #b621fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
-  font-weight: bold;
-  font-size: 1.2rem;
+
+.otherLinks ul a {
+    background-image: linear-gradient(0deg, #1fd1f9, #b621fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .fa-linkedin-in-1,
 .fa-facebook-f-1 {
-  font-size: 2rem;
-  padding: 1rem;
-  color: white;
-  margin-left: 5px;
-  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: hsla(0, 0%, 100%);
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    margin-left: 5px;
+    -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: hsla(0, 0%, 100%);
 }
 
 .fa-instagram-1 {
-  font-size: 2.25rem;
-  padding: 1rem;
-  color: white;
+    font-size: 2.25rem;
+    padding: 1rem;
+    color: white;
 }
 
 .linkedin-1,
 .facebook-1 {
-  font-size: 2rem;
-  padding: 1rem;
-  color: white;
-  margin-left: 5px;
-  -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: hsla(0, 0%, 0%);
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    margin-left: 5px;
+    -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: hsla(0, 0%, 0%);
 }
 
 .instagram-1 {
-  font-size: 2.25rem;
-  padding: 1rem;
-  color: black;
+    font-size: 2.25rem;
+    padding: 1rem;
+    color: black;
 }
 
 @media (max-width: 768px) {
-  .heading {
-    font-size: 3rem;
-  }
-  .description {
-    font-size: 0.8rem;
-  }
-  .sponsor-box {
-    top: 60%;
-    font-size: 1.7rem;
-    padding: 7% 0;
-  }
-  #flf{
-    font-size: 1.5rem;
-  }
-  #ecell{
-    position: relative;
-    width: 60%;
-  }
-  #nits{
-    position: relative;
-    width: 32%;
-  }
-  #iic{
-    position: relative;
-    width: 40%;
-    left: 0%;
-    margin: 7% 0;
-  }
-  #ieee{
-    width: 40%;
-  }
-  #gdsc{
-    position: relative;
-    width: 98%;
-    right: 0.5%;
-    margin-top: 7%;
-  }
-  #tc{
-    margin-top: 7%;
-    width: 35%;
-  }
-  .sponsor-logo {
-    width: 100%;
-    margin: 2% 0;
-  }
-  footer {
-    top: 5vh;
-  }
+    .heading {
+        font-size: 3rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .sponsor-box {
+        top: 60%;
+        font-size: 1.7rem;
+        padding: 7% 0;
+    }
+    #flf {
+        font-size: 1.5rem;
+    }
+    #ecell {
+        position: relative;
+        width: 60%;
+    }
+    #nits {
+        position: relative;
+        width: 32%;
+    }
+    #iic {
+        position: relative;
+        width: 40%;
+        left: 0%;
+        margin: 7% 0;
+    }
+    #ieee {
+        width: 40%;
+    }
+    #assamStartup {
+        position: relative;
+        width: 40%;
+    }
+    #gdsc {
+        position: relative;
+        width: 98%;
+        right: 0.5%;
+        margin-top: 7%;
+    }
+    #tc {
+        margin-top: 7%;
+        width: 35%;
+    }
+    .sponsor-logo {
+        width: 100%;
+        margin: 2% 0;
+    }
+    footer {
+        top: 5vh;
+    }
 }

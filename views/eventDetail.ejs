@@ -39,55 +39,81 @@
     <div class="privacy-policy">
         <div class="secondContainer">
         <h1 class="privacy-policy-title">Rules and Regulations</h1>
-        <div class="privacy-topics">
+        <% for(var i=0;i<event_list.length;i++){%>
+            <% if(event_id === event_list[i].id){%>
+                <div class="privacy-topics">
            
-            <h2 class="privacy-subtopics">OVERVIEW</h2>
-            <p class="privacy-desc">
-                “It’s not just about ideas, it’s about making the ideas happen.” <br><br>
-
-Innovation is the new way of life for most entrepreneurs in an ever more competitive and global economy. Great ideas result in great word of honour paving the way to success. In realization to this vision the fraternity of E-cell NIT Silchar is elated to announce the arrangement of a pitch competition to be held as a part of Srijan 3.0 for the budding entrepreneurs. <br><br>
-
-Aiming to provide the right stage to showcase the business ideas and models, creating potentiality of early-stage startups help ignite the enthusiastic minds. To evaluate their plan in a risk-free environment by panel of judges would bridge the gap between ideas and reality of an enterprise. <br><br>
-
-The competition is open for all. Pitch your plans.
-
-            </p>
-        </div>
-        <div class="privacy-topics">
-           
-            <h2 class="privacy-subtopics">STAGE 1 (𝐎𝐧𝐥𝐢𝐧𝐞 𝐒𝐜𝐫𝐞𝐞𝐧𝐢𝐧𝐠)</h2>
-            <p class="privacy-desc">
-                Interested teams should submit a PPT about their prospective business plan/idea (in not more than 20 slides). <br><br>
-
-The PPT should highlight the sectors of people who will be benefited from the business and also prove the scalability and the profitability of the idea/plan. Please find all the resources to creating a good pitch deck here: _ <br><br>
-
-𝘋𝘦𝘢𝘥𝘭𝘪𝘯𝘦:- 11:59 𝘗𝘔, 10 𝘈𝘱𝘳𝘪𝘭 2021 <br><br>
-
-Judges for round 1 screening: Tanmay & Teresa - 12 teams to be shortlisted. <br><br>
-
-            </p>
-        </div>
-        <div class="privacy-topics">
-           
-            <h2 class="privacy-subtopics">STAGE 2 (Pitching)</h2>
-            <p class="privacy-desc">
-                The shortlisted teams will have to pitch their idea in front of an expert investor (or panel).<br>
-                Time Limit: 8 mins (6 mins pitch + 2 mins QnA)
-
-            </p>
-        </div>
-        <div class="privacy-topics">
-         
-            <h2 class="privacy-subtopics">GUIDELINES</h2>
-            <p class="privacy-desc">
-                You can participate individually or in a team of a maximum of 4 members.
-            </p>
-        </div> <br><br>
-        <a href="/register/pitch-please" class="registerFormLink"
-        ><span class="registerFormLinkText">
-            Register Now <i class="fa-solid fa-arrow-right"></i>
-        </span>
-        </a>
+                    <h2 class="privacy-subtopics">OVERVIEW</h2>
+                    <p class="privacy-desc">
+                        <% for(var j=0;j<event_list[i].content.overview.length;j++) {%>
+                            <% if(event_list[i].content.overview[j].indexOf(":") !== -1){ %> 
+                                <%=event_list[i].content.overview[j].substring(0,event_list[i].content.overview[j].indexOf(":")) %><a href=<%= event_list[i].content.overview[j].substring(event_list[i].content.overview[j].indexOf(":")+1) %>>here</a><br><br>
+                            <% }else{%>
+                                <%=event_list[i].content.overview[j]%>
+                            <%} %>
+                        <% } %>  
+                        <% for(var j=0;j<event_list[i].content.outcome.length;j++) {%>
+                            <%=event_list[i].content.outcome[j] %><br><br>
+                        <% } %>  
+        
+                    </p>
+                </div>
+                <div class="privacy-topics">
+                   
+                    <h2 class="privacy-subtopics"><%=event_list[i].content.stages[0].stage_name%></h2>
+                    <p class="privacy-desc">
+                        
+                        <% for(var k=0;k<event_list[i].content.stages[0].stage_rules.length;k++){ %>
+                            <% if(event_list[i].content.stages[0].stage_rules[k].indexOf(":") !== -1){ %> 
+                                <%=event_list[i].content.stages[0].stage_rules[k].substring(0,event_list[i].content.stages[0].stage_rules[k].indexOf(":")) %><a href=<%=event_list[i].content.stages[0].stage_rules[k].substring(event_list[i].content.stages[0].stage_rules[k].indexOf(":")+1) %>>here</a><br><br>
+                            <% }else{%>
+                                <%=event_list[i].content.stages[0].stage_rules[k]%>
+                            <%} %>
+                            <br><br>
+                        <% } %> 
+        
+                    </p>
+                </div>
+                <div class="privacy-topics">
+                   
+                    <h2 class="privacy-subtopics"><%=event_list[i].content.stages[1].stage_name%></h2>
+                    <p class="privacy-desc">
+                        <% for(var k=0;k<event_list[i].content.stages[1].stage_rules.length;k++){ %>
+                            <% if(event_list[i].content.stages[1].stage_rules[k].indexOf(":") !== -1){ %> 
+                                <%=event_list[i].content.stages[1].stage_rules[k].substring(0,event_list[i].content.stages[1].stage_rules[k].indexOf(":")) %><a href=<%=event_list[i].content.stages[1].stage_rules[k].substring(event_list[i].content.stages[1].stage_rules[k].indexOf(":")+1) %>>here</a><br><br>
+                            <% }else{%>
+                                <%=event_list[i].content.stages[1].stage_rules[k]%>
+                            <%} %>
+                            <br><br>
+                        <% } %>
+                        <!-- The shortlisted teams will have to pitch their idea in front of an expert investor (or panel).<br>
+                        Time Limit: 8 mins (6 mins pitch + 2 mins QnA) -->
+        
+                    </p>
+                </div>
+                <div class="privacy-topics">
+                 
+                    <h2 class="privacy-subtopics">GUIDELINES</h2>
+                    <p class="privacy-desc">
+                        <% for(var k=0;k<event_list[i].content.guidelines.length;k++){ %>
+                            <% if(event_list[i].content.guidelines[k].indexOf(":") !== -1){ %> 
+                                <%=event_list[i].content.guidelines[k].substring(0,event_list[i].content.guidelines[k].indexOf(":")) %><a target="_blank" href=<%=event_list[i].content.guidelines[k].substring(event_list[i].content.guidelines[k].indexOf(":")+1) %>>here</a><br><br>
+                            <% }else{%>
+                                <%=event_list[i].content.guidelines[k]%><br><br>
+                            <%} %>
+                            
+                        <% } %>  
+                        <!-- You can participate individually or in a team of a maximum of 4 members. -->
+                    </p>
+                </div> <br><br>
+                <!-- <a href="/register/${event_id}" class="registerFormLink"
+                ><span class="registerFormLinkText">
+                    Register Now <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                </a> -->
+            <%}%>
+        <%}%>
+        
     </div>
 
 </body>

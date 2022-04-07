@@ -18,7 +18,7 @@
 
 
 <!-- REGISTER IMG & DESCRIPTION -->
-<div class="register-info">
+<!-- <div class="register-info">
     <div class="register-img">
         <img src="/eventImages/pitchpleases.png" alt="">
     </div>
@@ -30,8 +30,28 @@
     <div class="register-description">
         <p></p>
     </div>
-</div>
+</div> -->
 <!-- REGISTER IMG & DESCRIPTION -->
+
+<% for(var i=0;i<event_list.length;i++){%>
+    <% if(event_id === event_list[i].id){%>
+        <div class="register-info">
+            <div class="register-img">
+                <img src="/eventImages/<%=event_list[i].poster_img%>" alt="">
+            </div>
+            <div class="register-heading">
+                <h1>
+                    <%=event_list[i].name %>
+                </h1>
+            </div>
+            <div class="register-description">
+                <p></p>
+            </div>
+        </div>
+
+<%}%>
+<%}%>
+
 
 
 <!-- REGISTRATION FORM  -->
@@ -65,6 +85,30 @@
         </select>
         <br>
         <div class="line" id="line"></div>
+
+        <% for(var j=0;j<event_list.length;j++){%>
+            <% if(event_id === event_list[j].id){%>
+                <% for(var k=0;k<event_list[j].min_team_members-1;k++){%>
+                    <div class="member">
+                        <br><br>
+                        <div class="name">
+                            <div class="name-f"><label for="fname" class="first-name">Name*</label><input type="text" id="fname" class="fname" name="name" placeholder="John" required></div>
+                            <div class="name-l"><label for="email" class="last-name" >Email*</label><input type="email" id="lname" class="lname" name="email"  placeholder="DSouza@email.com" required></div>
+                        </div>
+                        <br><label for="pnumber" class="phone-number">Phone Number*</label>
+                        <div class="number"><span class="cc">+91</span><input type="tel" id="pnumber" class="pnumber" name="cnumber" placeholder="9876543210" required></div>
+                        <br><label for="gender" class="p-gender">Gender*</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <br>
+                        <div class="line" id="line"></div>
+                    </div>
+                    <%}%>
+        
+        <%}%>
+        <%}%>
 
         <!-- <div class="member">
             <br><br>

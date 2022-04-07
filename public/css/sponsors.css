@@ -1,0 +1,91 @@
+.headingSponsors {
+    font-size: 3rem;
+    font-family: 'Gilroy-Bold', sans-serif;
+    text-align: center;
+}
+
+.sponsorGradient,
+.sponserCategory {
+    background-image: linear-gradient(#B621FE, #1FD1F9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sponserCategory {
+    font-size: 1.6rem;
+}
+
+.sponsorName {
+    font-size: 1.3rem;
+}
+
+.sponsorTotal {
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.digitialPartner,
+.credentialsPartner,
+.mediaPartner,
+.codingPartner {
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.sponsorImage {
+    width: 250px;
+}
+
+.gfg {
+    margin: 45% 0 45% 0;
+}
+
+.marble {
+    margin: 1% 0 1% 0;
+}
+
+.notice {
+    margin: 2% 0 2% 0;
+}
+
+.tscholar {
+    margin: 23% 0 23% 0;
+}
+
+@media (max-width: 450px) {
+    .headingSponsors {
+        font-size: 2rem;
+    }
+
+    .sponsorTotal {
+        flex-direction: column;
+    }
+
+    .credentialsPartner,
+    .mediaPartner,
+    .codingPartner {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .digitialPartner {
+        margin-left: 3em;
+    }
+
+    .marble,
+    .tscholar {
+        margin: 0;
+    }
+
+    .gfg {
+        margin: 10% 0 10% 0;
+    }
+
+    .notice {
+        margin: -15% 0 -15% 0;
+    }
+}

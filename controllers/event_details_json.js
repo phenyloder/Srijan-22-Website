@@ -270,7 +270,7 @@ const event_list = [
         min_team_members: 1,
         max_team_members: 1,
         event_type: "competition",
-        poster_img: "stockMarket.jpeg",
+        poster_img: "Stock market.jpeg",
         icon_img: "",
         is_registering: true,
         stages_timeline: [

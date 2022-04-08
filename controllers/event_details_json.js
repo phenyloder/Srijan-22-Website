@@ -17,7 +17,7 @@ const event_list = [
         {
             stage_id: "stage_2",
             stage_name: "Stage 2 (Pitching)",
-            stage_start_datetime: "11:59 pm, 10 April 2022",
+            stage_start_datetime: "6:00 pm, 12 April 2022",
             stage_end_datetime: "",
         }
         ],
@@ -145,6 +145,13 @@ const event_list = [
             {
                 stage_id: "stage_1",
                 stage_name: "Round 1",
+                stage_start_datetime: "5:00 pm, 9 April 2022",
+                stage_end_datetime: "",
+            },
+
+            {
+                stage_id: "stage_2",
+                stage_name: "Round 2",
                 stage_start_datetime: "5:00 pm, 10 April 2022",
                 stage_end_datetime: "",
             },
@@ -153,7 +160,7 @@ const event_list = [
         content: {
             overview: ["Have you ever noticed how two people can have completely different perspectives on the same idea?"],
             outcome: ["Diverse perspectives can also aid in the discovery of fresh unique and creative ideologies on the same topic. You obtain a broader range of feedback when you present your idea to someone else", "Exchange Your Idea gives you an excellent opportunity to learn about other people's opinions and solutions to a given problem or issue. This enhances your thinking skills and allows you to explore  your idea in a more thorough manner, elevating it higher."],
-            guidelines: ["-> This is not a team event."],
+            guidelines: ["-> This is not a team event." , "->Submit your idea here :https://forms.gle/NY5wEijgjgqoVWxU7"],
             stages: [{
                 stage_id: "stage_1",
                 stage_name: "Round 1",
@@ -221,9 +228,16 @@ const event_list = [
         stages_timeline: [
 
             {
-                stage_id: "",
-                stage_name: "",
-                stage_start_datetime: "",
+                stage_id: "stage_1",
+                stage_name: "Round 1",
+                stage_start_datetime: "5:00pm , 10 April 2022",
+                stage_end_datetime: "",
+            },
+
+            {
+                stage_id: "stage_2",
+                stage_name: "Round 2",
+                stage_start_datetime: " 11 April 2022",
                 stage_end_datetime: "",
             },
 
@@ -256,7 +270,7 @@ const event_list = [
         min_team_members: 1,
         max_team_members: 1,
         event_type: "competition",
-        poster_img: "stockMarket.jpeg",
+        poster_img: "Stock market.jpeg",
         icon_img: "",
         is_registering: true,
         stages_timeline: [
@@ -268,7 +282,7 @@ const event_list = [
             // },
             {
                 stage_id: "stage_1",
-                stage_name: "Stage 1",
+                stage_name: "Event",
                 stage_start_datetime: "9:15 am, 10 April 2022",
                 stage_end_datetime: "3:30 pm, 11 April 2022",
             },
@@ -298,7 +312,177 @@ const event_list = [
                 }
             ]
         }
-    }
+    },
+    {
+        id: "pushkar_raj_thakur",
+        name: "Pushkar Raj Thakur",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "prThakur.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "4pm, 10th April",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: [" In this speaker session, Mr. Pushkar Raj Thakur sir will be dilineating with us, his odyssey as an Entrepreneur along with his escapades in the World of Business. In addition to being the CEO & founder at Coursedes Learning Solution PVT LTD, Thakur Sir is the Master of Leadership Psychology. Acclaimed as one of the most Influential Motivational Speakers and Personality development coaches, he has inspired multitudes as a Youth Icon. "],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+
+        },
+    },
+    {
+        id: "shantanu_jain",
+        name: "Shantanu Jain",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "shantanuJain.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "4pm, 11th April",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: ["In this Speaker Session, Shantanu Jain sir will be narrating his success story and his journey and experience of how to be one. Apart from being an avid reader, passionate writer and social entrepreneur, he is the co-founder at readon.in. A personal finance, fintech, Jain has great interests in finance, investing, block chain, stock market."],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+
+        },
+    },
+    {
+        id: "global_rashid",
+        name: "Global Rashid",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "gRashid.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "6pm, 9th April",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: ["We are stepping into a world where financial literacy and cryptocurrency is the most relevant topic. So for us it is imperative to know more about subjects of financial literacy and digital currencies. Srijan 3.0 gives you the opportunity to know and learn more about the same from Global Rashid, a youtuber with 4 Years of Experience in Cryptocurrency Trading with a demonstrated history of working in the internet industry. Along with that he is skilled in Management, Entrepreneurship, Leadership, Marketing, and Social Media."],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+
+        },
+    },
+
+    {
+        id: "case_study_canvas",
+        name: "Case Study Canvas",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "competition",
+        poster_img: "canvas.jpeg",
+        icon_img: "",
+        is_registering: true,
+        stages_timeline: [{
+                stage_id: "Last_date_of_submission",
+                stage_name: "Last Date of Submission of Document",
+                stage_start_datetime: "11:59 pm,11 April 2022 ",
+                stage_end_datetime: "",
+            }
+           
+            
+        ],
+        content: {
+            overview: ["'Genius is - 1% inspiration, and 99% perspiration.' - Thomas Edison","It is very well said that it's not about knowledge, it's about understanding. And in that understanding, either you make mistakes and learn or you win the hustle and set an example. But the first step for any of it, begins with research and development of the idea which includes a deep analysis of previous attempts and startups. "],
+            outcome: ["So, here we bring to you a grand platform where you will not only be getting to know about several ongoing startups to have a look at but also get to do proper research on the established startups. Along with this you will be learning from some of the budding startups as well. Following which you will be presenting your understanding of the case study on a digital canvas. The best case study wins!"],
+            guidelines: ["This is an individual event."],
+            stages: [{
+                    stage_id: "stage_1",
+                    stage_name: "Stage 1 ",
+                    stage_content: ["", ""],
+                    stage_rules: ["->So, do the case study, and submit your entries by 11th April and win exciting prizes worth 30,000 along with ample knowledge and case studies which will not help you all become aspiring entrepreneurs but also take you a step ahead in the world of business.", "->Submissions are accepted through Google form only Link:https://forms.gle/6p6TDjRweYpYsv5A8", "->Please register your team on our website at :https://srijan-nits.in/events"],
+                },
+                {
+                    stage_id: "",
+                    stage_name: "",
+                    stage_content: ["", ""],
+                    stage_rules: [""],
+                }
+            ]
+        }
+    },
+
+    {
+        id: "business_quiz",
+        name: "Business Quiz",
+        is_team_event: true,
+        min_team_members: 1,
+        max_team_members: 2,
+        event_type: "competition",
+        poster_img: "business quiz.jpg",
+        icon_img: "",
+        is_registering: true,
+        stages_timeline: [
+            {
+                stage_id: "Last_date_of_submission",
+                stage_name: "Last Date of registration",
+                stage_start_datetime: "10th April,2022",
+                stage_end_datetime: "",
+            }
+           
+            
+        ],
+        content: {
+            overview: ["'If you want the answer—ask the question.'' - Lorii Meyers","Let us let in you all to the realm of Business, where the 'Purple' has much more to it than just being the colour of a dress, and yes, it's OYO, not YOYO!"],
+            outcome: ["When any doubt related to any concept of a particular topic arises, we tend to ask 'questions'. Questions are a tremendous tool that not only helps to obliterate any doubt but also helps us to give an assessment to one's knowledge. For that purpose, quizzes play a great role." , "Let's drop a quick business question for everyone.","What do you mean by ADAG?" , "Hey, there business aficionados! Are you excited enough to give a check on your proficiency? Srijan 3.0 brings before you all 'Business Quiz', a platform to challenge your knowledge and sharpen it to a better one.","Quiz Master- Derajuddin Ahmed, Resource  Person ‘PITAMAH’"],
+            guidelines: ["This is a team event."],
+            stages: [{
+                    stage_id: "stage_1",
+                    stage_name: "Stage 1 ",
+                    stage_content: ["", ""],
+                    stage_rules: ["->Maximum of 2 members in a team, lonewolfs allowed.", "->Last date of registration - 10th April,2022.", "->Date - 11th April, 2022 , Time - 5.00 PM." , "->Venue - New Gallery (G-301).", "-> Prelims will be followed by the Finals on the same day.", "->Prizes Worth 50K at stake."],
+                },
+                {
+                    stage_id: "",
+                    stage_name: "",
+                    stage_content: ["", ""],
+                    stage_rules: [""],
+                }
+              
+            ]
+        }
+    },
 ]
 
 module.exports = event_list;

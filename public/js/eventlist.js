@@ -69,8 +69,11 @@ window.addEventListener('scroll', (e) => {
         if (x >= 4498.6 && x < 4676) {
             eventLogo.src = 'images/idea exchange.png'
         }
-        if(x >= 4676){
+        if(x >= 4676 && x < 5010){
             eventLogo.src = 'images/pannel discussion.png'
+        }
+        if(x > 5010){
+            eventLogo.src = 'images/technerd.png'
         }
     }
     else {
@@ -97,8 +100,11 @@ window.addEventListener('scroll', (e) => {
         if (x >= 4600 && x <4850) {
             eventLogo.src = 'images/idea exchange.png'
         }
-        if(x >= 4850){
+        if(x >= 4850 && x < 5200){
             eventLogo.src = 'images/pannel discussion.png'
+        }
+        if(x >= 5200){
+            eventLogo.src = 'images/technerd.png'
         }
 
         }

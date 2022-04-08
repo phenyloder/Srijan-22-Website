@@ -66,8 +66,11 @@ window.addEventListener('scroll', (e) => {
         if (x >= 4111 && x < 4498.6) {
             eventLogo.src = 'images/pitch.png'
         }
-        if (x >= 4498.6) {
+        if (x >= 4498.6 && x < 4676) {
             eventLogo.src = 'images/idea exchange.png'
+        }
+        if(x >= 4676){
+            eventLogo.src = 'images/pannel discussion.png'
         }
     }
     else {
@@ -90,11 +93,15 @@ window.addEventListener('scroll', (e) => {
         if (x >= 4244.6 && x < 4600) {
             eventLogo.src = 'images/pitch.png'
         }
-        if (x > 4600) {
+        
+        if (x >= 4600 && x <4850) {
             eventLogo.src = 'images/idea exchange.png'
         }
+        if(x >= 4850){
+            eventLogo.src = 'images/pannel discussion.png'
+        }
 
-    }
+        }
 
 
 })

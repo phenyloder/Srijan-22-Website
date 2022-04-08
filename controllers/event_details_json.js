@@ -298,6 +298,96 @@ const event_list = [
                 }
             ]
         }
+    },
+    {
+        id: "pushkar_raj_thakur",
+        name: "Pushkar Raj Thakur",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "prThakur.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "4pm, 10th April",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: [" In this speaker session, Mr. Pushkar Raj Thakur sir will be dilineating with us, his odyssey as an Entrepreneur along with his escapades in the World of Business. In addition to being the CEO & founder at Coursedes Learning Solution PVT LTD, Thakur Sir is the Master of Leadership Psychology. Acclaimed as one of the most Influential Motivational Speakers and Personality development coaches, he has inspired multitudes as a Youth Icon. "],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+
+        },
+    },
+    {
+        id: "shantanu_jain",
+        name: "Shantanu Jain",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "shantanuJain.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "4pm, 11th April",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: ["In this Speaker Session, Shantanu Jain sir will be narrating his success story and his journey and experience of how to be one. Apart from being an avid reader, passionate writer and social entrepreneur, he is the co-founder at readon.in. A personal finance, fintech, Jain has great interests in finance, investing, block chain, stock market."],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+
+        },
+    },
+    {
+        id: "global_rashid",
+        name: "Global Rashid",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "gRashid.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "6pm, 9th April",
+                stage_end_datetime: "",
+            },
+
+        ],
+        content: {
+            overview: ["We are stepping into a world where financial literacy and cryptocurrency is the most relevant topic. So for us it is imperative to know more about subjects of financial literacy and digital currencies. Srijan 3.0 gives you the opportunity to know and learn more about the same from Global Rashid, a youtuber with 4 Years of Experience in Cryptocurrency Trading with a demonstrated history of working in the internet industry. Along with that he is skilled in Management, Entrepreneurship, Leadership, Marketing, and Social Media."],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+
+        },
     }
 ]
 

@@ -138,7 +138,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "exchangeYI.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [
 
             {

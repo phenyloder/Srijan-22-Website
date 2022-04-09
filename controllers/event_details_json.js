@@ -251,7 +251,7 @@ const event_list = [
                     stage_id: "",
                     stage_name: "ROUND 1",
                     stage_content: [""],
-                    stage_rules: ["1. Participants need to submit a startup name and its requirements(startup either existing or new) upon which they think that might stand out and be a prominent startup.", "2. Submission should consist of the whole Entrepreneurial gist of requirements needed to build their startup idea including Venture Capital, Debt, Equity, Office and location space, Technical needs, etc.", "3. Submission format .pdf or .docx.", "4. Shortlisting will be done on the basis of the quality of the idea submitted."],
+                    stage_rules: ["1. Participants need to submit a startup name and its requirements(startup either existing or new) upon which they think that might stand out and be a prominent startup.", "2. Submission should consist of the whole Entrepreneurial gist of requirements needed to build their startup idea including Venture Capital, Debt, Equity, Office and location space, Technical needs, etc.", "3. Submission format .pdf or .docx.", "4. Shortlisting will be done on the basis of the quality of the idea submitted.","->Submission link ://forms.gle/KfKU7o9z5FL9Roo96"],
                 },
                 {
                     stage_id: "",
@@ -401,6 +401,36 @@ const event_list = [
                
             ]
 
+        },
+    },
+    {
+        id: "sankar_bora",
+        name: "Sankar Bora",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "sankar bora.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+    
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "5pm, 12th April",
+                stage_end_datetime: "",
+            },
+    
+        ],
+        content: {
+            overview: [" Whenever it comes to learning, we don't just look for expertise but for the experience. Which leads us to become an entrepreneur. We are overwhelmed to announce that our next guest speaker, Sankar Bora sir, will not only open up new dialects for working as an entrepreneur but also will share with us his experience of 17+ years in the world of business.  "],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+    
         },
     },
 

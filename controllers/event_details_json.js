@@ -251,7 +251,7 @@ const event_list = [
                     stage_id: "",
                     stage_name: "ROUND 1",
                     stage_content: [""],
-                    stage_rules: ["1. Participants need to submit a startup name and its requirements(startup either existing or new) upon which they think that might stand out and be a prominent startup.", "2. Submission should consist of the whole Entrepreneurial gist of requirements needed to build their startup idea including Venture Capital, Debt, Equity, Office and location space, Technical needs, etc.", "3. Submission format .pdf or .docx.", "4. Shortlisting will be done on the basis of the quality of the idea submitted."],
+                    stage_rules: ["1. Participants need to submit a startup name and its requirements(startup either existing or new) upon which they think that might stand out and be a prominent startup.", "2. Submission should consist of the whole Entrepreneurial gist of requirements needed to build their startup idea including Venture Capital, Debt, Equity, Office and location space, Technical needs, etc.", "3. Submission format .pdf or .docx.", "4. Shortlisting will be done on the basis of the quality of the idea submitted.","->Submission link ://forms.gle/KfKU7o9z5FL9Roo96"],
                 },
                 {
                     stage_id: "",

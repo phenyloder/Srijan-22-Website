@@ -48,7 +48,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "technerd.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "Last_date_of_submission",
                 stage_name: "Last Date of Submission of Document",

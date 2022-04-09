@@ -403,6 +403,36 @@ const event_list = [
 
         },
     },
+    {
+        id: "sankar_bora",
+        name: "Sankar Bora",
+        is_team_event: false,
+        min_team_members: 1,
+        max_team_members: 1,
+        event_type: "speaker",
+        poster_img: "sankar bora.jpeg",
+        icon_img: "",
+        is_registering: false,
+        stages_timeline: [
+    
+            {
+                stage_id: "",
+                stage_name: "",
+                stage_start_datetime: "5pm, 12th April",
+                stage_end_datetime: "",
+            },
+    
+        ],
+        content: {
+            overview: [" Whenever it comes to learning, we don't just look for expertise but for the experience. Which leads us to become an entrepreneur. We are overwhelmed to announce that our next guest speaker, Sankar Bora sir, will not only open up new dialects for working as an entrepreneur but also will share with us his experience of 17+ years in the world of business.  "],
+            outcome: [""],
+            guidelines: [""],
+            stages: [
+               
+            ]
+    
+        },
+    },
 
     {
         id: "case_study_canvas",

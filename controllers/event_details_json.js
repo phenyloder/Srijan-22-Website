@@ -184,7 +184,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "starupexpo.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [
 
             {

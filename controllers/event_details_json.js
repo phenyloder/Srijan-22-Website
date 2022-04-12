@@ -6,7 +6,7 @@ const event_list = [{
         max_team_members: 4,
         event_type: "competition",
         poster_img: "pitchpleases.png",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1 (Online Screening)",

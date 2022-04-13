@@ -13,20 +13,23 @@ const { getTermsConditions } = require("../controllers/getTermsConditions");
 const { getEventDetails } = require("../controllers/getEventDetails");
 const User = require("../models/registerinfo");
 const Pitch = require("../models/pitchPlease");
-const event_list=require("../controllers/event_details_json");
+const event_list = require("../controllers/event_details_json");
 const { getCollaborationPage } = require("../controllers/getCollaborationPage");
-
+const RegisterEvents = require("../models/registerinfo");
+const json2xls = require("json2xls");
 
 const router = express.Router();
 
 router.get("/", getIndexPage); // serves index page
 router.get("/events", getEventPage); // serves event page
-router.get("/register/:event_id", (req, res) => {
-    const event_id=req.params.event_id
-  res.render('register',{event_list: event_list, event_id: event_id});
-}
+router.get(
+  "/register/:event_id",
+  (req, res) => {
+    const event_id = req.params.event_id;
+    res.render("register", { event_list: event_list, event_id: event_id });
+  }
 
-// getRegisterPage
+  // getRegisterPage
 ); //serves register page
 // router.get("/register/:event_id", getRegisterPage); //serves register page
 router.get("/our-team", getOurTeamPage); //serves our-team page
@@ -39,15 +42,14 @@ router.get("/collaboration", getCollaborationPage); //serves terms and condition
 
 //router.get("/events/pitchPlease", getEventDetails);  //serves details of event
 //router.get("/events/technerd", getTechnerdDetails);  //serves details of event
-router.get("/events/:event_name",function(req,res){
-    const event_id=req.params.event_name;
-    res.render('eventDetail',{event_id:event_id,event_list:event_list});
+router.get("/events/:event_name", function (req, res) {
+  const event_id = req.params.event_name;
+  res.render("eventDetail", { event_id: event_id, event_list: event_list });
 });
-
 
 router.post("/register/:event_name", async (req, res) => {
   //console.log(req.body.fname.length)
-  const event_name=req.params.event_name;
+  const event_name = req.params.event_name;
   // console.log(event_name);
   let team_members = [];
   //console.log(req.body.fname[0]);
@@ -62,7 +64,7 @@ router.post("/register/:event_name", async (req, res) => {
   }
 
   const user = new User({
-    event_name:event_name,
+    event_name: event_name,
     tname: req.body.tname,
     members: team_members,
     // ...req.body
@@ -94,6 +96,15 @@ router.post("/register/:event_name", async (req, res) => {
 //   // res.send("data saved successfully");
 //   res.render("index");
 // });
+
+router.get("/getExcelAdityaAgarwalGauravDasJyotimoyKashyapAadiVermaMayurMulchandaniShritiMishraDidiALLTHANKSTOTHEM", json2xls.middleware, async (req, res) => {
+  const result = await RegisterEvents.find()
+    .select("-_id -__v")
+    .sort({ event_name: 1 });
+  res.set("Content-Disposition", "attachment; filename=data.json");
+  // res.xls("data.xlsx", result);
+  res.json(result);
+});
 
 router.get("/LaunchPage", getLaunchPage); // serves lauch page
 module.exports = router;

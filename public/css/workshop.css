@@ -55,13 +55,18 @@ body {
     margin-left: 10rem;
     margin-right: 10rem;
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .workshop .list {
     display: inline-block;
     padding-block-end: 2rem;
     padding-block-start: 1rem;
+    width: 50vw
 }
 
 .workshop .content {
@@ -74,11 +79,16 @@ body {
     ;
 }
 
+.workshop-image{
+    display: flex;
+    justify-content: center;
+}
+
 .workshop .title {
     font-size: 2.5rem;
     /* text-align: left; */
     line-height: 0.3rem;
-    padding-top: 1.5rem;
+    padding-top: 0rem;
 }
 
 @media screen and (max-width:1500px) {
@@ -138,12 +148,15 @@ body {
     }
     .workshop .title {
         font-size: 1.3rem;
-        line-height: 0.3rem;
+        line-height: 1.3rem;
     }
     .workshop .content {
         font-size: 0.8rem;
         line-height: 1.5rem;
         color: rgba(255, 255, 255, 0.72);
         ;
+    }
+    .workshop .list{
+        width:80vw
     }
 }

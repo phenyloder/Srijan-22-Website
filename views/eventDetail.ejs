@@ -49,7 +49,7 @@
                             <% if(event_list[i].content.overview[j].indexOf(":") !== -1){ %> 
                                 <%=event_list[i].content.overview[j].substring(0,event_list[i].content.overview[j].indexOf(":")) %><a href=<%= event_list[i].content.overview[j].substring(event_list[i].content.overview[j].indexOf(":")+1) %>>here</a><br><br>
                             <% }else{%>
-                                <%=event_list[i].content.overview[j]%>
+                                <%=event_list[i].content.overview[j]%><br><br>
                             <%} %>
                         <% } %>  
                         <% for(var j=0;j<event_list[i].content.outcome.length;j++) {%>

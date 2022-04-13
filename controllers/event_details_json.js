@@ -96,7 +96,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "outwit.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1",
@@ -335,11 +335,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-<<<<<<< HEAD
-               
-=======
-
->>>>>>> f4e978f00f1c18ffb1ad84b9c88b8a93b5e9c1ed
             ]
 
         },
@@ -369,11 +364,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-<<<<<<< HEAD
-               
-=======
-
->>>>>>> f4e978f00f1c18ffb1ad84b9c88b8a93b5e9c1ed
             ]
 
         },
@@ -403,13 +393,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-<<<<<<< HEAD
-               
-            ]
-
-        },
-    }
-=======
 
             ]
 
@@ -455,7 +438,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "canvas.jpeg",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "Last_date_of_submission",
                 stage_name: "Last Date of Submission of Document",
@@ -524,7 +507,6 @@ const event_list = [{
             ]
         }
     },
->>>>>>> f4e978f00f1c18ffb1ad84b9c88b8a93b5e9c1ed
 ]
 
 module.exports = event_list;

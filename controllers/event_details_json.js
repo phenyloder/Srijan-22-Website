@@ -96,7 +96,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "outwit.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1",
@@ -335,7 +335,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-
             ]
 
         },
@@ -365,7 +364,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-
             ]
 
         },
@@ -440,7 +438,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "canvas.jpeg",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "Last_date_of_submission",
                 stage_name: "Last Date of Submission of Document",

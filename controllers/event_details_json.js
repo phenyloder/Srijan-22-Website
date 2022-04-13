@@ -6,7 +6,7 @@ const event_list = [{
         max_team_members: 4,
         event_type: "competition",
         poster_img: "pitchpleases.png",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1 (Online Screening)",
@@ -96,7 +96,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "outwit.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "stage_1",
                 stage_name: "Stage 1",
@@ -184,7 +184,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "starupexpo.png",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [
 
             {
@@ -335,7 +335,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-
             ]
 
         },
@@ -365,7 +364,6 @@ const event_list = [{
             outcome: [""],
             guidelines: [""],
             stages: [
-
             ]
 
         },
@@ -440,7 +438,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "canvas.jpeg",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "Last_date_of_submission",
                 stage_name: "Last Date of Submission of Document",
@@ -479,7 +477,7 @@ const event_list = [{
         event_type: "competition",
         poster_img: "business quiz.jpg",
         icon_img: "",
-        is_registering: true,
+        is_registering: false,
         stages_timeline: [{
                 stage_id: "Last_date_of_submission",
                 stage_name: "Last Date of registration",
